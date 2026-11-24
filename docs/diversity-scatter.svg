@@ -1,0 +1,349 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 466" width="960" height="466" role="img" aria-labelledby="t d">
+<title id="t">Самостоятельная ошибка и выигрыш при добавлении к V4</title>
+<desc id="d">Каждая точка соответствует одной базовой модели. Выше нуля находятся смеси с меньшим калибровочным RMSE, чем у V4.</desc>
+<rect width="960" height="466" fill="white"/>
+<g font-family="DejaVu Sans,Arial,sans-serif" fill="#23343c" font-size="13">
+<line x1="102.000" y1="39.000" x2="102.000" y2="350.000" stroke="#dfe4e6" />
+<text x="102.00" y="370.00" text-anchor="middle">1 000</text>
+<line x1="370.333" y1="39.000" x2="370.333" y2="350.000" stroke="#dfe4e6" />
+<text x="370.33" y="370.00" text-anchor="middle">2 000</text>
+<line x1="638.667" y1="39.000" x2="638.667" y2="350.000" stroke="#dfe4e6" />
+<text x="638.67" y="370.00" text-anchor="middle">3 000</text>
+<line x1="907.000" y1="39.000" x2="907.000" y2="350.000" stroke="#dfe4e6" />
+<text x="907.00" y="370.00" text-anchor="middle">4 000</text>
+<line x1="102.000" y1="350.000" x2="907.000" y2="350.000" stroke="#dfe4e6" />
+<text x="92.00" y="354.00" text-anchor="end">-2</text>
+<line x1="102.000" y1="298.167" x2="907.000" y2="298.167" stroke="#dfe4e6" />
+<text x="92.00" y="302.17" text-anchor="end">0</text>
+<line x1="102.000" y1="246.333" x2="907.000" y2="246.333" stroke="#dfe4e6" />
+<text x="92.00" y="250.33" text-anchor="end">2</text>
+<line x1="102.000" y1="194.500" x2="907.000" y2="194.500" stroke="#dfe4e6" />
+<text x="92.00" y="198.50" text-anchor="end">4</text>
+<line x1="102.000" y1="142.667" x2="907.000" y2="142.667" stroke="#dfe4e6" />
+<text x="92.00" y="146.67" text-anchor="end">6</text>
+<line x1="102.000" y1="90.833" x2="907.000" y2="90.833" stroke="#dfe4e6" />
+<text x="92.00" y="94.83" text-anchor="end">8</text>
+<line x1="102.000" y1="39.000" x2="907.000" y2="39.000" stroke="#dfe4e6" />
+<text x="92.00" y="43.00" text-anchor="end">10</text>
+<line x1="102.000" y1="298.167" x2="907.000" y2="298.167" stroke="#536873" stroke-width="1.5"/>
+<line x1="130.077" y1="39.000" x2="130.077" y2="350.000" stroke="#536873" stroke-dasharray="5 4"/>
+<text x="504.50" y="395.00" text-anchor="middle">Самостоятельный RMSE на калибровке, км</text>
+<text transform="translate(25 191) rotate(-90)" text-anchor="middle">Снижение RMSE при добавлении к V4, км</text>
+<circle cx="237.294" cy="326.121" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_balanced_cells · RMSE 1 504,20 км · выигрыш -1,08 км</title></circle>
+<circle cx="245.702" cy="295.800" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_conditional_tree · RMSE 1 535,54 км · выигрыш 0,09 км</title></circle>
+<circle cx="253.914" cy="307.046" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_directional_mixture · RMSE 1 566,14 км · выигрыш -0,34 км</title></circle>
+<circle cx="209.443" cy="318.122" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_distance_targets · RMSE 1 400,41 км · выигрыш -0,77 км</title></circle>
+<circle cx="201.011" cy="281.430" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_ellipsoid_risk · RMSE 1 368,98 км · выигрыш 0,65 км</title></circle>
+<circle cx="229.078" cy="304.962" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_fourier_similarity · RMSE 1 473,58 км · выигрыш -0,26 км</title></circle>
+<circle cx="242.381" cy="287.851" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_graph_spectrum · RMSE 1 523,16 км · выигрыш 0,40 км</title></circle>
+<circle cx="267.235" cy="287.411" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_landmark_rings · RMSE 1 615,78 км · выигрыш 0,42 км</title></circle>
+<circle cx="213.568" cy="296.960" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_local_offsets · RMSE 1 415,78 км · выигрыш 0,05 км</title></circle>
+<circle cx="212.778" cy="302.818" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/balanced_pca/geo_triangle_targets · RMSE 1 412,84 км · выигрыш -0,18 км</title></circle>
+<circle cx="248.743" cy="303.197" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_balanced_cells · RMSE 1 546,87 км · выигрыш -0,19 км</title></circle>
+<circle cx="256.539" cy="278.297" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_conditional_tree · RMSE 1 575,92 км · выигрыш 0,77 км</title></circle>
+<circle cx="258.982" cy="299.336" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_directional_mixture · RMSE 1 585,03 км · выигрыш -0,05 км</title></circle>
+<circle cx="219.834" cy="319.108" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_distance_targets · RMSE 1 439,13 км · выигрыш -0,81 км</title></circle>
+<circle cx="217.397" cy="323.897" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_ellipsoid_risk · RMSE 1 430,05 км · выигрыш -0,99 км</title></circle>
+<circle cx="242.849" cy="300.185" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_fourier_similarity · RMSE 1 524,90 км · выигрыш -0,08 км</title></circle>
+<circle cx="259.384" cy="299.833" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_graph_spectrum · RMSE 1 586,52 км · выигрыш -0,06 км</title></circle>
+<circle cx="270.619" cy="297.184" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_landmark_rings · RMSE 1 628,40 км · выигрыш 0,04 км</title></circle>
+<circle cx="230.045" cy="307.865" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_local_offsets · RMSE 1 477,19 км · выигрыш -0,37 км</title></circle>
+<circle cx="223.115" cy="312.203" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/canonical_pair/geo_triangle_targets · RMSE 1 451,36 км · выигрыш -0,54 км</title></circle>
+<circle cx="264.552" cy="303.828" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_balanced_cells · RMSE 1 605,78 км · выигрыш -0,22 км</title></circle>
+<circle cx="273.148" cy="293.732" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_conditional_tree · RMSE 1 637,82 км · выигрыш 0,17 км</title></circle>
+<circle cx="255.432" cy="302.664" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_directional_mixture · RMSE 1 571,79 км · выигрыш -0,17 км</title></circle>
+<circle cx="231.346" cy="299.612" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_distance_targets · RMSE 1 482,04 км · выигрыш -0,06 км</title></circle>
+<circle cx="228.335" cy="306.601" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_ellipsoid_risk · RMSE 1 470,81 км · выигрыш -0,33 км</title></circle>
+<circle cx="252.103" cy="300.552" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_fourier_similarity · RMSE 1 559,39 км · выигрыш -0,09 км</title></circle>
+<circle cx="269.945" cy="294.859" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_graph_spectrum · RMSE 1 625,88 км · выигрыш 0,13 км</title></circle>
+<circle cx="275.369" cy="327.682" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_landmark_rings · RMSE 1 646,10 км · выигрыш -1,14 км</title></circle>
+<circle cx="241.086" cy="303.792" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_local_offsets · RMSE 1 518,33 км · выигрыш -0,22 км</title></circle>
+<circle cx="235.055" cy="303.630" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/cross_bilinear/geo_triangle_targets · RMSE 1 495,86 км · выигрыш -0,21 км</title></circle>
+<circle cx="264.758" cy="300.728" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_balanced_cells · RMSE 1 606,55 км · выигрыш -0,10 км</title></circle>
+<circle cx="279.359" cy="311.448" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_conditional_tree · RMSE 1 660,96 км · выигрыш -0,51 км</title></circle>
+<circle cx="282.143" cy="303.014" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_directional_mixture · RMSE 1 671,34 км · выигрыш -0,19 км</title></circle>
+<circle cx="243.845" cy="317.851" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_distance_targets · RMSE 1 528,62 км · выигрыш -0,76 км</title></circle>
+<circle cx="237.159" cy="325.203" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_ellipsoid_risk · RMSE 1 503,70 км · выигрыш -1,04 км</title></circle>
+<circle cx="265.993" cy="323.092" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_fourier_similarity · RMSE 1 611,15 км · выигрыш -0,96 км</title></circle>
+<circle cx="273.676" cy="310.216" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_graph_spectrum · RMSE 1 639,79 км · выигрыш -0,46 км</title></circle>
+<circle cx="305.272" cy="313.054" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_landmark_rings · RMSE 1 757,54 км · выигрыш -0,57 км</title></circle>
+<circle cx="250.819" cy="322.989" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_local_offsets · RMSE 1 554,61 км · выигрыш -0,96 км</title></circle>
+<circle cx="243.215" cy="312.723" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/fourier_rbf/geo_triangle_targets · RMSE 1 526,27 км · выигрыш -0,56 км</title></circle>
+<circle cx="248.868" cy="291.130" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_balanced_cells · RMSE 1 547,33 км · выигрыш 0,27 км</title></circle>
+<circle cx="260.649" cy="299.964" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_conditional_tree · RMSE 1 591,24 км · выигрыш -0,07 км</title></circle>
+<circle cx="253.987" cy="299.347" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_directional_mixture · RMSE 1 566,41 км · выигрыш -0,05 км</title></circle>
+<circle cx="220.158" cy="301.381" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_distance_targets · RMSE 1 440,34 км · выигрыш -0,12 км</title></circle>
+<circle cx="220.032" cy="298.076" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_ellipsoid_risk · RMSE 1 439,87 км · выигрыш 0,00 км</title></circle>
+<circle cx="225.165" cy="304.790" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_fourier_similarity · RMSE 1 459,00 км · выигрыш -0,26 км</title></circle>
+<circle cx="261.744" cy="296.803" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_graph_spectrum · RMSE 1 595,32 км · выигрыш 0,05 км</title></circle>
+<circle cx="274.563" cy="298.829" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_landmark_rings · RMSE 1 643,09 км · выигрыш -0,03 км</title></circle>
+<circle cx="226.117" cy="293.688" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_triangle_targets · RMSE 1 462,55 км · выигрыш 0,17 км</title></circle>
+<circle cx="303.020" cy="296.601" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_balanced_cells · RMSE 1 749,14 км · выигрыш 0,06 км</title></circle>
+<circle cx="306.007" cy="300.156" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_conditional_tree · RMSE 1 760,28 км · выигрыш -0,08 км</title></circle>
+<circle cx="320.694" cy="297.352" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_directional_mixture · RMSE 1 815,01 км · выигрыш 0,03 км</title></circle>
+<circle cx="273.448" cy="299.750" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_distance_targets · RMSE 1 638,94 км · выигрыш -0,06 км</title></circle>
+<circle cx="274.619" cy="299.142" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_ellipsoid_risk · RMSE 1 643,30 км · выигрыш -0,04 км</title></circle>
+<circle cx="279.748" cy="301.891" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_fourier_similarity · RMSE 1 662,42 км · выигрыш -0,14 км</title></circle>
+<circle cx="304.883" cy="301.967" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_graph_spectrum · RMSE 1 756,09 км · выигрыш -0,15 км</title></circle>
+<circle cx="332.498" cy="299.550" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_landmark_rings · RMSE 1 859,00 км · выигрыш -0,05 км</title></circle>
+<circle cx="276.955" cy="295.349" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_local_offsets · RMSE 1 652,01 км · выигрыш 0,11 км</title></circle>
+<circle cx="276.350" cy="296.757" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/prototype_metric/geo_triangle_targets · RMSE 1 649,75 км · выигрыш 0,05 км</title></circle>
+<circle cx="244.731" cy="295.306" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_balanced_cells · RMSE 1 531,92 км · выигрыш 0,11 км</title></circle>
+<circle cx="249.571" cy="298.627" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_conditional_tree · RMSE 1 549,95 км · выигрыш -0,02 км</title></circle>
+<circle cx="260.139" cy="304.117" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_directional_mixture · RMSE 1 589,34 км · выигрыш -0,23 км</title></circle>
+<circle cx="215.441" cy="306.356" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_distance_targets · RMSE 1 422,76 км · выигрыш -0,32 км</title></circle>
+<circle cx="212.936" cy="302.560" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_ellipsoid_risk · RMSE 1 413,43 км · выигрыш -0,17 км</title></circle>
+<circle cx="237.209" cy="304.147" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_fourier_similarity · RMSE 1 503,89 км · выигрыш -0,23 км</title></circle>
+<circle cx="247.386" cy="282.170" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_graph_spectrum · RMSE 1 541,81 км · выигрыш 0,62 км</title></circle>
+<circle cx="273.856" cy="319.198" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_landmark_rings · RMSE 1 640,46 км · выигрыш -0,81 км</title></circle>
+<circle cx="221.548" cy="305.863" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_local_offsets · RMSE 1 445,52 км · выигрыш -0,30 км</title></circle>
+<circle cx="222.224" cy="299.073" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/raw_blocks/geo_triangle_targets · RMSE 1 448,04 км · выигрыш -0,03 км</title></circle>
+<circle cx="238.182" cy="293.090" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_balanced_cells · RMSE 1 507,51 км · выигрыш 0,20 км</title></circle>
+<circle cx="248.485" cy="295.873" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_conditional_tree · RMSE 1 545,91 км · выигрыш 0,09 км</title></circle>
+<circle cx="248.454" cy="300.227" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_directional_mixture · RMSE 1 545,79 км · выигрыш -0,08 км</title></circle>
+<circle cx="210.369" cy="310.103" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_distance_targets · RMSE 1 403,86 км · выигрыш -0,46 км</title></circle>
+<circle cx="205.281" cy="296.635" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_ellipsoid_risk · RMSE 1 384,90 км · выигрыш 0,06 км</title></circle>
+<circle cx="237.105" cy="302.408" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_fourier_similarity · RMSE 1 503,50 км · выигрыш -0,16 км</title></circle>
+<circle cx="244.559" cy="281.720" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_graph_spectrum · RMSE 1 531,28 км · выигрыш 0,63 км</title></circle>
+<circle cx="261.829" cy="290.432" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_landmark_rings · RMSE 1 595,64 км · выигрыш 0,30 км</title></circle>
+<circle cx="218.697" cy="296.751" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_local_offsets · RMSE 1 434,90 км · выигрыш 0,05 км</title></circle>
+<circle cx="216.500" cy="308.270" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/shrink_whiten/geo_triangle_targets · RMSE 1 426,71 км · выигрыш -0,39 км</title></circle>
+<circle cx="242.944" cy="299.811" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_balanced_cells · RMSE 1 525,26 км · выигрыш -0,06 км</title></circle>
+<circle cx="246.368" cy="301.730" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_conditional_tree · RMSE 1 538,02 км · выигрыш -0,14 км</title></circle>
+<circle cx="259.425" cy="301.098" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_directional_mixture · RMSE 1 586,68 км · выигрыш -0,11 км</title></circle>
+<circle cx="217.604" cy="300.552" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_distance_targets · RMSE 1 430,82 км · выигрыш -0,09 км</title></circle>
+<circle cx="212.162" cy="299.723" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_ellipsoid_risk · RMSE 1 410,54 км · выигрыш -0,06 км</title></circle>
+<circle cx="232.917" cy="299.028" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_fourier_similarity · RMSE 1 487,89 км · выигрыш -0,03 км</title></circle>
+<circle cx="247.130" cy="286.992" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_graph_spectrum · RMSE 1 540,86 км · выигрыш 0,43 км</title></circle>
+<circle cx="272.317" cy="314.876" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_landmark_rings · RMSE 1 634,72 км · выигрыш -0,64 км</title></circle>
+<circle cx="222.516" cy="309.880" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_local_offsets · RMSE 1 449,13 км · выигрыш -0,45 км</title></circle>
+<circle cx="218.833" cy="305.008" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/signed_sqrt/geo_triangle_targets · RMSE 1 435,40 км · выигрыш -0,26 км</title></circle>
+<circle cx="263.431" cy="298.389" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_balanced_cells · RMSE 1 601,61 км · выигрыш -0,01 км</title></circle>
+<circle cx="273.963" cy="305.948" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_conditional_tree · RMSE 1 640,85 км · выигрыш -0,30 км</title></circle>
+<circle cx="277.496" cy="300.968" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_directional_mixture · RMSE 1 654,02 км · выигрыш -0,11 км</title></circle>
+<circle cx="234.326" cy="293.816" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_distance_targets · RMSE 1 493,14 км · выигрыш 0,17 км</title></circle>
+<circle cx="237.803" cy="297.679" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_ellipsoid_risk · RMSE 1 506,10 км · выигрыш 0,02 км</title></circle>
+<circle cx="248.572" cy="303.486" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_fourier_similarity · RMSE 1 546,23 км · выигрыш -0,21 км</title></circle>
+<circle cx="278.247" cy="299.353" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_graph_spectrum · RMSE 1 656,82 км · выигрыш -0,05 км</title></circle>
+<circle cx="296.591" cy="299.330" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_landmark_rings · RMSE 1 725,18 км · выигрыш -0,04 км</title></circle>
+<circle cx="246.281" cy="299.816" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_local_offsets · RMSE 1 537,69 км · выигрыш -0,06 км</title></circle>
+<circle cx="240.276" cy="296.042" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/sparse_jl/geo_triangle_targets · RMSE 1 515,31 км · выигрыш 0,08 км</title></circle>
+<circle cx="298.552" cy="273.952" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/bilinear · RMSE 1 732,49 км · выигрыш 0,93 км</title></circle>
+<circle cx="321.490" cy="305.739" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/expert_mixture · RMSE 1 817,98 км · выигрыш -0,29 км</title></circle>
+<circle cx="403.431" cy="299.978" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/group_gate · RMSE 2 123,34 км · выигрыш -0,07 км</title></circle>
+<circle cx="808.196" cy="300.945" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/random_kernel · RMSE 3 631,79 км · выигрыш -0,11 км</title></circle>
+<circle cx="308.055" cy="302.290" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/regional_heads · RMSE 1 767,91 км · выигрыш -0,16 км</title></circle>
+<circle cx="298.719" cy="304.283" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/residual_angle · RMSE 1 733,12 км · выигрыш -0,24 км</title></circle>
+<circle cx="397.961" cy="301.192" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/robust_mlp · RMSE 2 102,96 км · выигрыш -0,12 км</title></circle>
+<circle cx="345.118" cy="304.330" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/shallow_mlp · RMSE 1 906,03 км · выигрыш -0,24 км</title></circle>
+<circle cx="376.808" cy="299.898" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/token_attention · RMSE 2 024,13 км · выигрыш -0,07 км</title></circle>
+<circle cx="313.748" cy="309.618" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/balanced_pca/vmf_mixture · RMSE 1 789,12 км · выигрыш -0,44 км</title></circle>
+<circle cx="311.740" cy="286.159" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/bilinear · RMSE 1 781,64 км · выигрыш 0,46 км</title></circle>
+<circle cx="339.934" cy="310.683" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/expert_mixture · RMSE 1 886,71 км · выигрыш -0,48 км</title></circle>
+<circle cx="376.947" cy="304.192" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/group_gate · RMSE 2 024,65 км · выигрыш -0,23 км</title></circle>
+<circle cx="651.782" cy="301.558" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/random_kernel · RMSE 3 048,88 км · выигрыш -0,13 км</title></circle>
+<circle cx="314.306" cy="298.735" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/regional_heads · RMSE 1 791,20 км · выигрыш -0,02 км</title></circle>
+<circle cx="318.151" cy="300.186" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/residual_angle · RMSE 1 805,53 км · выигрыш -0,08 км</title></circle>
+<circle cx="347.109" cy="305.078" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/robust_mlp · RMSE 1 913,45 км · выигрыш -0,27 км</title></circle>
+<circle cx="361.269" cy="302.769" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/shallow_mlp · RMSE 1 966,22 км · выигрыш -0,18 км</title></circle>
+<circle cx="350.991" cy="302.846" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/token_attention · RMSE 1 927,92 км · выигрыш -0,18 км</title></circle>
+<circle cx="317.514" cy="302.603" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/canonical_pair/vmf_mixture · RMSE 1 803,16 км · выигрыш -0,17 км</title></circle>
+<circle cx="296.997" cy="310.005" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/bilinear · RMSE 1 726,70 км · выигрыш -0,46 км</title></circle>
+<circle cx="340.421" cy="305.639" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/expert_mixture · RMSE 1 888,53 км · выигрыш -0,29 км</title></circle>
+<circle cx="365.412" cy="299.792" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/group_gate · RMSE 1 981,66 км · выигрыш -0,06 км</title></circle>
+<circle cx="658.557" cy="300.435" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/random_kernel · RMSE 3 074,12 км · выигрыш -0,09 км</title></circle>
+<circle cx="326.145" cy="297.528" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/regional_heads · RMSE 1 835,32 км · выигрыш 0,02 км</title></circle>
+<circle cx="325.678" cy="304.745" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/residual_angle · RMSE 1 833,58 км · выигрыш -0,25 км</title></circle>
+<circle cx="332.369" cy="307.160" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/robust_mlp · RMSE 1 858,52 км · выигрыш -0,35 км</title></circle>
+<circle cx="369.268" cy="302.955" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/shallow_mlp · RMSE 1 996,03 км · выигрыш -0,18 км</title></circle>
+<circle cx="415.412" cy="297.237" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/token_attention · RMSE 2 168,00 км · выигрыш 0,04 км</title></circle>
+<circle cx="319.848" cy="325.036" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/cross_bilinear/vmf_mixture · RMSE 1 811,86 км · выигрыш -1,04 км</title></circle>
+<circle cx="293.423" cy="297.954" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/bilinear · RMSE 1 713,38 км · выигрыш 0,01 км</title></circle>
+<circle cx="327.921" cy="306.093" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/expert_mixture · RMSE 1 841,94 км · выигрыш -0,31 км</title></circle>
+<circle cx="328.205" cy="305.723" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/group_gate · RMSE 1 843,00 км · выигрыш -0,29 км</title></circle>
+<circle cx="562.919" cy="303.788" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/random_kernel · RMSE 2 717,71 км · выигрыш -0,22 км</title></circle>
+<circle cx="326.589" cy="304.566" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/regional_heads · RMSE 1 836,98 км · выигрыш -0,25 км</title></circle>
+<circle cx="318.134" cy="304.298" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/residual_angle · RMSE 1 805,47 км · выигрыш -0,24 км</title></circle>
+<circle cx="333.076" cy="302.004" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/robust_mlp · RMSE 1 861,15 км · выигрыш -0,15 км</title></circle>
+<circle cx="353.895" cy="305.384" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/shallow_mlp · RMSE 1 938,74 км · выигрыш -0,28 км</title></circle>
+<circle cx="507.938" cy="298.971" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/token_attention · RMSE 2 512,81 км · выигрыш -0,03 км</title></circle>
+<circle cx="332.459" cy="308.804" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/fourier_rbf/vmf_mixture · RMSE 1 858,86 км · выигрыш -0,41 км</title></circle>
+<circle cx="284.000" cy="297.473" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/bilinear · RMSE 1 678,26 км · выигрыш 0,03 км</title></circle>
+<circle cx="313.506" cy="308.607" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/expert_mixture · RMSE 1 788,22 км · выигрыш -0,40 км</title></circle>
+<circle cx="319.266" cy="310.560" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/group_gate · RMSE 1 809,69 км · выигрыш -0,48 км</title></circle>
+<circle cx="542.461" cy="299.743" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/random_kernel · RMSE 2 641,47 км · выигрыш -0,06 км</title></circle>
+<circle cx="295.273" cy="302.565" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/regional_heads · RMSE 1 720,27 км · выигрыш -0,17 км</title></circle>
+<circle cx="294.140" cy="304.883" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/residual_angle · RMSE 1 716,05 км · выигрыш -0,26 км</title></circle>
+<circle cx="323.806" cy="311.801" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/robust_mlp · RMSE 1 826,60 км · выигрыш -0,53 км</title></circle>
+<circle cx="335.331" cy="303.544" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/shallow_mlp · RMSE 1 869,56 км · выигрыш -0,21 км</title></circle>
+<circle cx="406.061" cy="299.833" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/token_attention · RMSE 2 133,15 км · выигрыш -0,06 км</title></circle>
+<circle cx="301.929" cy="318.335" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/geo_projection/vmf_mixture · RMSE 1 745,08 км · выигрыш -0,78 км</title></circle>
+<circle cx="357.403" cy="297.307" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/bilinear · RMSE 1 951,81 км · выигрыш 0,03 км</title></circle>
+<circle cx="386.497" cy="295.134" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/expert_mixture · RMSE 2 060,24 км · выигрыш 0,12 км</title></circle>
+<circle cx="376.105" cy="299.797" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/group_gate · RMSE 2 021,51 км · выигрыш -0,06 км</title></circle>
+<circle cx="406.833" cy="299.164" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/random_kernel · RMSE 2 136,02 км · выигрыш -0,04 км</title></circle>
+<circle cx="393.048" cy="297.386" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/regional_heads · RMSE 2 084,65 км · выигрыш 0,03 км</title></circle>
+<circle cx="367.304" cy="298.285" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/residual_angle · RMSE 1 988,71 км · выигрыш -0,00 км</title></circle>
+<circle cx="388.079" cy="297.920" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/robust_mlp · RMSE 2 066,13 км · выигрыш 0,01 км</title></circle>
+<circle cx="411.102" cy="297.661" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/shallow_mlp · RMSE 2 151,93 км · выигрыш 0,02 км</title></circle>
+<circle cx="358.682" cy="302.209" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/token_attention · RMSE 1 956,58 км · выигрыш -0,16 км</title></circle>
+<circle cx="390.600" cy="294.598" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/prototype_metric/vmf_mixture · RMSE 2 075,53 км · выигрыш 0,14 км</title></circle>
+<circle cx="265.784" cy="299.789" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/bilinear · RMSE 1 610,38 км · выигрыш -0,06 км</title></circle>
+<circle cx="318.543" cy="303.860" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/expert_mixture · RMSE 1 806,99 км · выигрыш -0,22 км</title></circle>
+<circle cx="292.763" cy="298.640" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/group_gate · RMSE 1 710,92 км · выигрыш -0,02 км</title></circle>
+<circle cx="481.704" cy="303.612" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/random_kernel · RMSE 2 415,05 км · выигрыш -0,21 км</title></circle>
+<circle cx="311.451" cy="300.259" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/regional_heads · RMSE 1 780,56 км · выигрыш -0,08 км</title></circle>
+<circle cx="323.872" cy="299.510" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/residual_angle · RMSE 1 826,85 км · выигрыш -0,05 км</title></circle>
+<circle cx="324.251" cy="301.761" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/robust_mlp · RMSE 1 828,27 км · выигрыш -0,14 км</title></circle>
+<circle cx="343.386" cy="302.454" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/shallow_mlp · RMSE 1 899,58 км · выигрыш -0,17 км</title></circle>
+<circle cx="463.894" cy="304.845" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/token_attention · RMSE 2 348,67 км · выигрыш -0,26 км</title></circle>
+<circle cx="316.020" cy="300.205" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/raw_blocks/vmf_mixture · RMSE 1 797,59 км · выигрыш -0,08 км</title></circle>
+<circle cx="299.482" cy="269.018" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/bilinear · RMSE 1 735,96 км · выигрыш 1,12 км</title></circle>
+<circle cx="322.784" cy="306.623" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/expert_mixture · RMSE 1 822,80 км · выигрыш -0,33 км</title></circle>
+<circle cx="411.663" cy="299.577" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/group_gate · RMSE 2 154,02 км · выигрыш -0,05 км</title></circle>
+<circle cx="799.647" cy="299.932" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/random_kernel · RMSE 3 599,93 км · выигрыш -0,07 км</title></circle>
+<circle cx="307.492" cy="303.638" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/regional_heads · RMSE 1 765,81 км · выигрыш -0,21 км</title></circle>
+<circle cx="299.111" cy="311.084" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/residual_angle · RMSE 1 734,57 км · выигрыш -0,50 км</title></circle>
+<circle cx="404.955" cy="301.147" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/robust_mlp · RMSE 2 129,02 км · выигрыш -0,12 км</title></circle>
+<circle cx="345.344" cy="304.479" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/shallow_mlp · RMSE 1 906,87 км · выигрыш -0,24 км</title></circle>
+<circle cx="381.486" cy="298.157" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/token_attention · RMSE 2 041,56 км · выигрыш 0,00 км</title></circle>
+<circle cx="316.129" cy="312.664" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/shrink_whiten/vmf_mixture · RMSE 1 798,00 км · выигрыш -0,56 км</title></circle>
+<circle cx="261.641" cy="266.205" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/bilinear · RMSE 1 594,94 км · выигрыш 1,23 км</title></circle>
+<circle cx="314.985" cy="303.052" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/expert_mixture · RMSE 1 793,73 км · выигрыш -0,19 км</title></circle>
+<circle cx="291.334" cy="299.528" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/group_gate · RMSE 1 705,59 км · выигрыш -0,05 км</title></circle>
+<circle cx="496.842" cy="304.762" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/random_kernel · RMSE 2 471,46 км · выигрыш -0,25 км</title></circle>
+<circle cx="307.697" cy="301.200" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/regional_heads · RMSE 1 766,57 км · выигрыш -0,12 км</title></circle>
+<circle cx="320.550" cy="302.226" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/residual_angle · RMSE 1 814,47 км · выигрыш -0,16 км</title></circle>
+<circle cx="318.044" cy="302.690" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/robust_mlp · RMSE 1 805,13 км · выигрыш -0,17 км</title></circle>
+<circle cx="341.800" cy="304.711" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/shallow_mlp · RMSE 1 893,67 км · выигрыш -0,25 км</title></circle>
+<circle cx="478.731" cy="299.229" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/token_attention · RMSE 2 403,97 км · выигрыш -0,04 км</title></circle>
+<circle cx="315.177" cy="301.843" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/signed_sqrt/vmf_mixture · RMSE 1 794,45 км · выигрыш -0,14 км</title></circle>
+<circle cx="296.570" cy="297.253" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/bilinear · RMSE 1 725,11 км · выигрыш 0,04 км</title></circle>
+<circle cx="332.842" cy="299.807" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/expert_mixture · RMSE 1 860,28 км · выигрыш -0,06 км</title></circle>
+<circle cx="331.847" cy="300.644" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/group_gate · RMSE 1 856,57 км · выигрыш -0,10 км</title></circle>
+<circle cx="505.882" cy="299.940" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/random_kernel · RMSE 2 505,15 км · выигрыш -0,07 км</title></circle>
+<circle cx="336.078" cy="297.940" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/regional_heads · RMSE 1 872,34 км · выигрыш 0,01 км</title></circle>
+<circle cx="307.469" cy="301.160" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/residual_angle · RMSE 1 765,72 км · выигрыш -0,12 км</title></circle>
+<circle cx="341.338" cy="300.216" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/robust_mlp · RMSE 1 891,94 км · выигрыш -0,08 км</title></circle>
+<circle cx="353.104" cy="301.038" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/shallow_mlp · RMSE 1 935,79 км · выигрыш -0,11 км</title></circle>
+<circle cx="445.831" cy="300.398" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/token_attention · RMSE 2 281,36 км · выигрыш -0,09 км</title></circle>
+<circle cx="330.823" cy="303.532" r="3.3" fill="#7653a3" fill-opacity=".82"><title>neural/sparse_jl/vmf_mixture · RMSE 1 852,76 км · выигрыш -0,21 км</title></circle>
+<circle cx="201.005" cy="298.602" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_barycentric · RMSE 1 368,96 км · выигрыш -0,02 км</title></circle>
+<circle cx="200.949" cy="303.890" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_frechet · RMSE 1 368,76 км · выигрыш -0,22 км</title></circle>
+<circle cx="209.252" cy="307.191" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_geo_prior · RMSE 1 399,70 км · выигрыш -0,35 км</title></circle>
+<circle cx="204.549" cy="313.612" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_huber · RMSE 1 382,17 км · выигрыш -0,60 км</title></circle>
+<circle cx="198.496" cy="255.182" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_hubness · RMSE 1 359,61 км · выигрыш 1,66 км</title></circle>
+<circle cx="221.386" cy="256.305" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_kernel_mode · RMSE 1 444,92 км · выигрыш 1,62 км</title></circle>
+<circle cx="208.261" cy="266.096" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_learned_kernel · RMSE 1 396,00 км · выигрыш 1,24 км</title></circle>
+<circle cx="216.079" cy="295.276" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_local_ridge · RMSE 1 425,14 км · выигрыш 0,11 км</title></circle>
+<circle cx="217.005" cy="298.788" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_support_medoid · RMSE 1 428,59 км · выигрыш -0,02 км</title></circle>
+<circle cx="197.773" cy="309.480" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/balanced_pca/ret_two_basin · RMSE 1 356,92 км · выигрыш -0,44 км</title></circle>
+<circle cx="217.914" cy="230.988" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_barycentric · RMSE 1 431,98 км · выигрыш 2,59 км</title></circle>
+<circle cx="236.754" cy="242.233" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_geo_prior · RMSE 1 502,19 км · выигрыш 2,16 км</title></circle>
+<circle cx="214.196" cy="227.451" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_huber · RMSE 1 418,12 км · выигрыш 2,73 км</title></circle>
+<circle cx="215.084" cy="227.062" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_hubness · RMSE 1 421,43 км · выигрыш 2,74 км</title></circle>
+<circle cx="247.800" cy="170.081" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_kernel_mode · RMSE 1 543,35 км · выигрыш 4,94 км</title></circle>
+<circle cx="205.669" cy="175.027" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_learned_kernel · RMSE 1 386,35 км · выигрыш 4,75 км</title></circle>
+<circle cx="231.029" cy="228.221" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_local_ridge · RMSE 1 480,85 км · выигрыш 2,70 км</title></circle>
+<circle cx="229.576" cy="240.516" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_support_medoid · RMSE 1 475,44 км · выигрыш 2,22 км</title></circle>
+<circle cx="213.638" cy="237.016" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_two_basin · RMSE 1 416,04 км · выигрыш 2,36 км</title></circle>
+<circle cx="216.449" cy="302.049" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_barycentric · RMSE 1 426,52 км · выигрыш -0,15 км</title></circle>
+<circle cx="217.469" cy="303.705" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_frechet · RMSE 1 430,32 км · выигрыш -0,21 км</title></circle>
+<circle cx="227.210" cy="309.172" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_geo_prior · RMSE 1 466,62 км · выигрыш -0,42 км</title></circle>
+<circle cx="219.247" cy="295.629" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_huber · RMSE 1 436,95 км · выигрыш 0,10 км</title></circle>
+<circle cx="214.258" cy="285.292" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_hubness · RMSE 1 418,35 км · выигрыш 0,50 км</title></circle>
+<circle cx="244.681" cy="304.961" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_kernel_mode · RMSE 1 531,73 км · выигрыш -0,26 км</title></circle>
+<circle cx="213.478" cy="309.142" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_learned_kernel · RMSE 1 415,45 км · выигрыш -0,42 км</title></circle>
+<circle cx="230.139" cy="299.771" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_local_ridge · RMSE 1 477,54 км · выигрыш -0,06 км</title></circle>
+<circle cx="230.143" cy="293.444" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_support_medoid · RMSE 1 477,55 км · выигрыш 0,18 км</title></circle>
+<circle cx="215.252" cy="302.161" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/cross_bilinear/ret_two_basin · RMSE 1 422,06 км · выигрыш -0,15 км</title></circle>
+<circle cx="220.836" cy="296.151" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_barycentric · RMSE 1 442,87 км · выигрыш 0,08 км</title></circle>
+<circle cx="220.756" cy="299.766" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_frechet · RMSE 1 442,57 км · выигрыш -0,06 км</title></circle>
+<circle cx="218.519" cy="299.560" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_geo_prior · RMSE 1 434,23 км · выигрыш -0,05 км</title></circle>
+<circle cx="228.469" cy="306.514" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_huber · RMSE 1 471,31 км · выигрыш -0,32 км</title></circle>
+<circle cx="211.900" cy="269.084" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_hubness · RMSE 1 409,57 км · выигрыш 1,12 км</title></circle>
+<circle cx="249.704" cy="331.180" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_kernel_mode · RMSE 1 550,45 км · выигрыш -1,27 км</title></circle>
+<circle cx="204.050" cy="244.243" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_learned_kernel · RMSE 1 380,31 км · выигрыш 2,08 км</title></circle>
+<circle cx="237.720" cy="296.760" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_local_ridge · RMSE 1 505,79 км · выигрыш 0,05 км</title></circle>
+<circle cx="243.867" cy="300.410" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_support_medoid · RMSE 1 528,70 км · выигрыш -0,09 км</title></circle>
+<circle cx="218.799" cy="298.480" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/fourier_rbf/ret_two_basin · RMSE 1 435,28 км · выигрыш -0,01 км</title></circle>
+<circle cx="205.745" cy="297.798" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_barycentric · RMSE 1 386,63 км · выигрыш 0,01 км</title></circle>
+<circle cx="205.971" cy="304.838" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_frechet · RMSE 1 387,47 км · выигрыш -0,26 км</title></circle>
+<circle cx="215.373" cy="300.751" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_geo_prior · RMSE 1 422,51 км · выигрыш -0,10 км</title></circle>
+<circle cx="211.818" cy="318.412" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_huber · RMSE 1 409,26 км · выигрыш -0,78 км</title></circle>
+<circle cx="205.835" cy="264.340" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_hubness · RMSE 1 386,96 км · выигрыш 1,31 км</title></circle>
+<circle cx="234.900" cy="343.920" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_kernel_mode · RMSE 1 495,28 км · выигрыш -1,77 км</title></circle>
+<circle cx="205.196" cy="300.666" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_learned_kernel · RMSE 1 384,58 км · выигрыш -0,10 км</title></circle>
+<circle cx="216.319" cy="297.920" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_local_ridge · RMSE 1 426,03 км · выигрыш 0,01 км</title></circle>
+<circle cx="222.928" cy="301.667" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_support_medoid · RMSE 1 450,66 км · выигрыш -0,14 км</title></circle>
+<circle cx="203.610" cy="304.717" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/geo_projection/ret_two_basin · RMSE 1 378,67 км · выигрыш -0,25 км</title></circle>
+<circle cx="310.177" cy="296.894" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_barycentric · RMSE 1 775,81 км · выигрыш 0,05 км</title></circle>
+<circle cx="317.467" cy="297.762" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_frechet · RMSE 1 802,98 км · выигрыш 0,02 км</title></circle>
+<circle cx="321.161" cy="294.110" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_geo_prior · RMSE 1 816,75 км · выигрыш 0,16 км</title></circle>
+<circle cx="328.453" cy="302.664" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_huber · RMSE 1 843,93 км · выигрыш -0,17 км</title></circle>
+<circle cx="311.515" cy="296.095" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_hubness · RMSE 1 780,80 км · выигрыш 0,08 км</title></circle>
+<circle cx="361.881" cy="296.690" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_kernel_mode · RMSE 1 968,50 км · выигрыш 0,06 км</title></circle>
+<circle cx="299.172" cy="286.893" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_learned_kernel · RMSE 1 734,80 км · выигрыш 0,43 км</title></circle>
+<circle cx="313.960" cy="299.411" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_local_ridge · RMSE 1 789,91 км · выигрыш -0,05 км</title></circle>
+<circle cx="344.535" cy="302.767" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_support_medoid · RMSE 1 903,86 км · выигрыш -0,18 км</title></circle>
+<circle cx="315.944" cy="296.910" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/prototype_metric/ret_two_basin · RMSE 1 797,31 км · выигрыш 0,05 км</title></circle>
+<circle cx="224.709" cy="309.174" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_barycentric · RMSE 1 457,30 км · выигрыш -0,42 км</title></circle>
+<circle cx="226.076" cy="312.315" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_frechet · RMSE 1 462,40 км · выигрыш -0,55 км</title></circle>
+<circle cx="223.105" cy="319.690" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_geo_prior · RMSE 1 451,32 км · выигрыш -0,83 км</title></circle>
+<circle cx="232.490" cy="306.643" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_huber · RMSE 1 486,30 км · выигрыш -0,33 км</title></circle>
+<circle cx="217.928" cy="297.427" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_hubness · RMSE 1 432,03 км · выигрыш 0,03 км</title></circle>
+<circle cx="254.829" cy="301.803" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_kernel_mode · RMSE 1 569,55 км · выигрыш -0,14 км</title></circle>
+<circle cx="207.807" cy="278.525" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_learned_kernel · RMSE 1 394,31 км · выигрыш 0,76 км</title></circle>
+<circle cx="234.305" cy="302.431" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_local_ridge · RMSE 1 493,06 км · выигрыш -0,16 км</title></circle>
+<circle cx="246.215" cy="314.151" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_support_medoid · RMSE 1 537,45 км · выигрыш -0,62 км</title></circle>
+<circle cx="224.452" cy="310.699" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/raw_blocks/ret_two_basin · RMSE 1 456,34 км · выигрыш -0,48 км</title></circle>
+<circle cx="214.637" cy="189.499" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_barycentric · RMSE 1 419,77 км · выигрыш 4,19 км</title></circle>
+<circle cx="213.625" cy="199.380" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_frechet · RMSE 1 415,99 км · выигрыш 3,81 км</title></circle>
+<circle cx="232.052" cy="204.578" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_geo_prior · RMSE 1 484,67 км · выигрыш 3,61 км</title></circle>
+<circle cx="204.481" cy="133.138" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_huber · RMSE 1 381,92 км · выигрыш 6,37 км</title></circle>
+<circle cx="238.369" cy="122.461" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_kernel_mode · RMSE 1 508,21 км · выигрыш 6,78 км</title></circle>
+<circle cx="235.505" cy="212.087" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_local_ridge · RMSE 1 497,54 км · выигрыш 3,32 км</title></circle>
+<circle cx="218.671" cy="138.591" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_support_medoid · RMSE 1 434,80 км · выигрыш 6,16 км</title></circle>
+<circle cx="208.482" cy="187.795" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_two_basin · RMSE 1 396,83 км · выигрыш 4,26 км</title></circle>
+<circle cx="200.245" cy="291.898" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_barycentric · RMSE 1 366,13 км · выигрыш 0,24 км</title></circle>
+<circle cx="198.317" cy="304.266" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_frechet · RMSE 1 358,94 км · выигрыш -0,24 км</title></circle>
+<circle cx="198.196" cy="292.470" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_geo_prior · RMSE 1 358,50 км · выигрыш 0,22 км</title></circle>
+<circle cx="201.099" cy="279.564" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_huber · RMSE 1 369,31 км · выигрыш 0,72 км</title></circle>
+<circle cx="196.146" cy="241.140" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_hubness · RMSE 1 350,85 км · выигрыш 2,20 км</title></circle>
+<circle cx="219.644" cy="293.927" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_kernel_mode · RMSE 1 438,42 км · выигрыш 0,16 км</title></circle>
+<circle cx="194.745" cy="186.763" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_learned_kernel · RMSE 1 345,63 км · выигрыш 4,30 км</title></circle>
+<circle cx="212.591" cy="287.750" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_local_ridge · RMSE 1 412,14 км · выигрыш 0,40 км</title></circle>
+<circle cx="214.295" cy="288.102" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_support_medoid · RMSE 1 418,49 км · выигрыш 0,39 км</title></circle>
+<circle cx="195.481" cy="271.030" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/signed_sqrt/ret_two_basin · RMSE 1 348,38 км · выигрыш 1,05 км</title></circle>
+<circle cx="235.673" cy="299.388" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_barycentric · RMSE 1 498,16 км · выигрыш -0,05 км</title></circle>
+<circle cx="235.996" cy="300.194" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_frechet · RMSE 1 499,36 км · выигрыш -0,08 км</title></circle>
+<circle cx="233.556" cy="300.324" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_geo_prior · RMSE 1 490,27 км · выигрыш -0,08 км</title></circle>
+<circle cx="242.403" cy="302.890" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_huber · RMSE 1 523,24 км · выигрыш -0,18 км</title></circle>
+<circle cx="221.792" cy="286.914" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_hubness · RMSE 1 446,43 км · выигрыш 0,43 км</title></circle>
+<circle cx="258.185" cy="297.539" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_kernel_mode · RMSE 1 582,05 км · выигрыш 0,02 км</title></circle>
+<circle cx="214.312" cy="247.974" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_learned_kernel · RMSE 1 418,55 км · выигрыш 1,94 км</title></circle>
+<circle cx="246.763" cy="296.991" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_local_ridge · RMSE 1 539,49 км · выигрыш 0,05 км</title></circle>
+<circle cx="257.335" cy="307.044" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_support_medoid · RMSE 1 578,89 км · выигрыш -0,34 км</title></circle>
+<circle cx="235.116" cy="300.774" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/sparse_jl/ret_two_basin · RMSE 1 496,08 км · выигрыш -0,10 км</title></circle>
+<circle cx="232.375" cy="280.088" r="6.4" fill="white" stroke="#152b38" stroke-width="2"/>
+<circle cx="232.375" cy="280.088" r="3.3" fill="#087f76" fill-opacity=".82"><title>geo/geo_projection/geo_local_offsets · RMSE 1 485,87 км · выигрыш 0,70 км</title></circle>
+<circle cx="217.672" cy="275.336" r="6.4" fill="white" stroke="#152b38" stroke-width="2"/>
+<circle cx="217.672" cy="275.336" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/canonical_pair/ret_frechet · RMSE 1 431,07 км · выигрыш 0,88 км</title></circle>
+<circle cx="214.345" cy="159.457" r="6.4" fill="white" stroke="#152b38" stroke-width="2"/>
+<circle cx="214.345" cy="159.457" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_hubness · RMSE 1 418,68 км · выигрыш 5,35 км</title></circle>
+<circle cx="199.887" cy="88.703" r="6.4" fill="white" stroke="#152b38" stroke-width="2"/>
+<path d="M 199.887 79.703 l 9 9 -9 9 -9 -9 Z" fill="none" stroke="#a1164a" stroke-width="2"/>
+<circle cx="199.887" cy="88.703" r="3.3" fill="#bf6521" fill-opacity=".82"><title>retrieval/shrink_whiten/ret_learned_kernel · RMSE 1 364,80 км · выигрыш 8,08 км</title></circle>
+<circle cx="100" cy="425" r="4" fill="#7653a3"/>
+<text x="110.00" y="430.00" >Нейросети</text>
+<circle cx="311" cy="425" r="4" fill="#087f76"/>
+<text x="321.00" y="430.00" >Геоклассификаторы</text>
+<circle cx="522" cy="425" r="4" fill="#bf6521"/>
+<text x="532.00" y="430.00" >Поиск по эталонам</text>
+<line x1="724.000" y1="425.000" x2="750.000" y2="425.000" stroke="#536873" stroke-dasharray="5 4"/>
+<text x="759.00" y="430.00" >RMSE базы V4</text>
+<circle cx="100" cy="449" r="5" stroke="#152b38" stroke-width="2" fill="none"/>
+<text x="110.00" y="454.00" >Отобран в совместную смесь или полную CV</text>
+<path d="M 512 442 l 7 7 -7 7 -7 -7 Z" stroke="#a1164a" stroke-width="2" fill="none"/>
+<text x="524.00" y="454.00" >Лучший выигрыш среди уступающих V4 в одиночку</text>
+</g></svg>

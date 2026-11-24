@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1376" viewBox="0 0 1120 1376" role="img" aria-labelledby="title desc">
+<title id="title">Геолокация V3 — ансамбль геоячеек, поиск и CatBoost</title>
+<desc id="desc">Разбиение 85/15. Пять внешних фолдов, три внутренних разбиения для обучения стека. В каждом обучающем наборе строятся собственные географические ячейки. Победитель выбирается по RMSE WGS84 и проверяется на 37 500 фиксированных снимках после переобучения.</desc>
+<defs><marker id="blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path fill="#1e749b" d="M0 0L10 5L0 10Z"/></marker><marker id="gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path fill="#a16207" d="M0 0L10 5L0 10Z"/></marker></defs>
+<rect width="1120" height="1376" fill="#f8fafc"/>
+<g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="48" y="64" fill="#0f172a" font-size="40" font-weight="700">Геолокация по снимкам · V3</text>
+<text x="48" y="101" fill="#475569" font-size="21" font-weight="400">Ансамбль геоячеек • локальный поиск • CatBoost • оценка WGS84</text>
+<rect x="48" y="132" width="1024" height="78" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="68" y="164" fill="#0f172a" font-size="23" font-weight="700">250 000 снимков</text>
+<text x="68" y="189" fill="#334155" font-size="17" font-weight="400">GeoCLIP 512 + StreetCLIP 768 → 1 280 признаков на снимок</text>
+<rect x="48" y="252" width="687" height="86" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="68" y="284" fill="#0f172a" font-size="23" font-weight="700">85% · 212 500 снимков для разработки</text>
+<text x="68" y="309" fill="#334155" font-size="17" font-weight="400">Фиксированные пять внешних фолдов</text>
+<rect x="756" y="252" width="316" height="86" rx="15" fill="#fffbeb" stroke="#d6a62d" stroke-width="1.5"/>
+<text x="776" y="284" fill="#0f172a" font-size="23" font-weight="700">15% · 37 500</text>
+<text x="776" y="309" fill="#334155" font-size="17" font-weight="400">Отложенный тест</text>
+<path d="M560 210 V228 H392 V252" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M560 210 V228 H914 V252" fill="none" stroke="#a16207" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#gold)" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="48" y="378" width="1024" height="656" rx="22" fill="#eaf7fd" stroke="#a6cfe2" stroke-width="1.5"/>
+<text x="72" y="415" fill="#0f172a" font-size="27" font-weight="700">Подбор на пяти внешних фолдах</text>
+<text x="72" y="440" fill="#475569" font-size="18" font-weight="400">Каждый вариант проходит оценку на всех пяти частях.</text>
+<rect x="72" y="461" width="527" height="76" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="92" y="493" fill="#0f172a" font-size="23" font-weight="700">170 000 · внешнее обучение</text>
+<text x="92" y="518" fill="#334155" font-size="17" font-weight="400">Только эти снимки доступны для обучения.</text>
+<rect x="644" y="461" width="403" height="76" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="664" y="493" fill="#0f172a" font-size="23" font-weight="700">42 500 · валидация</text>
+<text x="664" y="518" fill="#334155" font-size="17" font-weight="400">Векторы → прогноз, метки → оценка.</text>
+<rect x="72" y="581" width="527" height="122" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="92" y="613" fill="#0f172a" font-size="23" font-weight="700">3 внутренних фолда (OOF)</text>
+<text x="92" y="638" fill="#334155" font-size="17" font-weight="400">Каждая строка получает прогнозы</text>
+<text x="92" y="660" fill="#334155" font-size="17" font-weight="400">базовых моделей, обученных на двух</text>
+<text x="92" y="682" fill="#334155" font-size="17" font-weight="400">других внутренних частях.</text>
+<rect x="644" y="581" width="403" height="122" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="664" y="613" fill="#0f172a" font-size="23" font-weight="700">Базовые эксперты</text>
+<text x="664" y="638" fill="#334155" font-size="17" font-weight="400">Две сетки 512 и одна 1 024.</text>
+<text x="664" y="660" fill="#334155" font-size="17" font-weight="400">Температуры softmax от 0,6 до 1,6.</text>
+<text x="664" y="682" fill="#334155" font-size="17" font-weight="400">Поиск с учётом вероятностей ячеек.</text>
+<rect x="72" y="748" width="527" height="133" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="92" y="780" fill="#0f172a" font-size="23" font-weight="700">Обучаем CatBoost по OOF</text>
+<text x="92" y="805" fill="#334155" font-size="17" font-weight="400">Уверенность, разброс и согласие экспертов.</text>
+<text x="92" y="827" fill="#334155" font-size="17" font-weight="400">Два адаптивных способа взвешивания.</text>
+<text x="92" y="849" fill="#334155" font-size="17" font-weight="400">Касательный остаток к сферической средней.</text>
+<rect x="644" y="748" width="403" height="133" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="664" y="780" fill="#0f172a" font-size="23" font-weight="700">Оценка по WGS84</text>
+<text x="664" y="805" fill="#334155" font-size="17" font-weight="400">Одиночные модели, ансамбли,</text>
+<text x="664" y="827" fill="#334155" font-size="17" font-weight="400">локальный поиск и CatBoost.</text>
+<text x="664" y="849" fill="#334155" font-size="17" font-weight="400">Сравниваем MAE и RMSE на фолде.</text>
+<rect x="72" y="928" width="975" height="48" rx="12" fill="#075985" stroke="#075985" stroke-width="1.5"/>
+<text x="92" y="959" fill="#ffffff" font-size="19" font-weight="700">Выбираем конфигурацию с минимальным RMSE по всем пяти фолдам</text>
+<path d="M392 338 V378" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M335 537 V581" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M560 537 V558 H764 V581" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M954 537 V581" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M335 703 V748" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M845 703 V748" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M599 814 H644" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M845 881 V928" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="48" y="1074" width="1024" height="266" rx="22" fill="#f0fdf4" stroke="#a7d6b4" stroke-width="1.5"/>
+<text x="72" y="1111" fill="#0f172a" font-size="27" font-weight="700">Переобучение и оценка победителя</text>
+<text x="72" y="1136" fill="#475569" font-size="18" font-weight="400">Конфигурация зафиксирована до подсчёта метрик на тесте.</text>
+<rect x="72" y="1172" width="550" height="111" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="92" y="1204" fill="#0f172a" font-size="23" font-weight="700">Переобучаем на всех 212 500</text>
+<text x="92" y="1229" fill="#334155" font-size="17" font-weight="400">Для стека — прогнозы пяти внешних фолдов.</text>
+<text x="92" y="1251" fill="#334155" font-size="17" font-weight="400">Базовые модели обучены на всех 85%.</text>
+<rect x="668" y="1172" width="379" height="111" rx="15" fill="#fffbeb" stroke="#d6a62d" stroke-width="1.5"/>
+<text x="688" y="1204" fill="#0f172a" font-size="23" font-weight="700">Тест на 37 500 снимках</text>
+<text x="688" y="1229" fill="#334155" font-size="17" font-weight="400">Один итоговый прогноз</text>
+<text x="688" y="1251" fill="#334155" font-size="17" font-weight="400">MAE и RMSE в км по WGS84</text>
+<path d="M559 1034 V1074" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M622 1227 H668" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1072 295 H1094 V1227 H1047" fill="none" stroke="#a16207" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#gold)" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="1314" fill="#475569" font-size="17" font-weight="400">Пунктир — отдельный путь фиксированного теста.</text>
+</g></svg>

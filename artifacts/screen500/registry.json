@@ -1,0 +1,3502 @@
+{
+  "neural/raw_blocks/shallow_mlp": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "shallow_mlp",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/raw_blocks/residual_angle": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "residual_angle",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/raw_blocks/group_gate": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "group_gate",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/raw_blocks/expert_mixture": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "expert_mixture",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/raw_blocks/vmf_mixture": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "vmf_mixture",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/raw_blocks/token_attention": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "token_attention",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/raw_blocks/bilinear": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "bilinear",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/raw_blocks/random_kernel": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "random_kernel",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/raw_blocks/robust_mlp": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "robust_mlp",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/raw_blocks/regional_heads": {
+    "family": "neural",
+    "features": "raw_blocks",
+    "method": "regional_heads",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/signed_sqrt/shallow_mlp": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "shallow_mlp",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/signed_sqrt/residual_angle": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "residual_angle",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/signed_sqrt/group_gate": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "group_gate",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/signed_sqrt/expert_mixture": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "expert_mixture",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/signed_sqrt/vmf_mixture": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "vmf_mixture",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/signed_sqrt/token_attention": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "token_attention",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/signed_sqrt/bilinear": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "bilinear",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/signed_sqrt/random_kernel": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "random_kernel",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/signed_sqrt/robust_mlp": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "robust_mlp",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/signed_sqrt/regional_heads": {
+    "family": "neural",
+    "features": "signed_sqrt",
+    "method": "regional_heads",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/balanced_pca/shallow_mlp": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "shallow_mlp",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/balanced_pca/residual_angle": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "residual_angle",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/balanced_pca/group_gate": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "group_gate",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/balanced_pca/expert_mixture": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "expert_mixture",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/balanced_pca/vmf_mixture": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "vmf_mixture",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/balanced_pca/token_attention": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "token_attention",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/balanced_pca/bilinear": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "bilinear",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/balanced_pca/random_kernel": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "random_kernel",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/balanced_pca/robust_mlp": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "robust_mlp",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/balanced_pca/regional_heads": {
+    "family": "neural",
+    "features": "balanced_pca",
+    "method": "regional_heads",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/shrink_whiten/shallow_mlp": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "shallow_mlp",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/shrink_whiten/residual_angle": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "residual_angle",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/shrink_whiten/group_gate": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "group_gate",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/shrink_whiten/expert_mixture": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "expert_mixture",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/shrink_whiten/vmf_mixture": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "vmf_mixture",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/shrink_whiten/token_attention": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "token_attention",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/shrink_whiten/bilinear": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "bilinear",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/shrink_whiten/random_kernel": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "random_kernel",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/shrink_whiten/robust_mlp": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "robust_mlp",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/shrink_whiten/regional_heads": {
+    "family": "neural",
+    "features": "shrink_whiten",
+    "method": "regional_heads",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/geo_projection/shallow_mlp": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "shallow_mlp",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/geo_projection/residual_angle": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "residual_angle",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/geo_projection/group_gate": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "group_gate",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/geo_projection/expert_mixture": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "expert_mixture",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/geo_projection/vmf_mixture": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "vmf_mixture",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/geo_projection/token_attention": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "token_attention",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/geo_projection/bilinear": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "bilinear",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/geo_projection/random_kernel": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "random_kernel",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/geo_projection/robust_mlp": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "robust_mlp",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/geo_projection/regional_heads": {
+    "family": "neural",
+    "features": "geo_projection",
+    "method": "regional_heads",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/fourier_rbf/shallow_mlp": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "shallow_mlp",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/fourier_rbf/residual_angle": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "residual_angle",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/fourier_rbf/group_gate": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "group_gate",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/fourier_rbf/expert_mixture": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "expert_mixture",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/fourier_rbf/vmf_mixture": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "vmf_mixture",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/fourier_rbf/token_attention": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "token_attention",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/fourier_rbf/bilinear": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "bilinear",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/fourier_rbf/random_kernel": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "random_kernel",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/fourier_rbf/robust_mlp": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "robust_mlp",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/fourier_rbf/regional_heads": {
+    "family": "neural",
+    "features": "fourier_rbf",
+    "method": "regional_heads",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/cross_bilinear/shallow_mlp": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "shallow_mlp",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/cross_bilinear/residual_angle": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "residual_angle",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/cross_bilinear/group_gate": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "group_gate",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/cross_bilinear/expert_mixture": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "expert_mixture",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/cross_bilinear/vmf_mixture": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "vmf_mixture",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/cross_bilinear/token_attention": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "token_attention",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/cross_bilinear/bilinear": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "bilinear",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/cross_bilinear/random_kernel": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "random_kernel",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/cross_bilinear/robust_mlp": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "robust_mlp",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/cross_bilinear/regional_heads": {
+    "family": "neural",
+    "features": "cross_bilinear",
+    "method": "regional_heads",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/canonical_pair/shallow_mlp": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "shallow_mlp",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/canonical_pair/residual_angle": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "residual_angle",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/canonical_pair/group_gate": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "group_gate",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/canonical_pair/expert_mixture": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "expert_mixture",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/canonical_pair/vmf_mixture": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "vmf_mixture",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/canonical_pair/token_attention": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "token_attention",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/canonical_pair/bilinear": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "bilinear",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/canonical_pair/random_kernel": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "random_kernel",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/canonical_pair/robust_mlp": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "robust_mlp",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/canonical_pair/regional_heads": {
+    "family": "neural",
+    "features": "canonical_pair",
+    "method": "regional_heads",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/prototype_metric/shallow_mlp": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "shallow_mlp",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/prototype_metric/residual_angle": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "residual_angle",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/prototype_metric/group_gate": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "group_gate",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/prototype_metric/expert_mixture": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "expert_mixture",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/prototype_metric/vmf_mixture": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "vmf_mixture",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/prototype_metric/token_attention": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "token_attention",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/prototype_metric/bilinear": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "bilinear",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/prototype_metric/random_kernel": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "random_kernel",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/prototype_metric/robust_mlp": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "robust_mlp",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/prototype_metric/regional_heads": {
+    "family": "neural",
+    "features": "prototype_metric",
+    "method": "regional_heads",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "neural/sparse_jl/shallow_mlp": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "shallow_mlp",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Один скрытый слой, квадратичная ошибка координат."
+  },
+  "neural/sparse_jl/residual_angle": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "residual_angle",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Остаточные блоки и квадрат центрального угла."
+  },
+  "neural/sparse_jl/group_gate": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "group_gate",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Две группы входных признаков с обучаемым покомпонентным шлюзом."
+  },
+  "neural/sparse_jl/expert_mixture": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "expert_mixture",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Четыре независимые локальные головы и обучаемые веса."
+  },
+  "neural/sparse_jl/vmf_mixture": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "vmf_mixture",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Смесь трёх направлений фон Мизеса–Фишера."
+  },
+  "neural/sparse_jl/token_attention": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "token_attention",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Самовнимание по токенам групп признаков."
+  },
+  "neural/sparse_jl/bilinear": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "bilinear",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Низкоранговое мультипликативное объединение."
+  },
+  "neural/sparse_jl/random_kernel": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "random_kernel",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Регуляризованная регрессия случайных Fourier-признаков."
+  },
+  "neural/sparse_jl/robust_mlp": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "robust_mlp",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Регрессия с устойчивой ошибкой Huber и дополнительным угловым штрафом."
+  },
+  "neural/sparse_jl/regional_heads": {
+    "family": "neural",
+    "features": "sparse_jl",
+    "method": "regional_heads",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Восемь географических голов с вероятностным маршрутизатором."
+  },
+  "geo/raw_blocks/geo_balanced_cells": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_balanced_cells",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/raw_blocks/geo_distance_targets": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_distance_targets",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/raw_blocks/geo_conditional_tree": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_conditional_tree",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/raw_blocks/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/raw_blocks/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/raw_blocks/geo_landmark_rings": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_landmark_rings",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/raw_blocks/geo_local_offsets": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_local_offsets",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/raw_blocks/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/raw_blocks/geo_directional_mixture": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_directional_mixture",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/raw_blocks/geo_triangle_targets": {
+    "family": "geo",
+    "features": "raw_blocks",
+    "method": "geo_triangle_targets",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/signed_sqrt/geo_balanced_cells": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_balanced_cells",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/signed_sqrt/geo_distance_targets": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_distance_targets",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/signed_sqrt/geo_conditional_tree": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_conditional_tree",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/signed_sqrt/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/signed_sqrt/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/signed_sqrt/geo_landmark_rings": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_landmark_rings",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/signed_sqrt/geo_local_offsets": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_local_offsets",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/signed_sqrt/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/signed_sqrt/geo_directional_mixture": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_directional_mixture",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/signed_sqrt/geo_triangle_targets": {
+    "family": "geo",
+    "features": "signed_sqrt",
+    "method": "geo_triangle_targets",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/balanced_pca/geo_balanced_cells": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_balanced_cells",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/balanced_pca/geo_distance_targets": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_distance_targets",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/balanced_pca/geo_conditional_tree": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_conditional_tree",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/balanced_pca/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/balanced_pca/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/balanced_pca/geo_landmark_rings": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_landmark_rings",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/balanced_pca/geo_local_offsets": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_local_offsets",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/balanced_pca/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/balanced_pca/geo_directional_mixture": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_directional_mixture",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/balanced_pca/geo_triangle_targets": {
+    "family": "geo",
+    "features": "balanced_pca",
+    "method": "geo_triangle_targets",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/shrink_whiten/geo_balanced_cells": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_balanced_cells",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/shrink_whiten/geo_distance_targets": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_distance_targets",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/shrink_whiten/geo_conditional_tree": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_conditional_tree",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/shrink_whiten/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/shrink_whiten/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/shrink_whiten/geo_landmark_rings": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_landmark_rings",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/shrink_whiten/geo_local_offsets": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_local_offsets",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/shrink_whiten/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/shrink_whiten/geo_directional_mixture": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_directional_mixture",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/shrink_whiten/geo_triangle_targets": {
+    "family": "geo",
+    "features": "shrink_whiten",
+    "method": "geo_triangle_targets",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/geo_projection/geo_balanced_cells": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_balanced_cells",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/geo_projection/geo_distance_targets": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_distance_targets",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/geo_projection/geo_conditional_tree": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_conditional_tree",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/geo_projection/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/geo_projection/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/geo_projection/geo_landmark_rings": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_landmark_rings",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/geo_projection/geo_local_offsets": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_local_offsets",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/geo_projection/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/geo_projection/geo_directional_mixture": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_directional_mixture",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/geo_projection/geo_triangle_targets": {
+    "family": "geo",
+    "features": "geo_projection",
+    "method": "geo_triangle_targets",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/fourier_rbf/geo_balanced_cells": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_balanced_cells",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/fourier_rbf/geo_distance_targets": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_distance_targets",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/fourier_rbf/geo_conditional_tree": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_conditional_tree",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/fourier_rbf/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/fourier_rbf/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/fourier_rbf/geo_landmark_rings": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_landmark_rings",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/fourier_rbf/geo_local_offsets": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_local_offsets",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/fourier_rbf/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/fourier_rbf/geo_directional_mixture": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_directional_mixture",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/fourier_rbf/geo_triangle_targets": {
+    "family": "geo",
+    "features": "fourier_rbf",
+    "method": "geo_triangle_targets",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/cross_bilinear/geo_balanced_cells": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_balanced_cells",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/cross_bilinear/geo_distance_targets": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_distance_targets",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/cross_bilinear/geo_conditional_tree": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_conditional_tree",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/cross_bilinear/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/cross_bilinear/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/cross_bilinear/geo_landmark_rings": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_landmark_rings",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/cross_bilinear/geo_local_offsets": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_local_offsets",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/cross_bilinear/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/cross_bilinear/geo_directional_mixture": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_directional_mixture",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/cross_bilinear/geo_triangle_targets": {
+    "family": "geo",
+    "features": "cross_bilinear",
+    "method": "geo_triangle_targets",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/canonical_pair/geo_balanced_cells": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_balanced_cells",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/canonical_pair/geo_distance_targets": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_distance_targets",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/canonical_pair/geo_conditional_tree": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_conditional_tree",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/canonical_pair/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/canonical_pair/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/canonical_pair/geo_landmark_rings": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_landmark_rings",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/canonical_pair/geo_local_offsets": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_local_offsets",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/canonical_pair/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/canonical_pair/geo_directional_mixture": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_directional_mixture",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/canonical_pair/geo_triangle_targets": {
+    "family": "geo",
+    "features": "canonical_pair",
+    "method": "geo_triangle_targets",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/prototype_metric/geo_balanced_cells": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_balanced_cells",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/prototype_metric/geo_distance_targets": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_distance_targets",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/prototype_metric/geo_conditional_tree": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_conditional_tree",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/prototype_metric/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/prototype_metric/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/prototype_metric/geo_landmark_rings": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_landmark_rings",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/prototype_metric/geo_local_offsets": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_local_offsets",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/prototype_metric/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/prototype_metric/geo_directional_mixture": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_directional_mixture",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/prototype_metric/geo_triangle_targets": {
+    "family": "geo",
+    "features": "prototype_metric",
+    "method": "geo_triangle_targets",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "geo/sparse_jl/geo_balanced_cells": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_balanced_cells",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Классификатор ячеек равной численности, полученных медианными разрезами вдоль главных осей географии."
+  },
+  "geo/sparse_jl/geo_distance_targets": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_distance_targets",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Мягкие целевые вероятности ближайших сферических кластеров по эллипсоидальному расстоянию WGS84."
+  },
+  "geo/sparse_jl/geo_conditional_tree": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_conditional_tree",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Отдельные головы для крупного региона и условного распределения по его дочерним ячейкам."
+  },
+  "geo/sparse_jl/geo_fourier_similarity": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_fourier_similarity",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Два кодировщика сопоставляют изображение с координатами опор через многочастотное представление Фурье."
+  },
+  "geo/sparse_jl/geo_ellipsoid_risk": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_ellipsoid_risk",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Кросс-энтропия классов с дополнительным ожидаемым квадратом расстояния между опорами WGS84."
+  },
+  "geo/sparse_jl/geo_landmark_rings": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_landmark_rings",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Модель предсказывает попадание в кольцевые пороги вокруг опор, затем согласует их с картой ячеек."
+  },
+  "geo/sparse_jl/geo_local_offsets": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_local_offsets",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Классификатор с отдельными предсказаниями касательных смещений внутри каждой ячейки."
+  },
+  "geo/sparse_jl/geo_graph_spectrum": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_graph_spectrum",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Регрессия собственных функций географического графа с вероятностным декодированием по спектральным кодам."
+  },
+  "geo/sparse_jl/geo_directional_mixture": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_directional_mixture",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Условная смесь распределений фон Мизеса — Фишера с обучаемыми направлениями, концентрациями и массами."
+  },
+  "geo/sparse_jl/geo_triangle_targets": {
+    "family": "geo",
+    "features": "sparse_jl",
+    "method": "geo_triangle_targets",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Классификация географических опор по барицентрическим меткам вершин сферического треугольника."
+  },
+  "retrieval/raw_blocks/ret_frechet": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_frechet",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/raw_blocks/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_geo_prior",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/raw_blocks/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_support_medoid",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/raw_blocks/ret_huber": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_huber",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/raw_blocks/ret_two_basin": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_two_basin",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/raw_blocks/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_local_ridge",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/raw_blocks/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_kernel_mode",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/raw_blocks/ret_hubness": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_hubness",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/raw_blocks/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_learned_kernel",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/raw_blocks/ret_barycentric": {
+    "family": "retrieval",
+    "features": "raw_blocks",
+    "method": "ret_barycentric",
+    "feature_description": "Раздельная L2-нормировка исходных GeoCLIP и StreetCLIP.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/signed_sqrt/ret_frechet": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_frechet",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/signed_sqrt/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_geo_prior",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/signed_sqrt/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_support_medoid",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/signed_sqrt/ret_huber": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_huber",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/signed_sqrt/ret_two_basin": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_two_basin",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/signed_sqrt/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_local_ridge",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/signed_sqrt/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_kernel_mode",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/signed_sqrt/ret_hubness": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_hubness",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/signed_sqrt/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_learned_kernel",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/signed_sqrt/ret_barycentric": {
+    "family": "retrieval",
+    "features": "signed_sqrt",
+    "method": "ret_barycentric",
+    "feature_description": "Квадратный корень из модуля каждой координаты с сохранением знака и раздельной нормировкой.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/balanced_pca/ret_frechet": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_frechet",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/balanced_pca/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_geo_prior",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/balanced_pca/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_support_medoid",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/balanced_pca/ret_huber": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_huber",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/balanced_pca/ret_two_basin": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_two_basin",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/balanced_pca/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_local_ridge",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/balanced_pca/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_kernel_mode",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/balanced_pca/ret_hubness": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_hubness",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/balanced_pca/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_learned_kernel",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/balanced_pca/ret_barycentric": {
+    "family": "retrieval",
+    "features": "balanced_pca",
+    "method": "ret_barycentric",
+    "feature_description": "Отдельное центрирование и одинаковое число главных компонент для двух энкодеров.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/shrink_whiten/ret_frechet": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_frechet",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/shrink_whiten/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_geo_prior",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/shrink_whiten/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_support_medoid",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/shrink_whiten/ret_huber": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_huber",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/shrink_whiten/ret_two_basin": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_two_basin",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/shrink_whiten/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_local_ridge",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/shrink_whiten/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_kernel_mode",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/shrink_whiten/ret_hubness": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_hubness",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/shrink_whiten/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_learned_kernel",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/shrink_whiten/ret_barycentric": {
+    "family": "retrieval",
+    "features": "shrink_whiten",
+    "method": "ret_barycentric",
+    "feature_description": "Раздельные главные компоненты с регуляризованным отбеливанием и нормировкой.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/geo_projection/ret_frechet": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_frechet",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/geo_projection/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_geo_prior",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/geo_projection/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_support_medoid",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/geo_projection/ret_huber": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_huber",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/geo_projection/ret_two_basin": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_two_basin",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/geo_projection/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_local_ridge",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/geo_projection/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_kernel_mode",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/geo_projection/ret_hubness": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_hubness",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/geo_projection/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_learned_kernel",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/geo_projection/ret_barycentric": {
+    "family": "retrieval",
+    "features": "geo_projection",
+    "method": "ret_barycentric",
+    "feature_description": "Географически направленные проекции по связи с мягкими геоячейками плюс обычные компоненты каждого энкодера.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/fourier_rbf/ret_frechet": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_frechet",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/fourier_rbf/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_geo_prior",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/fourier_rbf/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_support_medoid",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/fourier_rbf/ret_huber": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_huber",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/fourier_rbf/ret_two_basin": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_two_basin",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/fourier_rbf/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_local_ridge",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/fourier_rbf/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_kernel_mode",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/fourier_rbf/ret_hubness": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_hubness",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/fourier_rbf/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_learned_kernel",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/fourier_rbf/ret_barycentric": {
+    "family": "retrieval",
+    "features": "fourier_rbf",
+    "method": "ret_barycentric",
+    "feature_description": "Случайные признаки Фурье радиального ядра с шириной по обучающим расстояниям для каждого энкодера.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/cross_bilinear/ret_frechet": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_frechet",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/cross_bilinear/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_geo_prior",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/cross_bilinear/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_support_medoid",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/cross_bilinear/ret_huber": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_huber",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/cross_bilinear/ret_two_basin": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_two_basin",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/cross_bilinear/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_local_ridge",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/cross_bilinear/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_kernel_mode",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/cross_bilinear/ret_hubness": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_hubness",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/cross_bilinear/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_learned_kernel",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/cross_bilinear/ret_barycentric": {
+    "family": "retrieval",
+    "features": "cross_bilinear",
+    "method": "ret_barycentric",
+    "feature_description": "Низкоранговые произведения двух независимых проекций модальностей вместе с их основными компонентами.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/canonical_pair/ret_frechet": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_frechet",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/canonical_pair/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_geo_prior",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/canonical_pair/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_support_medoid",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/canonical_pair/ret_huber": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_huber",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/canonical_pair/ret_two_basin": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_two_basin",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/canonical_pair/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_local_ridge",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/canonical_pair/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_kernel_mode",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/canonical_pair/ret_hubness": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_hubness",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/canonical_pair/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_learned_kernel",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/canonical_pair/ret_barycentric": {
+    "family": "retrieval",
+    "features": "canonical_pair",
+    "method": "ret_barycentric",
+    "feature_description": "Согласованные пары координат двух энкодеров из регуляризованного канонического корреляционного анализа.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/prototype_metric/ret_frechet": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_frechet",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/prototype_metric/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_geo_prior",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/prototype_metric/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_support_medoid",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/prototype_metric/ret_huber": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_huber",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/prototype_metric/ret_two_basin": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_two_basin",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/prototype_metric/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_local_ridge",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/prototype_metric/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_kernel_mode",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/prototype_metric/ret_hubness": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_hubness",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/prototype_metric/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_learned_kernel",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/prototype_metric/ret_barycentric": {
+    "family": "retrieval",
+    "features": "prototype_metric",
+    "method": "ret_barycentric",
+    "feature_description": "Стандартизованные угловые расстояния до прототипов двух отдельно обученных сферических кластеризаций.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "retrieval/sparse_jl/ret_frechet": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_frechet",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Взвешенное внутреннее среднее на сфере с температурой по разбросу визуальных баллов."
+  },
+  "retrieval/sparse_jl/ret_geo_prior": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_geo_prior",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Поправка визуальных весов на фоновую плотность обучающих мест в равновеликих ячейках."
+  },
+  "retrieval/sparse_jl/ret_support_medoid": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_support_medoid",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Географический медоид из реальных соседей, минимизирующий взвешенную сумму квадратов углов."
+  },
+  "retrieval/sparse_jl/ret_huber": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_huber",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Устойчивая сферическая оценка положения с весами функции Хьюбера."
+  },
+  "retrieval/sparse_jl/ret_two_basin": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_two_basin",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Две мягкие географические группы с отдельными центрами и уточнёнными массами."
+  },
+  "retrieval/sparse_jl/ret_local_ridge": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_local_ridge",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Локальная регуляризованная регрессия касательного смещения на визуальные разности."
+  },
+  "retrieval/sparse_jl/ret_kernel_mode": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_kernel_mode",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Наиболее плотный географический бассейн и локальное среднее внутри него."
+  },
+  "retrieval/sparse_jl/ret_hubness": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_hubness",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Коррекция визуального балла по близости референса к независимым пробам обучающей базы."
+  },
+  "retrieval/sparse_jl/ret_learned_kernel": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_learned_kernel",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Обученное на поиске с исключением самого примера ядро визуального и географического согласия."
+  },
+  "retrieval/sparse_jl/ret_barycentric": {
+    "family": "retrieval",
+    "features": "sparse_jl",
+    "method": "ret_barycentric",
+    "feature_description": "Две независимые разреженные знаковые проекции Джонсона — Линденштраусса.",
+    "model_description": "Энтропийно регуляризованные барицентрические веса для восстановления визуального запроса соседями."
+  },
+  "meta/all/ridge_xyz": {
+    "family": "meta",
+    "features": "all",
+    "method": "ridge_xyz",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/all/ridge_residual": {
+    "family": "meta",
+    "features": "all",
+    "method": "ridge_residual",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/all/ridge_wgs84": {
+    "family": "meta",
+    "features": "all",
+    "method": "ridge_wgs84",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/all/ridge_interaction": {
+    "family": "meta",
+    "features": "all",
+    "method": "ridge_interaction",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/all/cat_xyz": {
+    "family": "meta",
+    "features": "all",
+    "method": "cat_xyz",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/all/cat_wgs84": {
+    "family": "meta",
+    "features": "all",
+    "method": "cat_wgs84",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/all/mlp_xyz": {
+    "family": "meta",
+    "features": "all",
+    "method": "mlp_xyz",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/all/mlp_gate": {
+    "family": "meta",
+    "features": "all",
+    "method": "mlp_gate",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/all/mlp_wgs84": {
+    "family": "meta",
+    "features": "all",
+    "method": "mlp_wgs84",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/all/kernel_ridge": {
+    "family": "meta",
+    "features": "all",
+    "method": "kernel_ridge",
+    "feature_description": "Все сохранённые прогнозы, вероятности, диагностические признаки и PCA.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/experts/ridge_xyz": {
+    "family": "meta",
+    "features": "experts",
+    "method": "ridge_xyz",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/experts/ridge_residual": {
+    "family": "meta",
+    "features": "experts",
+    "method": "ridge_residual",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/experts/ridge_wgs84": {
+    "family": "meta",
+    "features": "experts",
+    "method": "ridge_wgs84",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/experts/ridge_interaction": {
+    "family": "meta",
+    "features": "experts",
+    "method": "ridge_interaction",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/experts/cat_xyz": {
+    "family": "meta",
+    "features": "experts",
+    "method": "cat_xyz",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/experts/cat_wgs84": {
+    "family": "meta",
+    "features": "experts",
+    "method": "cat_wgs84",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/experts/mlp_xyz": {
+    "family": "meta",
+    "features": "experts",
+    "method": "mlp_xyz",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/experts/mlp_gate": {
+    "family": "meta",
+    "features": "experts",
+    "method": "mlp_gate",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/experts/mlp_wgs84": {
+    "family": "meta",
+    "features": "experts",
+    "method": "mlp_wgs84",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/experts/kernel_ridge": {
+    "family": "meta",
+    "features": "experts",
+    "method": "kernel_ridge",
+    "feature_description": "Координаты семи экспертов и их попарное согласие.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/posterior/ridge_xyz": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "ridge_xyz",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/posterior/ridge_residual": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "ridge_residual",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/posterior/ridge_wgs84": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "ridge_wgs84",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/posterior/ridge_interaction": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "ridge_interaction",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/posterior/cat_xyz": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "cat_xyz",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/posterior/cat_wgs84": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "cat_wgs84",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/posterior/mlp_xyz": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "mlp_xyz",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/posterior/mlp_gate": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "mlp_gate",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/posterior/mlp_wgs84": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "mlp_wgs84",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/posterior/kernel_ridge": {
+    "family": "meta",
+    "features": "posterior",
+    "method": "kernel_ridge",
+    "feature_description": "Три блока распределений по географическим ячейкам.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/retrieval/ridge_xyz": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "ridge_xyz",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/retrieval/ridge_residual": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "ridge_residual",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/retrieval/ridge_wgs84": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "ridge_wgs84",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/retrieval/ridge_interaction": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "ridge_interaction",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/retrieval/cat_xyz": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "cat_xyz",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/retrieval/cat_wgs84": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "cat_wgs84",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/retrieval/mlp_xyz": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "mlp_xyz",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/retrieval/mlp_gate": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "mlp_gate",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/retrieval/mlp_wgs84": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "mlp_wgs84",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/retrieval/kernel_ridge": {
+    "family": "meta",
+    "features": "retrieval",
+    "method": "kernel_ridge",
+    "feature_description": "Статистика поиска и оценки локальной плотности.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/uncertainty/ridge_xyz": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "ridge_xyz",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/uncertainty/ridge_residual": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "ridge_residual",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/uncertainty/ridge_wgs84": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "ridge_wgs84",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/uncertainty/ridge_interaction": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "ridge_interaction",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/uncertainty/cat_xyz": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "cat_xyz",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/uncertainty/cat_wgs84": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "cat_wgs84",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/uncertainty/mlp_xyz": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "mlp_xyz",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/uncertainty/mlp_gate": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "mlp_gate",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/uncertainty/mlp_wgs84": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "mlp_wgs84",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/uncertainty/kernel_ridge": {
+    "family": "meta",
+    "features": "uncertainty",
+    "method": "kernel_ridge",
+    "feature_description": "Энтропии, массы и географический разброс.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/geometry/ridge_xyz": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "ridge_xyz",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/geometry/ridge_residual": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "ridge_residual",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/geometry/ridge_wgs84": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "ridge_wgs84",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/geometry/ridge_interaction": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "ridge_interaction",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/geometry/cat_xyz": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "cat_xyz",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/geometry/cat_wgs84": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "cat_wgs84",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/geometry/mlp_xyz": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "mlp_xyz",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/geometry/mlp_gate": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "mlp_gate",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/geometry/mlp_wgs84": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "mlp_wgs84",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/geometry/kernel_ridge": {
+    "family": "meta",
+    "features": "geometry",
+    "method": "kernel_ridge",
+    "feature_description": "Координаты экспертов, их взаимные отклонения и уверенность.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/visual_pca/ridge_xyz": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "ridge_xyz",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/visual_pca/ridge_residual": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "ridge_residual",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/visual_pca/ridge_wgs84": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "ridge_wgs84",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/visual_pca/ridge_interaction": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "ridge_interaction",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/visual_pca/cat_xyz": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "cat_xyz",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/visual_pca/cat_wgs84": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "cat_wgs84",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/visual_pca/mlp_xyz": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "mlp_xyz",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/visual_pca/mlp_gate": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "mlp_gate",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/visual_pca/mlp_wgs84": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "mlp_wgs84",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/visual_pca/kernel_ridge": {
+    "family": "meta",
+    "features": "visual_pca",
+    "method": "kernel_ridge",
+    "feature_description": "32 компоненты PCA исходных эмбеддингов.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/interactions/ridge_xyz": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "ridge_xyz",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/interactions/ridge_residual": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "ridge_residual",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/interactions/ridge_wgs84": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "ridge_wgs84",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/interactions/ridge_interaction": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "ridge_interaction",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/interactions/cat_xyz": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "cat_xyz",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/interactions/cat_wgs84": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "cat_wgs84",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/interactions/mlp_xyz": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "mlp_xyz",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/interactions/mlp_gate": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "mlp_gate",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/interactions/mlp_wgs84": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "mlp_wgs84",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/interactions/kernel_ridge": {
+    "family": "meta",
+    "features": "interactions",
+    "method": "kernel_ridge",
+    "feature_description": "Произведения координат экспертов на признаки уверенности.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/rank_shape/ridge_xyz": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "ridge_xyz",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/rank_shape/ridge_residual": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "ridge_residual",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/rank_shape/ridge_wgs84": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "ridge_wgs84",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/rank_shape/ridge_interaction": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "ridge_interaction",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/rank_shape/cat_xyz": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "cat_xyz",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/rank_shape/cat_wgs84": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "cat_wgs84",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/rank_shape/mlp_xyz": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "mlp_xyz",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/rank_shape/mlp_gate": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "mlp_gate",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/rank_shape/mlp_wgs84": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "mlp_wgs84",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/rank_shape/kernel_ridge": {
+    "family": "meta",
+    "features": "rank_shape",
+    "method": "kernel_ridge",
+    "feature_description": "Ранги вероятностей и пространственное рассеяние центров.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "meta/compact/ridge_xyz": {
+    "family": "meta",
+    "features": "compact",
+    "method": "ridge_xyz",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Глобальная ridge-регрессия трёх координат."
+  },
+  "meta/compact/ridge_residual": {
+    "family": "meta",
+    "features": "compact",
+    "method": "ridge_residual",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Ridge на остатке относительно ансамблевого направления."
+  },
+  "meta/compact/ridge_wgs84": {
+    "family": "meta",
+    "features": "compact",
+    "method": "ridge_wgs84",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Линейная корректировка восток/север на WGS84."
+  },
+  "meta/compact/ridge_interaction": {
+    "family": "meta",
+    "features": "compact",
+    "method": "ridge_interaction",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Нелинейный признак взаимодействия с направлением ансамбля."
+  },
+  "meta/compact/cat_xyz": {
+    "family": "meta",
+    "features": "compact",
+    "method": "cat_xyz",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "CatBoost MultiRMSE, прямое предсказание координат."
+  },
+  "meta/compact/cat_wgs84": {
+    "family": "meta",
+    "features": "compact",
+    "method": "cat_wgs84",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "CatBoost MultiRMSE на геодезических остатках."
+  },
+  "meta/compact/mlp_xyz": {
+    "family": "meta",
+    "features": "compact",
+    "method": "mlp_xyz",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Нейросетевой регрессор трёх координат."
+  },
+  "meta/compact/mlp_gate": {
+    "family": "meta",
+    "features": "compact",
+    "method": "mlp_gate",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Нейросетевой шлюз для семи экспертов."
+  },
+  "meta/compact/mlp_wgs84": {
+    "family": "meta",
+    "features": "compact",
+    "method": "mlp_wgs84",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Нейросетевой регрессор геодезических остатков."
+  },
+  "meta/compact/kernel_ridge": {
+    "family": "meta",
+    "features": "compact",
+    "method": "kernel_ridge",
+    "feature_description": "Ключевые вероятностные и географические признаки вместе с PCA.",
+    "model_description": "Случайные Fourier features и ridge."
+  },
+  "ensemble/best_rmse/uniform": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "uniform",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/best_rmse/inverse_risk": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "inverse_risk",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/best_rmse/soft_risk": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "soft_risk",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/best_rmse/median": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "median",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/best_rmse/medoid": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "medoid",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/best_rmse/signed_wgs84": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "signed_wgs84",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/best_rmse/simplex": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "simplex",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/best_rmse/regional_risk": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "regional_risk",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/best_rmse/context_gate": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "context_gate",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/best_rmse/trim_consensus": {
+    "family": "ensemble",
+    "features": "best_rmse",
+    "method": "trim_consensus",
+    "feature_description": "Восемь лучших по RMSE.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/best_mae/uniform": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "uniform",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/best_mae/inverse_risk": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "inverse_risk",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/best_mae/soft_risk": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "soft_risk",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/best_mae/median": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "median",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/best_mae/medoid": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "medoid",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/best_mae/signed_wgs84": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "signed_wgs84",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/best_mae/simplex": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "simplex",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/best_mae/regional_risk": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "regional_risk",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/best_mae/context_gate": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "context_gate",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/best_mae/trim_consensus": {
+    "family": "ensemble",
+    "features": "best_mae",
+    "method": "trim_consensus",
+    "feature_description": "Восемь лучших по MAE.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/balanced_bases/uniform": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "uniform",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/balanced_bases/inverse_risk": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "inverse_risk",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/balanced_bases/soft_risk": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "soft_risk",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/balanced_bases/median": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "median",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/balanced_bases/medoid": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "medoid",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/balanced_bases/signed_wgs84": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "signed_wgs84",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/balanced_bases/simplex": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "simplex",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/balanced_bases/regional_risk": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "regional_risk",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/balanced_bases/context_gate": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "context_gate",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/balanced_bases/trim_consensus": {
+    "family": "ensemble",
+    "features": "balanced_bases",
+    "method": "trim_consensus",
+    "feature_description": "Лучшие из нейросетей, геоклассификаторов и поиска.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/neural/uniform": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "uniform",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/neural/inverse_risk": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "inverse_risk",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/neural/soft_risk": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "soft_risk",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/neural/median": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "median",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/neural/medoid": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "medoid",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/neural/signed_wgs84": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "signed_wgs84",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/neural/simplex": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "simplex",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/neural/regional_risk": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "regional_risk",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/neural/context_gate": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "context_gate",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/neural/trim_consensus": {
+    "family": "ensemble",
+    "features": "neural",
+    "method": "trim_consensus",
+    "feature_description": "Лучшие прямые нейрорегрессоры.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/geo/uniform": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "uniform",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/geo/inverse_risk": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "inverse_risk",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/geo/soft_risk": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "soft_risk",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/geo/median": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "median",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/geo/medoid": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "medoid",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/geo/signed_wgs84": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "signed_wgs84",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/geo/simplex": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "simplex",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/geo/regional_risk": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "regional_risk",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/geo/context_gate": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "context_gate",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/geo/trim_consensus": {
+    "family": "ensemble",
+    "features": "geo",
+    "method": "trim_consensus",
+    "feature_description": "Лучшие вероятностные геомодели.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/retrieval/uniform": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "uniform",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/retrieval/inverse_risk": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "inverse_risk",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/retrieval/soft_risk": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "soft_risk",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/retrieval/median": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "median",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/retrieval/medoid": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "medoid",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/retrieval/signed_wgs84": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "signed_wgs84",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/retrieval/simplex": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "simplex",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/retrieval/regional_risk": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "regional_risk",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/retrieval/context_gate": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "context_gate",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/retrieval/trim_consensus": {
+    "family": "ensemble",
+    "features": "retrieval",
+    "method": "trim_consensus",
+    "feature_description": "Лучшие модели поиска.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/feature_diverse/uniform": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "uniform",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/feature_diverse/inverse_risk": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "inverse_risk",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/feature_diverse/soft_risk": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "soft_risk",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/feature_diverse/median": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "median",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/feature_diverse/medoid": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "medoid",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/feature_diverse/signed_wgs84": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "signed_wgs84",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/feature_diverse/simplex": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "simplex",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/feature_diverse/regional_risk": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "regional_risk",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/feature_diverse/context_gate": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "context_gate",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/feature_diverse/trim_consensus": {
+    "family": "ensemble",
+    "features": "feature_diverse",
+    "method": "trim_consensus",
+    "feature_description": "Лучшие для различных структур признаков.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/decorrelated/uniform": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "uniform",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/decorrelated/inverse_risk": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "inverse_risk",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/decorrelated/soft_risk": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "soft_risk",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/decorrelated/median": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "median",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/decorrelated/medoid": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "medoid",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/decorrelated/signed_wgs84": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "signed_wgs84",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/decorrelated/simplex": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "simplex",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/decorrelated/regional_risk": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "regional_risk",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/decorrelated/context_gate": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "context_gate",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/decorrelated/trim_consensus": {
+    "family": "ensemble",
+    "features": "decorrelated",
+    "method": "trim_consensus",
+    "feature_description": "Сильные модели со слабо согласованными ошибками.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/tail_safe/uniform": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "uniform",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/tail_safe/inverse_risk": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "inverse_risk",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/tail_safe/soft_risk": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "soft_risk",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/tail_safe/median": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "median",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/tail_safe/medoid": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "medoid",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/tail_safe/signed_wgs84": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "signed_wgs84",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/tail_safe/simplex": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "simplex",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/tail_safe/regional_risk": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "regional_risk",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/tail_safe/context_gate": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "context_gate",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/tail_safe/trim_consensus": {
+    "family": "ensemble",
+    "features": "tail_safe",
+    "method": "trim_consensus",
+    "feature_description": "Лучшие по 95-му перцентилю ошибок.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  },
+  "ensemble/near_precision/uniform": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "uniform",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Равные веса и сферическое среднее."
+  },
+  "ensemble/near_precision/inverse_risk": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "inverse_risk",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Веса, обратные квадрату RMSE."
+  },
+  "ensemble/near_precision/soft_risk": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "soft_risk",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Экспоненциальные веса калибровочного риска."
+  },
+  "ensemble/near_precision/median": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "median",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Геометрическая медиана на сфере."
+  },
+  "ensemble/near_precision/medoid": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "medoid",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Взвешенный кандидат с наименьшим суммарным квадратом расстояния до экспертов."
+  },
+  "ensemble/near_precision/signed_wgs84": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "signed_wgs84",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Регуляризованная регрессия смещений восток/север."
+  },
+  "ensemble/near_precision/simplex": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "simplex",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Выпуклая комбинация экспертов, оптимизированная по квадратичной ошибке."
+  },
+  "ensemble/near_precision/regional_risk": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "regional_risk",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Локальный риск экспертов по похожим географическим калибровочным прогнозам."
+  },
+  "ensemble/near_precision/context_gate": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "context_gate",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Ridge-прогноз риска по географии и расхождению экспертных ответов."
+  },
+  "ensemble/near_precision/trim_consensus": {
+    "family": "ensemble",
+    "features": "near_precision",
+    "method": "trim_consensus",
+    "feature_description": "Лучшие по доле малых ошибок.",
+    "model_description": "Подавление отличающихся от согласованной группы экспертов."
+  }
+}

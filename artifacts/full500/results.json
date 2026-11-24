@@ -1,0 +1,41 @@
+{
+  "winner": "tuned:all/shared/expert/a0.01/tail0/cap20000",
+  "test": {
+    "mae_km": 271.848376615944,
+    "rmse_km": 952.5249850273548,
+    "mse_km2": 907303.8471013625,
+    "n": 37500
+  },
+  "cv": {
+    "name": "tuned:all/shared/expert/a0.01/tail0/cap20000",
+    "cv_mae_km": 282.9259076158753,
+    "cv_rmse_km": 973.4910271453901,
+    "fold_rmse_km": [
+      937.1108115686068,
+      996.5275650812696,
+      1006.3043229128417,
+      979.7962071690089,
+      945.7965112229524
+    ]
+  },
+  "split_sha256": "66273b78b3d7d59137034db945ac48b4b688b6c5017826db61e19cace62cbd4c",
+  "cv_sha256": "4604c08fdca3e58ef9b5d4805995f7362c444b52aa96c9289eea1ff6609d9ae4",
+  "predictions_sha256": "a8c52e93346515a89a83e9a7349ad1c894bdca66681b668b81051afd22d4f0fc",
+  "development_rows": 212500,
+  "test_rows": 37500,
+  "component_training_seeds": {
+    "meta/experts/mlp_gate": 954322,
+    "paper/distance_risk": 954322,
+    "retrieval/fourier_rbf/ret_learned_kernel": 954322,
+    "retrieval/shrink_whiten/ret_learned_kernel": 954322,
+    "retrieval/canonical_pair/ret_frechet": 954322
+  },
+  "provenance": "final-provenance.json",
+  "historical_reference": {
+    "mae_km": 266.6239811486437,
+    "rmse_km": 975.2377056762869,
+    "mse_km2": 951088.5825727478,
+    "n": 37500
+  },
+  "historical_reference_source": "v4/results.json"
+}

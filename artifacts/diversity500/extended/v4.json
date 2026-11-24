@@ -1,0 +1,1323 @@
+{
+  "metadata": {
+    "phase": "v4",
+    "selection_sha256": "1e959e6d1b93b39119c4556876cfcb3bb9484cf7eba7e63778686c29449bbc54",
+    "split_sha256": "2b1a6b91b4b3c5724cf333d717833a4e53d77f844dd41a60c3df492c7ff5457e",
+    "code_sha256": "0326af5ac2613b2104c7b431c2c0cdf72e74b7063cda63dce133edef6aa0382a",
+    "reference": "v4_cal_interaction_full_fold_fit_170000",
+    "n": 12500,
+    "fixed_candidate_weight": 0.25,
+    "exploratory_only": true,
+    "scope": "Диагностика после фиксации набора; результаты не участвуют в отборе.",
+    "gain_definition": "Снижение RMSE WGS84 относительно указанного V4, в километрах."
+  },
+  "reference_metrics": {
+    "n": 12500,
+    "mae_km": 275.00336036765196,
+    "mse_km2": 859266.736557443,
+    "rmse_km": 926.966416089301
+  },
+  "n_candidates": 50,
+  "rows": [
+    {
+      "name": "cal_atlas_prior",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 295.0157984921343,
+        "mse_km2": 875100.394086323,
+        "rmse_km": 935.4680080506885
+      },
+      "standalone_gain_vs_reference_km": -8.501591961387476,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.3622510380801,
+        "mse_km2": 858436.8926819349,
+        "rmse_km": 926.5186952684413
+      },
+      "quarter_blend_gain_vs_reference_km": 0.44772082085967213,
+      "error_corr_east": 0.9801533878807788,
+      "error_corr_north": 0.9830155793818648,
+      "error_corr_vector": 0.981335233411063,
+      "error_corr_distance": 0.9881993465595951,
+      "candidate_closer_fraction": 0.33632,
+      "closer_in_baseline_worst_decile": 0.512,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2911.155468904442
+    },
+    {
+      "name": "cal_compass",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 295.9695901112126,
+        "mse_km2": 875360.3911779637,
+        "rmse_km": 935.606964049522
+      },
+      "standalone_gain_vs_reference_km": -8.640547960221056,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.47459665174716,
+        "mse_km2": 858257.8335952443,
+        "rmse_km": 926.4220601838259
+      },
+      "quarter_blend_gain_vs_reference_km": 0.5443559054750722,
+      "error_corr_east": 0.9795015402055118,
+      "error_corr_north": 0.9823148707973263,
+      "error_corr_vector": 0.9806932166746536,
+      "error_corr_distance": 0.9878950475154656,
+      "candidate_closer_fraction": 0.33872,
+      "closer_in_baseline_worst_decile": 0.5088,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2910.7704126613467
+    },
+    {
+      "name": "cal_global_simplex",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 297.4106506161577,
+        "mse_km2": 882788.6009700098,
+        "rmse_km": 939.568305643613
+      },
+      "standalone_gain_vs_reference_km": -12.601889554312038,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.83737979014603,
+        "mse_km2": 859810.4757182217,
+        "rmse_km": 927.2596592746941
+      },
+      "quarter_blend_gain_vs_reference_km": -0.2932431853930666,
+      "error_corr_east": 0.9793905705378007,
+      "error_corr_north": 0.981463359646114,
+      "error_corr_vector": 0.9802725610902985,
+      "error_corr_distance": 0.9866809461618303,
+      "candidate_closer_fraction": 0.34736,
+      "closer_in_baseline_worst_decile": 0.488,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2921.41475698126
+    },
+    {
+      "name": "cal_harmonics",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 296.003208935125,
+        "mse_km2": 875801.7368114517,
+        "rmse_km": 935.8427949241537
+      },
+      "standalone_gain_vs_reference_km": -8.876378834852744,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.5504032345055,
+        "mse_km2": 858315.736007468,
+        "rmse_km": 926.4533102145342
+      },
+      "quarter_blend_gain_vs_reference_km": 0.5131058747667794,
+      "error_corr_east": 0.9789725611496509,
+      "error_corr_north": 0.9824934626950332,
+      "error_corr_vector": 0.9804410991118151,
+      "error_corr_distance": 0.9875596783873913,
+      "candidate_closer_fraction": 0.34504,
+      "closer_in_baseline_worst_decile": 0.5056,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2911.0955048724686
+    },
+    {
+      "name": "cal_interaction",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 275.00336004819974,
+        "mse_km2": 859266.736487868,
+        "rmse_km": 926.9664160517726
+      },
+      "standalone_gain_vs_reference_km": 3.7528366192418616e-08,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 275.0033602877873,
+        "mse_km2": 859266.7365400491,
+        "rmse_km": 926.9664160799188
+      },
+      "quarter_blend_gain_vs_reference_km": 9.382233656651806e-09,
+      "error_corr_east": 0.9999999999999999,
+      "error_corr_north": 0.9999999999999992,
+      "error_corr_vector": 0.9999999999999997,
+      "error_corr_distance": 0.9999999999999998,
+      "candidate_closer_fraction": 0.12568,
+      "closer_in_baseline_worst_decile": 0.1336,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2898.201315454074
+    },
+    {
+      "name": "cal_kernel",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 301.4222579304877,
+        "mse_km2": 874470.7984966097,
+        "rmse_km": 935.1314338084297
+      },
+      "standalone_gain_vs_reference_km": -8.165017719128741,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 277.21705678915816,
+        "mse_km2": 857986.9331822258,
+        "rmse_km": 926.2758407635523
+      },
+      "quarter_blend_gain_vs_reference_km": 0.6905753257486822,
+      "error_corr_east": 0.9786036815829112,
+      "error_corr_north": 0.9824077657644386,
+      "error_corr_vector": 0.9801834947208596,
+      "error_corr_distance": 0.9878119348747469,
+      "candidate_closer_fraction": 0.30664,
+      "closer_in_baseline_worst_decile": 0.5016,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2908.513414503451
+    },
+    {
+      "name": "cal_local_bias",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 291.1060987805828,
+        "mse_km2": 877272.7792027141,
+        "rmse_km": 936.6284104183014
+      },
+      "standalone_gain_vs_reference_km": -9.661994329000436,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 275.67342419679636,
+        "mse_km2": 858648.8478914816,
+        "rmse_km": 926.6330707952752
+      },
+      "quarter_blend_gain_vs_reference_km": 0.33334529402577573,
+      "error_corr_east": 0.9787694924399678,
+      "error_corr_north": 0.9821301600912165,
+      "error_corr_vector": 0.9801853055407965,
+      "error_corr_distance": 0.9873520017136449,
+      "candidate_closer_fraction": 0.39104,
+      "closer_in_baseline_worst_decile": 0.5152,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2915.619774027925
+    },
+    {
+      "name": "cal_posterior_rank",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 290.8858277674694,
+        "mse_km2": 875795.1774077131,
+        "rmse_km": 935.8392903740007
+      },
+      "standalone_gain_vs_reference_km": -8.87287428469972,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 275.2512053102314,
+        "mse_km2": 858751.5163667854,
+        "rmse_km": 926.6884678071619
+      },
+      "quarter_blend_gain_vs_reference_km": 0.2779482821390502,
+      "error_corr_east": 0.9821317999454889,
+      "error_corr_north": 0.9831976877810547,
+      "error_corr_vector": 0.982572004928363,
+      "error_corr_distance": 0.9885377261759207,
+      "candidate_closer_fraction": 0.37872,
+      "closer_in_baseline_worst_decile": 0.5032,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2914.5520931446113
+    },
+    {
+      "name": "cal_regional_simplex",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 297.1377920307831,
+        "mse_km2": 873822.0054230911,
+        "rmse_km": 934.7844700373938
+      },
+      "standalone_gain_vs_reference_km": -7.818053948092825,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.8724586787619,
+        "mse_km2": 857701.9307726229,
+        "rmse_km": 926.1219848230701
+      },
+      "quarter_blend_gain_vs_reference_km": 0.844431266230913,
+      "error_corr_east": 0.9797408023913199,
+      "error_corr_north": 0.9800684660415967,
+      "error_corr_vector": 0.9798838516398978,
+      "error_corr_distance": 0.9871543023901848,
+      "candidate_closer_fraction": 0.34456,
+      "closer_in_baseline_worst_decile": 0.508,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2906.1881350251383
+    },
+    {
+      "name": "cal_robust",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 294.4569523950889,
+        "mse_km2": 876497.9723898828,
+        "rmse_km": 936.2147042158026
+      },
+      "standalone_gain_vs_reference_km": -9.24828812650162,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.3499055087524,
+        "mse_km2": 858696.3876169397,
+        "rmse_km": 926.6587223012255
+      },
+      "quarter_blend_gain_vs_reference_km": 0.3076937880755395,
+      "error_corr_east": 0.9797788121881017,
+      "error_corr_north": 0.9825026435623685,
+      "error_corr_vector": 0.9808892128056147,
+      "error_corr_distance": 0.9879311764885241,
+      "candidate_closer_fraction": 0.35176,
+      "closer_in_baseline_worst_decile": 0.5048,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2913.232054099239
+    },
+    {
+      "name": "cal_rotation",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 294.9106958192477,
+        "mse_km2": 876251.8206838225,
+        "rmse_km": 936.0832338439902
+      },
+      "standalone_gain_vs_reference_km": -9.116817754689237,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.39375017610627,
+        "mse_km2": 858623.6993960036,
+        "rmse_km": 926.6195008718539
+      },
+      "quarter_blend_gain_vs_reference_km": 0.34691521744707643,
+      "error_corr_east": 0.9798107407257325,
+      "error_corr_north": 0.9825546920406442,
+      "error_corr_vector": 0.9809323595432193,
+      "error_corr_distance": 0.9879001683614352,
+      "candidate_closer_fraction": 0.35552,
+      "closer_in_baseline_worst_decile": 0.5072,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2912.5358283505734
+    },
+    {
+      "name": "cal_signed",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 294.71254195688897,
+        "mse_km2": 876368.3247301413,
+        "rmse_km": 936.1454613093744
+      },
+      "standalone_gain_vs_reference_km": -9.179045220073363,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.39112466347683,
+        "mse_km2": 858659.1878169313,
+        "rmse_km": 926.6386500772193
+      },
+      "quarter_blend_gain_vs_reference_km": 0.3277660120817245,
+      "error_corr_east": 0.9797954185314137,
+      "error_corr_north": 0.9825547751103538,
+      "error_corr_vector": 0.9809240190784649,
+      "error_corr_distance": 0.9879077466218619,
+      "candidate_closer_fraction": 0.34976,
+      "closer_in_baseline_worst_decile": 0.5072,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2912.780564001371
+    },
+    {
+      "name": "cal_spread_simplex",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 289.69618665904267,
+        "mse_km2": 880065.7407964859,
+        "rmse_km": 938.1181912725527
+      },
+      "standalone_gain_vs_reference_km": -11.151775183251743,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.3706830375037,
+        "mse_km2": 859363.8248383009,
+        "rmse_km": 927.0187834333784
+      },
+      "quarter_blend_gain_vs_reference_km": -0.052367344077424605,
+      "error_corr_east": 0.9806800347942811,
+      "error_corr_north": 0.9825848201155378,
+      "error_corr_vector": 0.9814901940699632,
+      "error_corr_distance": 0.9868424822834757,
+      "candidate_closer_fraction": 0.46176,
+      "closer_in_baseline_worst_decile": 0.4808,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2918.911438382972
+    },
+    {
+      "name": "confident_scale_routing",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 314.22787174779086,
+        "mse_km2": 950826.8212054874,
+        "rmse_km": 975.1034925614241
+      },
+      "standalone_gain_vs_reference_km": -48.13707647212311,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 280.95627615220286,
+        "mse_km2": 865805.1011708857,
+        "rmse_km": 930.4864862913839
+      },
+      "quarter_blend_gain_vs_reference_km": -3.520070202082934,
+      "error_corr_east": 0.9492857255056615,
+      "error_corr_north": 0.9453399426659395,
+      "error_corr_vector": 0.9473429056600898,
+      "error_corr_distance": 0.9571006639192554,
+      "candidate_closer_fraction": 0.38096,
+      "closer_in_baseline_worst_decile": 0.4504,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3012.2613378091355
+    },
+    {
+      "name": "density_anisotropic_update",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 316.19816488499833,
+        "mse_km2": 889006.4797572232,
+        "rmse_km": 942.8714014950411
+      },
+      "standalone_gain_vs_reference_km": -15.904985405740149,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 281.34612419329864,
+        "mse_km2": 855779.4067585556,
+        "rmse_km": 925.0834593476178
+      },
+      "quarter_blend_gain_vs_reference_km": 1.8829567416831878,
+      "error_corr_east": 0.9643971726031578,
+      "error_corr_north": 0.9653273612856363,
+      "error_corr_vector": 0.9647444619170509,
+      "error_corr_distance": 0.9687893536056001,
+      "candidate_closer_fraction": 0.34128,
+      "closer_in_baseline_worst_decile": 0.4792,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2908.503663252257
+    },
+    {
+      "name": "density_classifier_reliability",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 316.5118220538814,
+        "mse_km2": 954016.4120078466,
+        "rmse_km": 976.7376372434138
+      },
+      "standalone_gain_vs_reference_km": -49.77122115411282,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 281.42939036085,
+        "mse_km2": 865460.2318243225,
+        "rmse_km": 930.301151146403
+      },
+      "quarter_blend_gain_vs_reference_km": -3.334735057101966,
+      "error_corr_east": 0.9472489255500769,
+      "error_corr_north": 0.9449063928217672,
+      "error_corr_vector": 0.9461623521837625,
+      "error_corr_distance": 0.9534755331466257,
+      "candidate_closer_fraction": 0.37824,
+      "closer_in_baseline_worst_decile": 0.4728,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3014.4533096295513
+    },
+    {
+      "name": "density_coarse_fine_transport",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 319.25086330222507,
+        "mse_km2": 961207.6146041742,
+        "rmse_km": 980.4119616794637
+      },
+      "standalone_gain_vs_reference_km": -53.44554559016274,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 282.03479139519806,
+        "mse_km2": 867185.710214317,
+        "rmse_km": 931.228065628564
+      },
+      "quarter_blend_gain_vs_reference_km": -4.261649539262976,
+      "error_corr_east": 0.9476262522935658,
+      "error_corr_north": 0.9450555307399982,
+      "error_corr_vector": 0.946234476138086,
+      "error_corr_distance": 0.9537825553177879,
+      "candidate_closer_fraction": 0.4036,
+      "closer_in_baseline_worst_decile": 0.4568,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3023.613880003465
+    },
+    {
+      "name": "density_local_offset",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 318.75782305340937,
+        "mse_km2": 960997.4362133004,
+        "rmse_km": 980.3047670052923
+      },
+      "standalone_gain_vs_reference_km": -53.33835091599133,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 281.9622696857284,
+        "mse_km2": 867154.555166552,
+        "rmse_km": 931.2113375418879
+      },
+      "quarter_blend_gain_vs_reference_km": -4.2449214525869365,
+      "error_corr_east": 0.947717906279681,
+      "error_corr_north": 0.9451138080110411,
+      "error_corr_vector": 0.9463102704509501,
+      "error_corr_distance": 0.9538057880750982,
+      "candidate_closer_fraction": 0.41704,
+      "closer_in_baseline_worst_decile": 0.4576,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3023.3868181234584
+    },
+    {
+      "name": "density_modality_recovery",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 334.80592507520964,
+        "mse_km2": 894396.0520462736,
+        "rmse_km": 945.7251461425109
+      },
+      "standalone_gain_vs_reference_km": -18.758730053209888,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 283.4375760239562,
+        "mse_km2": 857076.9388932518,
+        "rmse_km": 925.7844991644934
+      },
+      "quarter_blend_gain_vs_reference_km": 1.1819169248076378,
+      "error_corr_east": 0.964591285978791,
+      "error_corr_north": 0.960832485331202,
+      "error_corr_vector": 0.9629270895659039,
+      "error_corr_distance": 0.9701267428563443,
+      "candidate_closer_fraction": 0.20928,
+      "closer_in_baseline_worst_decile": 0.5056,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2911.2114908616327
+    },
+    {
+      "name": "density_peer_kernel",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 288.03197958468377,
+        "mse_km2": 924737.4047302168,
+        "rmse_km": 961.6326766131738
+      },
+      "standalone_gain_vs_reference_km": -34.66626052387278,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 275.0637692830628,
+        "mse_km2": 860890.856688411,
+        "rmse_km": 927.8420429622765
+      },
+      "quarter_blend_gain_vs_reference_km": -0.8756268729755448,
+      "error_corr_east": 0.952591195439323,
+      "error_corr_north": 0.951801211904213,
+      "error_corr_vector": 0.9521005625238294,
+      "error_corr_distance": 0.9601981157991941,
+      "candidate_closer_fraction": 0.45144,
+      "closer_in_baseline_worst_decile": 0.4728,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2994.633623017409
+    },
+    {
+      "name": "density_pooled_frechet",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 320.3170175256288,
+        "mse_km2": 961343.7362336081,
+        "rmse_km": 980.4813798505345
+      },
+      "standalone_gain_vs_reference_km": -53.5149637612335,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 282.37518547494466,
+        "mse_km2": 867206.4823135848,
+        "rmse_km": 931.2392186294479
+      },
+      "quarter_blend_gain_vs_reference_km": -4.272802540146927,
+      "error_corr_east": 0.9476299030297614,
+      "error_corr_north": 0.9449599299303214,
+      "error_corr_vector": 0.9461956473240686,
+      "error_corr_distance": 0.9537970279147754,
+      "candidate_closer_fraction": 0.37544,
+      "closer_in_baseline_worst_decile": 0.4568,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3023.686809572099
+    },
+    {
+      "name": "density_precision_fusion",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 344.69134166198296,
+        "mse_km2": 904360.8130826333,
+        "rmse_km": 950.9788709969498
+      },
+      "standalone_gain_vs_reference_km": -24.012454907648817,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 285.9359935900774,
+        "mse_km2": 854693.5232074455,
+        "rmse_km": 924.4963619222336
+      },
+      "quarter_blend_gain_vs_reference_km": 2.47005416706736,
+      "error_corr_east": 0.9456597632597884,
+      "error_corr_north": 0.9370480586329277,
+      "error_corr_vector": 0.9418417793373299,
+      "error_corr_distance": 0.954916975385718,
+      "candidate_closer_fraction": 0.22088,
+      "closer_in_baseline_worst_decile": 0.4952,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2913.2161273122188
+    },
+    {
+      "name": "density_prior_temperature",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 290.66599521581696,
+        "mse_km2": 936197.4022918864,
+        "rmse_km": 967.5729441710772
+      },
+      "standalone_gain_vs_reference_km": -40.60652808177622,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.6395637822644,
+        "mse_km2": 863484.6230967424,
+        "rmse_km": 929.238733101856
+      },
+      "quarter_blend_gain_vs_reference_km": -2.2723170125550496,
+      "error_corr_east": 0.9543834448645359,
+      "error_corr_north": 0.949439083946369,
+      "error_corr_vector": 0.9519676816333907,
+      "error_corr_distance": 0.9586521915929068,
+      "candidate_closer_fraction": 0.4896,
+      "closer_in_baseline_worst_decile": 0.4632,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3011.2862713709083
+    },
+    {
+      "name": "density_regional_median",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 309.4075003678112,
+        "mse_km2": 953984.0855122472,
+        "rmse_km": 976.7210889052449
+      },
+      "standalone_gain_vs_reference_km": -49.75467281594388,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 279.9642409948128,
+        "mse_km2": 865457.4496168884,
+        "rmse_km": 930.2996558189669
+      },
+      "quarter_blend_gain_vs_reference_km": -3.3332397296659337,
+      "error_corr_east": 0.9480000385121168,
+      "error_corr_north": 0.943247573763031,
+      "error_corr_vector": 0.9458402790843587,
+      "error_corr_distance": 0.9535474649959315,
+      "candidate_closer_fraction": 0.40656,
+      "closer_in_baseline_worst_decile": 0.48,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3020.8926935927275
+    },
+    {
+      "name": "density_retrieval_likelihood",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 272.90950273997737,
+        "mse_km2": 891491.1962861571,
+        "rmse_km": 944.1881148829174
+      },
+      "standalone_gain_vs_reference_km": -17.221698793616383,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 272.49648871600004,
+        "mse_km2": 860369.4841417221,
+        "rmse_km": 927.5610406553965
+      },
+      "quarter_blend_gain_vs_reference_km": -0.5946245660954901,
+      "error_corr_east": 0.9760310270209379,
+      "error_corr_north": 0.9731004709004869,
+      "error_corr_vector": 0.9747362342016468,
+      "error_corr_distance": 0.9816874788405288,
+      "candidate_closer_fraction": 0.478,
+      "closer_in_baseline_worst_decile": 0.5504,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2950.1570942215717
+    },
+    {
+      "name": "density_tail_calibration",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 312.2314312395045,
+        "mse_km2": 952435.7643830215,
+        "rmse_km": 975.9281553388147
+      },
+      "standalone_gain_vs_reference_km": -48.9617392495137,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 281.0863665480139,
+        "mse_km2": 866115.2736515838,
+        "rmse_km": 930.6531435779841
+      },
+      "quarter_blend_gain_vs_reference_km": -3.6867274886831183,
+      "error_corr_east": 0.9504211835204267,
+      "error_corr_north": 0.9481214956981806,
+      "error_corr_vector": 0.9491173246931391,
+      "error_corr_distance": 0.9558517667791856,
+      "candidate_closer_fraction": 0.40416,
+      "closer_in_baseline_worst_decile": 0.4624,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3018.4232336493733
+    },
+    {
+      "name": "expert_consensus_reweight",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 301.34750088245715,
+        "mse_km2": 901673.2537099629,
+        "rmse_km": 949.5647706765258
+      },
+      "standalone_gain_vs_reference_km": -22.598354587224776,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 278.08358313003856,
+        "mse_km2": 862374.1147699612,
+        "rmse_km": 928.641004247584
+      },
+      "quarter_blend_gain_vs_reference_km": -1.6745881582829725,
+      "error_corr_east": 0.9747882780141877,
+      "error_corr_north": 0.9739777701823883,
+      "error_corr_vector": 0.9744241269137329,
+      "error_corr_distance": 0.980274057968959,
+      "candidate_closer_fraction": 0.34616,
+      "closer_in_baseline_worst_decile": 0.4928,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2948.8218375824263
+    },
+    {
+      "name": "expert_geometric_median",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 300.20014278942676,
+        "mse_km2": 898312.3721892779,
+        "rmse_km": 947.7934227400387
+      },
+      "standalone_gain_vs_reference_km": -20.827006650737758,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 278.4560274096371,
+        "mse_km2": 860488.0457900992,
+        "rmse_km": 927.6249488829519
+      },
+      "quarter_blend_gain_vs_reference_km": -0.6585327936509202,
+      "error_corr_east": 0.9727762107724739,
+      "error_corr_north": 0.9702179634486336,
+      "error_corr_vector": 0.9716041488274452,
+      "error_corr_distance": 0.9771769452445029,
+      "candidate_closer_fraction": 0.40832,
+      "closer_in_baseline_worst_decile": 0.4768,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2941.3435648786854
+    },
+    {
+      "name": "posterior_local_adaptive",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 293.44445687732554,
+        "mse_km2": 893115.6294254718,
+        "rmse_km": 945.0479508604162
+      },
+      "standalone_gain_vs_reference_km": -18.08153477111523,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.98272742357483,
+        "mse_km2": 860468.6400903182,
+        "rmse_km": 927.6144889394075
+      },
+      "quarter_blend_gain_vs_reference_km": -0.6480728501064732,
+      "error_corr_east": 0.9720431931536545,
+      "error_corr_north": 0.9737685544227571,
+      "error_corr_vector": 0.9728021003647828,
+      "error_corr_distance": 0.9810923971061377,
+      "candidate_closer_fraction": 0.3984,
+      "closer_in_baseline_worst_decile": 0.5304,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2940.699198299453
+    },
+    {
+      "name": "posterior_scored_expert",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 304.6391505796966,
+        "mse_km2": 960883.5202462508,
+        "rmse_km": 980.2466629610379
+      },
+      "standalone_gain_vs_reference_km": -53.28024687173695,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 279.49818257582166,
+        "mse_km2": 868137.7220364765,
+        "rmse_km": 931.7390847423309
+      },
+      "quarter_blend_gain_vs_reference_km": -4.772668653029882,
+      "error_corr_east": 0.9499891124295841,
+      "error_corr_north": 0.943137376942905,
+      "error_corr_vector": 0.9469151231935341,
+      "error_corr_distance": 0.9572023356222079,
+      "candidate_closer_fraction": 0.43472,
+      "closer_in_baseline_worst_decile": 0.4616,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3039.2671509849174
+    },
+    {
+      "name": "prior_odds_reference_shrinkage",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 300.4402766584182,
+        "mse_km2": 1031078.4637352503,
+        "rmse_km": 1015.4203384486891
+      },
+      "standalone_gain_vs_reference_km": -88.45392235938812,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 278.13763893590215,
+        "mse_km2": 877948.3332910136,
+        "rmse_km": 936.9889718086407
+      },
+      "quarter_blend_gain_vs_reference_km": -10.02255571933972,
+      "error_corr_east": 0.9143679205841707,
+      "error_corr_north": 0.9214972467644226,
+      "error_corr_vector": 0.9174672838554097,
+      "error_corr_distance": 0.9398821185307593,
+      "candidate_closer_fraction": 0.46272,
+      "closer_in_baseline_worst_decile": 0.4616,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3154.12407755817
+    },
+    {
+      "name": "rank_connected_component",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 247.31195800922873,
+        "mse_km2": 1143802.0298949738,
+        "rmse_km": 1069.4868067886457
+      },
+      "standalone_gain_vs_reference_km": -142.52039069934472,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 263.79915152757934,
+        "mse_km2": 868332.556722169,
+        "rmse_km": 931.8436331929134
+      },
+      "quarter_blend_gain_vs_reference_km": -4.877217103612452,
+      "error_corr_east": 0.7924325101622158,
+      "error_corr_north": 0.7846769231456195,
+      "error_corr_vector": 0.7890159384106133,
+      "error_corr_distance": 0.8570833661202918,
+      "candidate_closer_fraction": 0.53096,
+      "closer_in_baseline_worst_decile": 0.5528,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3352.437837716688
+    },
+    {
+      "name": "rank_entropy_weighted_mean",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 300.8548244585554,
+        "mse_km2": 959668.3399695603,
+        "rmse_km": 979.626632942143
+      },
+      "standalone_gain_vs_reference_km": -52.66021685284204,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 278.5003826662627,
+        "mse_km2": 868225.3179295511,
+        "rmse_km": 931.7860902211146
+      },
+      "quarter_blend_gain_vs_reference_km": -4.819674131813599,
+      "error_corr_east": 0.9419627799780288,
+      "error_corr_north": 0.9427332255505366,
+      "error_corr_vector": 0.9422744661658398,
+      "error_corr_distance": 0.9584183286816844,
+      "candidate_closer_fraction": 0.42464,
+      "closer_in_baseline_worst_decile": 0.4648,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3042.3512899679477
+    },
+    {
+      "name": "rank_frechet_medoid",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 274.4965747594256,
+        "mse_km2": 1074230.5350762992,
+        "rmse_km": 1036.450932305191
+      },
+      "standalone_gain_vs_reference_km": -109.48451621588993,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 271.2124074270909,
+        "mse_km2": 869592.3995147638,
+        "rmse_km": 932.5193829163895
+      },
+      "quarter_blend_gain_vs_reference_km": -5.5529668270885395,
+      "error_corr_east": 0.8667306061654049,
+      "error_corr_north": 0.8527341514891309,
+      "error_corr_vector": 0.8605658450947229,
+      "error_corr_distance": 0.8979624069423615,
+      "candidate_closer_fraction": 0.51936,
+      "closer_in_baseline_worst_decile": 0.516,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3237.8913221865355
+    },
+    {
+      "name": "rank_minimax_consensus",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 305.7404988927372,
+        "mse_km2": 1123349.0140716257,
+        "rmse_km": 1059.8816037990402
+      },
+      "standalone_gain_vs_reference_km": -132.91518770973926,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 277.274101609569,
+        "mse_km2": 869187.537667543,
+        "rmse_km": 932.3022780555366
+      },
+      "quarter_blend_gain_vs_reference_km": -5.335861966235598,
+      "error_corr_east": 0.8238441825949876,
+      "error_corr_north": 0.8272079665755858,
+      "error_corr_vector": 0.8252938706536765,
+      "error_corr_distance": 0.8776956928871554,
+      "candidate_closer_fraction": 0.45384,
+      "closer_in_baseline_worst_decile": 0.5032,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3279.1252023385455
+    },
+    {
+      "name": "rank_product_mode",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 237.87663461406174,
+        "mse_km2": 1110058.8873615006,
+        "rmse_km": 1053.5933216196374
+      },
+      "standalone_gain_vs_reference_km": -126.62690553033644,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 261.5988172549626,
+        "mse_km2": 859242.8563617119,
+        "rmse_km": 926.9535351686792
+      },
+      "quarter_blend_gain_vs_reference_km": 0.012880920621796577,
+      "error_corr_east": 0.818022314215885,
+      "error_corr_north": 0.7978850737526084,
+      "error_corr_vector": 0.8091675897346845,
+      "error_corr_distance": 0.8529621311608439,
+      "candidate_closer_fraction": 0.58584,
+      "closer_in_baseline_worst_decile": 0.524,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3302.5277467423593
+    },
+    {
+      "name": "rank_spatial_mode",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 240.34587973179475,
+        "mse_km2": 1135992.107818695,
+        "rmse_km": 1065.8293051979267
+      },
+      "standalone_gain_vs_reference_km": -138.86288910862572,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 262.2047651609375,
+        "mse_km2": 863454.0945417505,
+        "rmse_km": 929.222306308749
+      },
+      "quarter_blend_gain_vs_reference_km": -2.2558902194480197,
+      "error_corr_east": 0.816075330992197,
+      "error_corr_north": 0.7953304242040417,
+      "error_corr_vector": 0.8068779321493126,
+      "error_corr_distance": 0.8498416734168924,
+      "candidate_closer_fraction": 0.58528,
+      "closer_in_baseline_worst_decile": 0.5192,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3341.5757476906188
+    },
+    {
+      "name": "rank_spherical_median",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 237.78952185200595,
+        "mse_km2": 1010219.52353396,
+        "rmse_km": 1005.0967732183603
+      },
+      "standalone_gain_vs_reference_km": -78.13035712905935,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 262.8042168565019,
+        "mse_km2": 858149.1320287025,
+        "rmse_km": 926.363390915629
+      },
+      "quarter_blend_gain_vs_reference_km": 0.6030251736719947,
+      "error_corr_east": 0.8863109420065567,
+      "error_corr_north": 0.864997439946419,
+      "error_corr_vector": 0.8769860330862402,
+      "error_corr_distance": 0.8992991281291957,
+      "candidate_closer_fraction": 0.60608,
+      "closer_in_baseline_worst_decile": 0.5096,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3151.2680618305203
+    },
+    {
+      "name": "rank_tail_completed_mean",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 305.9030116720795,
+        "mse_km2": 964511.2896041044,
+        "rmse_km": 982.0953566757682
+      },
+      "standalone_gain_vs_reference_km": -55.12894058646725,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 279.76904915730944,
+        "mse_km2": 869340.6707476518,
+        "rmse_km": 932.3844007423396
+      },
+      "quarter_blend_gain_vs_reference_km": -5.417984653038616,
+      "error_corr_east": 0.9499585064943546,
+      "error_corr_north": 0.9464557587962177,
+      "error_corr_vector": 0.9483997785286755,
+      "error_corr_distance": 0.957950678045929,
+      "candidate_closer_fraction": 0.42016,
+      "closer_in_baseline_worst_decile": 0.4576,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3045.9240082371402
+    },
+    {
+      "name": "rank_trimmed_frechet",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 253.2584256524764,
+        "mse_km2": 953461.7453280841,
+        "rmse_km": 976.4536575424786
+      },
+      "standalone_gain_vs_reference_km": -49.4872414531776,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 266.3853869283284,
+        "mse_km2": 858456.1707980144,
+        "rmse_km": 926.5290987324761
+      },
+      "quarter_blend_gain_vs_reference_km": 0.4373173568249058,
+      "error_corr_east": 0.9209706607579985,
+      "error_corr_north": 0.9163366266030752,
+      "error_corr_vector": 0.9188820706931699,
+      "error_corr_distance": 0.94018388228541,
+      "candidate_closer_fraction": 0.60128,
+      "closer_in_baseline_worst_decile": 0.5048,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3058.9519974421896
+    },
+    {
+      "name": "stack_angular_risk",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 284.98993870703026,
+        "mse_km2": 878202.4328836766,
+        "rmse_km": 937.1245556934663
+      },
+      "standalone_gain_vs_reference_km": -10.158139604165285,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 274.42257618431427,
+        "mse_km2": 856593.3866203179,
+        "rmse_km": 925.5233042016381
+      },
+      "quarter_blend_gain_vs_reference_km": 1.4431118876628943,
+      "error_corr_east": 0.9742289288650341,
+      "error_corr_north": 0.9747924481898025,
+      "error_corr_vector": 0.974459706359813,
+      "error_corr_distance": 0.9807239158982736,
+      "candidate_closer_fraction": 0.37512,
+      "closer_in_baseline_worst_decile": 0.5448,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2922.069257835365
+    },
+    {
+      "name": "stack_covariance_fusion",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 298.9078990299825,
+        "mse_km2": 883436.5417716608,
+        "rmse_km": 939.913050112435
+      },
+      "standalone_gain_vs_reference_km": -12.946634023134038,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.18083866375173,
+        "mse_km2": 857241.1157842459,
+        "rmse_km": 925.8731639831915
+      },
+      "quarter_blend_gain_vs_reference_km": 1.093252106109503,
+      "error_corr_east": 0.9724858166956086,
+      "error_corr_north": 0.9736196198802416,
+      "error_corr_vector": 0.9729756572968943,
+      "error_corr_distance": 0.9795702077236977,
+      "candidate_closer_fraction": 0.41856,
+      "closer_in_baseline_worst_decile": 0.5096,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2915.9037892739534
+    },
+    {
+      "name": "stack_disagreement_frame",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 316.6898164916329,
+        "mse_km2": 873236.9979015606,
+        "rmse_km": 934.4715072711209
+      },
+      "standalone_gain_vs_reference_km": -7.505091181819921,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 280.34076234286783,
+        "mse_km2": 854106.0259628673,
+        "rmse_km": 924.1785682230828
+      },
+      "quarter_blend_gain_vs_reference_km": 2.787847866218158,
+      "error_corr_east": 0.9718485749923865,
+      "error_corr_north": 0.9698630150239416,
+      "error_corr_vector": 0.9709261558840586,
+      "error_corr_distance": 0.9782352149941683,
+      "candidate_closer_fraction": 0.2744,
+      "closer_in_baseline_worst_decile": 0.4976,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2891.796539692088
+    },
+    {
+      "name": "stack_ecef_residual",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 304.14075895023535,
+        "mse_km2": 882970.2037320919,
+        "rmse_km": 939.6649422704307
+      },
+      "standalone_gain_vs_reference_km": -12.69852618112975,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 276.9578051353121,
+        "mse_km2": 857681.0141771489,
+        "rmse_km": 926.1106921837955
+      },
+      "quarter_blend_gain_vs_reference_km": 0.8557239055054424,
+      "error_corr_east": 0.975771444501638,
+      "error_corr_north": 0.9668031803356107,
+      "error_corr_vector": 0.9716897317138665,
+      "error_corr_distance": 0.9832273663865426,
+      "candidate_closer_fraction": 0.2912,
+      "closer_in_baseline_worst_decile": 0.512,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2922.3693759565467
+    },
+    {
+      "name": "stack_landmark_distances",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 305.6457067568974,
+        "mse_km2": 891195.8095839263,
+        "rmse_km": 944.031678273524
+      },
+      "standalone_gain_vs_reference_km": -17.065262184223002,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 277.9459061534996,
+        "mse_km2": 859485.9448105054,
+        "rmse_km": 927.0846481365687
+      },
+      "quarter_blend_gain_vs_reference_km": -0.11823204726772474,
+      "error_corr_east": 0.9743574742798475,
+      "error_corr_north": 0.9706299824517604,
+      "error_corr_vector": 0.9727051336676057,
+      "error_corr_distance": 0.9806897575746241,
+      "candidate_closer_fraction": 0.29968,
+      "closer_in_baseline_worst_decile": 0.4952,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2934.3962452061264
+    },
+    {
+      "name": "stack_local_trust",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 288.37425644795263,
+        "mse_km2": 875900.5397342116,
+        "rmse_km": 935.895581640501
+      },
+      "standalone_gain_vs_reference_km": -8.929165551199958,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 275.9675525486999,
+        "mse_km2": 857346.5356062369,
+        "rmse_km": 925.9300921809578
+      },
+      "quarter_blend_gain_vs_reference_km": 1.0363239083432063,
+      "error_corr_east": 0.9764567024624241,
+      "error_corr_north": 0.9796031051623252,
+      "error_corr_vector": 0.9778430788923248,
+      "error_corr_distance": 0.9846070404319286,
+      "candidate_closer_fraction": 0.42984,
+      "closer_in_baseline_worst_decile": 0.5168,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2914.635931961328
+    },
+    {
+      "name": "stack_pair_tournament",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 262.0486188676336,
+        "mse_km2": 875775.9290499755,
+        "rmse_km": 935.829006309366
+      },
+      "standalone_gain_vs_reference_km": -8.862590220065044,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 270.29481984360314,
+        "mse_km2": 857790.8116532179,
+        "rmse_km": 926.1699690948838
+      },
+      "quarter_blend_gain_vs_reference_km": 0.7964469944172379,
+      "error_corr_east": 0.981332981711198,
+      "error_corr_north": 0.97847303173714,
+      "error_corr_vector": 0.9800467376388518,
+      "error_corr_distance": 0.9857107079658084,
+      "candidate_closer_fraction": 0.5608,
+      "closer_in_baseline_worst_decile": 0.5608,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2928.2830992508607
+    },
+    {
+      "name": "stack_tail_mixture",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 280.94729138488344,
+        "mse_km2": 868478.6423581006,
+        "rmse_km": 931.9220151697783
+      },
+      "standalone_gain_vs_reference_km": -4.955599080477327,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 274.3365963445752,
+        "mse_km2": 854124.1956738271,
+        "rmse_km": 924.1883983657375
+      },
+      "quarter_blend_gain_vs_reference_km": 2.7780177235634937,
+      "error_corr_east": 0.9722648544873749,
+      "error_corr_north": 0.9720289426565915,
+      "error_corr_vector": 0.9721609434253792,
+      "error_corr_distance": 0.9817731979170378,
+      "candidate_closer_fraction": 0.47584,
+      "closer_in_baseline_worst_decile": 0.4664,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2907.2352313894057
+    },
+    {
+      "name": "stack_wgs84_tangent",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 318.4795540035894,
+        "mse_km2": 906391.0534796278,
+        "rmse_km": 952.0457202674816
+      },
+      "standalone_gain_vs_reference_km": -25.079304178180564,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 280.6060585352604,
+        "mse_km2": 860273.310561856,
+        "rmse_km": 927.5091970227875
+      },
+      "quarter_blend_gain_vs_reference_km": -0.5427809334864833,
+      "error_corr_east": 0.9591480938613995,
+      "error_corr_north": 0.9696652097599721,
+      "error_corr_vector": 0.9637803454479879,
+      "error_corr_distance": 0.9724016820482975,
+      "candidate_closer_fraction": 0.2688,
+      "closer_in_baseline_worst_decile": 0.4736,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 2951.734605332223
+    },
+    {
+      "name": "uncertainty_adaptive_temperature",
+      "reference": "v4_cal_interaction_full_fold_fit_170000",
+      "standalone": {
+        "n": 12500,
+        "mae_km": 311.1129604684954,
+        "mse_km2": 1114725.3749246271,
+        "rmse_km": 1055.8055573469137
+      },
+      "standalone_gain_vs_reference_km": -128.8391412576127,
+      "fixed_quarter_blend": {
+        "n": 12500,
+        "mae_km": 279.9368566249767,
+        "mse_km2": 886226.2304100848,
+        "rmse_km": 941.3958946214312
+      },
+      "quarter_blend_gain_vs_reference_km": -14.429478532130247,
+      "error_corr_east": 0.8679630932594026,
+      "error_corr_north": 0.8839563209157872,
+      "error_corr_vector": 0.8750416253428929,
+      "error_corr_distance": 0.913462149959302,
+      "candidate_closer_fraction": 0.47112,
+      "closer_in_baseline_worst_decile": 0.4576,
+      "baseline_worst_decile_rmse_km": 2898.2013156249823,
+      "candidate_on_baseline_worst_decile_rmse_km": 3264.233717212845
+    }
+  ]
+}

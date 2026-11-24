@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.venv/
+data/
+runs/
+*.safetensors
+*.parquet
+*.npy
+*.npz
+*.pt
+*.cbm
+*.log

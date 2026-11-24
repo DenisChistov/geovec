@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1090" viewBox="0 0 1120 1090" role="img" aria-labelledby="title desc">
+<title id="title">V4 — от прогнозов V3 к оценке 50 вариантов</title>
+<desc id="desc">Фиксированное разбиение 85/15. На каждом из пяти фолдов 28 способов объединения прогнозов и 22 обучаемых метода используют соответствующие прогнозы V3. Калибраторы учатся на внутренних вневыборочных прогнозах. Все варианты сравниваются с V3, победитель оценивается на неизменном тесте.</desc>
+<defs><marker id="blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path fill="#1e749b" d="M0 0L10 5L0 10Z"/></marker><marker id="gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path fill="#a16207" d="M0 0L10 5L0 10Z"/></marker></defs>
+<rect width="1120" height="1090" fill="#f8fafc"/>
+<g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="48" y="64" font-size="37" font-weight="700" fill="#0f172a">Геолокация V4 · 50 новых вариантов</text>
+<text x="48" y="100" font-size="21" font-weight="400" fill="#475569">Переиспользуем ансамбль V3 и сохраняем прежний тест</text>
+<rect x="48" y="133" width="686" height="86" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="68" y="164" font-size="23" font-weight="700" fill="#0f172a">85% · 212 500 снимков</text>
+<text x="68" y="188" font-size="17" font-weight="400" fill="#334155">Пять прежних внешних фолдов</text>
+<rect x="756" y="133" width="316" height="86" rx="14" fill="#fffbeb" stroke="#d6a62d" stroke-width="1.5"/>
+<text x="776" y="164" font-size="23" font-weight="700" fill="#0f172a">15% · 37 500</text>
+<text x="776" y="188" font-size="17" font-weight="400" fill="#334155">Тот же отложенный тест</text>
+<rect x="48" y="254" width="1024" height="499" rx="22" fill="#eaf7fd" stroke="#a6cfe2" stroke-width="1.5"/>
+<text x="72" y="293" font-size="27" font-weight="700" fill="#0f172a">На каждом из пяти внешних фолдов</text>
+<text x="72" y="319" font-size="18" font-weight="400" fill="#334155">170 000 для обучения · 42 500 для оценки</text>
+<rect x="72" y="350" width="460" height="94" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="92" y="381" font-size="23" font-weight="700" fill="#0f172a">Пакет прогнозов V3</text>
+<text x="92" y="405" font-size="17" font-weight="400" fill="#334155">Внешние прогнозы и вероятности</text>
+<text x="92" y="428" font-size="17" font-weight="400" fill="#334155">ячеек на 42 500 снимках</text>
+<rect x="573" y="350" width="474" height="94" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="593" y="381" font-size="23" font-weight="700" fill="#0f172a">Внутренние прогнозы V3</text>
+<text x="593" y="405" font-size="17" font-weight="400" fill="#334155">Три внутренних разбиения (OOF)</text>
+<text x="593" y="428" font-size="17" font-weight="400" fill="#334155">и PCA по внешней обучающей части</text>
+<rect x="72" y="484" width="460" height="116" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="92" y="515" font-size="23" font-weight="700" fill="#0f172a">28 фиксированных правил</text>
+<text x="92" y="539" font-size="17" font-weight="400" fill="#334155">16 методов постобработки вероятностей</text>
+<text x="92" y="562" font-size="17" font-weight="400" fill="#334155">12 методов географической плотности</text>
+<rect x="573" y="484" width="474" height="116" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="593" y="515" font-size="23" font-weight="700" fill="#0f172a">22 обучаемых метода</text>
+<text x="593" y="539" font-size="17" font-weight="400" fill="#334155">12 стеков и калибраторов экспертов</text>
+<text x="593" y="562" font-size="17" font-weight="400" fill="#334155">10 методов коррекции по WGS84</text>
+<rect x="72" y="653" width="975" height="55" rx="12" fill="#075985" stroke="#075985" stroke-width="1.5"/>
+<text x="96" y="687" font-size="20" font-weight="700" fill="#fff">Рейтинг по RMSE WGS84 на пяти фолдах · 50 методов + победитель V3</text>
+<path d="M390 219 V254" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M302 444 V484" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M810 444 V484" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M514 444 V464 H960 V484" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M302 600 V653" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M810 600 V653" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="48" y="792" width="1024" height="260" rx="22" fill="#f0fdf4" stroke="#a7d6b4" stroke-width="1.5"/>
+<text x="72" y="832" font-size="27" font-weight="700" fill="#0f172a">Оценка победителя на неизменном тесте</text>
+<rect x="72" y="874" width="550" height="119" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="92" y="905" font-size="23" font-weight="700" fill="#0f172a">Фиксируем результат CV</text>
+<text x="92" y="929" font-size="17" font-weight="400" fill="#334155">Пакет V3 уже обучен на всех 85%.</text>
+<text x="92" y="952" font-size="17" font-weight="400" fill="#334155">Обучаемый победитель использует</text>
+<text x="92" y="975" font-size="17" font-weight="400" fill="#334155">OOF-прогнозы пяти внешних фолдов.</text>
+<rect x="668" y="874" width="379" height="119" rx="14" fill="#fffbeb" stroke="#d6a62d" stroke-width="1.5"/>
+<text x="688" y="905" font-size="23" font-weight="700" fill="#0f172a">Итог на 37 500 снимках</text>
+<text x="688" y="929" font-size="17" font-weight="400" fill="#334155">MAE и RMSE в км по WGS84</text>
+<text x="688" y="952" font-size="17" font-weight="400" fill="#334155">Сравниваем с результатом V3</text>
+<path d="M560 753 V792" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M622 933 H668" fill="none" stroke="#1e749b" stroke-width="2.5" marker-end="url(#blue)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1072 176 H1095 V933 H1047" fill="none" stroke="#a16207" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#gold)" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="1026" font-size="17" font-weight="400" fill="#334155">Если победителем остаётся V3, используем его сохранённые test-прогнозы и метрики.</text>
+</g></svg>

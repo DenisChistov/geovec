@@ -1,0 +1,773 @@
+{
+  "winner": "cal_interaction",
+  "n_new_variants": 50,
+  "candidates": [
+    {
+      "name": "cal_interaction",
+      "description": "Regress expert directions on continuous posterior, retrieval and disagreement indicators.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 280.93457353990715,
+      "cv_rmse_km": 999.6675503715717,
+      "fold_rmse_km": [
+        979.5065785634771,
+        1011.0066597662418,
+        1028.5878816009779,
+        1008.9881915566547,
+        969.0501802855805
+      ]
+    },
+    {
+      "name": "stack_pair_tournament",
+      "description": "Learn the probabilities of pairwise expert wins and combine predictions by tournament score.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 267.9837100326652,
+      "cv_rmse_km": 1002.8238347610417,
+      "fold_rmse_km": [
+        982.6268942259954,
+        1019.8225382229261,
+        1036.560659171889,
+        1007.7504270131258,
+        965.7461735945575
+      ]
+    },
+    {
+      "name": "stack_angular_risk",
+      "description": "Estimate each expert's excess squared-angular risk per unit of displacement and form a soft risk gate.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 291.7102301723844,
+      "cv_rmse_km": 1006.6047114125014,
+      "fold_rmse_km": [
+        981.6615091231379,
+        1022.9639699851632,
+        1033.8812446005109,
+        1015.4651960444426,
+        977.7886430580097
+      ]
+    },
+    {
+      "name": "incumbent_v3",
+      "cv_mae_km": 307.913175534007,
+      "cv_rmse_km": 1007.4139960106687,
+      "fold_rmse_km": [
+        985.5470798836741,
+        1016.9651694841688,
+        1038.5392074744852,
+        1016.3535666071355,
+        978.445367081341
+      ],
+      "original_name": "fusion_tangent_residual",
+      "description": "Previously selected V3 ensemble",
+      "family": "incumbent",
+      "kind": "incumbent"
+    },
+    {
+      "name": "cal_posterior_rank",
+      "description": "Learn directional corrections for probability-weighted posterior ranks at two cell resolutions.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 297.4914023577477,
+      "cv_rmse_km": 1007.4933078410818,
+      "fold_rmse_km": [
+        984.2630957471076,
+        1015.5301305985048,
+        1035.155893266585,
+        1020.9219629197465,
+        980.463748020944
+      ]
+    },
+    {
+      "name": "stack_local_trust",
+      "description": "Learn the signed geographic displacement toward the retrieval-refined mean, constrained to their common arc.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 294.8239762664742,
+      "cv_rmse_km": 1007.7950005174584,
+      "fold_rmse_km": [
+        981.9714978396212,
+        1018.3040002233065,
+        1037.063448156214,
+        1021.3989385277747,
+        978.9210227451556
+      ]
+    },
+    {
+      "name": "cal_local_bias",
+      "description": "Estimate a spatial bias from training forecast neighbors of similar uncertainty.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 297.62716528817083,
+      "cv_rmse_km": 1008.3207312899408,
+      "fold_rmse_km": [
+        982.4075019414696,
+        1019.0179486810543,
+        1036.3642055264424,
+        1020.7476715342767,
+        981.8629388571912
+      ]
+    },
+    {
+      "name": "cal_harmonics",
+      "description": "Correct a signed stack with a smooth degree-two geographic bias field conditioned on uncertainty.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 301.4576855353546,
+      "cv_rmse_km": 1008.3869556384766,
+      "fold_rmse_km": [
+        983.0571808027883,
+        1018.4211984788809,
+        1035.8794688461355,
+        1021.5088756166513,
+        981.8917691525586
+      ]
+    },
+    {
+      "name": "cal_kernel",
+      "description": "Learn a random Fourier kernel ridge correction from geographic, uncertainty and visual-PCA features.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 308.09994595443186,
+      "cv_rmse_km": 1008.4125133995664,
+      "fold_rmse_km": [
+        982.7467779572985,
+        1018.5455043103132,
+        1036.2773365172231,
+        1020.4866241020256,
+        982.8474672183739
+      ]
+    },
+    {
+      "name": "cal_atlas_prior",
+      "description": "Learn a geographic label-density prior and calibrate motion along its gradients at two uncertainty-dependent scales.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 301.16748755755174,
+      "cv_rmse_km": 1008.4786564359135,
+      "fold_rmse_km": [
+        982.2629313297452,
+        1018.2328879335986,
+        1037.0515679333375,
+        1021.751302926758,
+        981.8633522615585
+      ]
+    },
+    {
+      "name": "cal_rotation",
+      "description": "Estimate a proper 3D rotation of the signed stack by iteratively reweighted spherical Procrustes.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 301.09121066584646,
+      "cv_rmse_km": 1008.750604584148,
+      "fold_rmse_km": [
+        982.792110392485,
+        1018.413171216077,
+        1037.4866698172086,
+        1021.793014833878,
+        982.0405472670735
+      ]
+    },
+    {
+      "name": "cal_robust",
+      "description": "Fit an uncertainty-adaptive Huber stack with bounded influence for extreme training misses.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 300.507601789658,
+      "cv_rmse_km": 1008.7554332921945,
+      "fold_rmse_km": [
+        982.8305003491702,
+        1018.4069436974677,
+        1037.44963937023,
+        1021.8243681501466,
+        982.0398831106257
+      ]
+    },
+    {
+      "name": "cal_signed",
+      "description": "Fit a ridge-regularized, signed combination of expert offsets with extrapolation.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 300.77780414781756,
+      "cv_rmse_km": 1008.7792547361798,
+      "fold_rmse_km": [
+        982.8133020208852,
+        1018.4440088533329,
+        1037.5300561980523,
+        1021.8258595648584,
+        982.0544961162666
+      ]
+    },
+    {
+      "name": "cal_compass",
+      "description": "Fit separate east/north coefficients, cross-axis terms and a global bias.",
+      "family": "calibration_ideas",
+      "kind": "trained",
+      "cv_mae_km": 302.0944638667556,
+      "cv_rmse_km": 1009.1490318824624,
+      "fold_rmse_km": [
+        982.0695161528107,
+        1018.777029733792,
+        1038.0295742927635,
+        1022.9680592572813,
+        982.6355501963627
+      ]
+    },
+    {
+      "name": "stack_tail_mixture",
+      "description": "Fit separate typical-error and long-distance-error regressions, combined by a learned probability of an error above 1,500 km.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 289.49708818026573,
+      "cv_rmse_km": 1009.458800406629,
+      "fold_rmse_km": [
+        984.4939684444213,
+        1020.7945637910904,
+        1037.974862853286,
+        1020.321556544344,
+        982.5159228016076
+      ]
+    },
+    {
+      "name": "cal_spread_simplex",
+      "description": "Fit convex tangent-plane mixtures across seven training quantiles of expert disagreement and interpolate weights for each query.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 296.61050031353875,
+      "cv_rmse_km": 1009.5805124221737,
+      "fold_rmse_km": [
+        984.7030640753813,
+        1018.9710099390866,
+        1039.3526103431498,
+        1022.1415686586918,
+        981.4758157031669
+      ]
+    },
+    {
+      "name": "cal_regional_simplex",
+      "description": "Fit convex tangent-plane mixtures by geographic region, with smooth memberships around 24 spherical centers and shrinkage toward the global fit.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 303.4089778537149,
+      "cv_rmse_km": 1009.8723587484247,
+      "fold_rmse_km": [
+        982.9911628916319,
+        1019.4971515276674,
+        1040.9796616150475,
+        1023.6656123428957,
+        980.8337752825045
+      ]
+    },
+    {
+      "name": "cal_global_simplex",
+      "description": "Fit one convex mixture of the seven expert log maps about the multiscale forecast using ellipsoid-scaled squared error.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 302.93698801157535,
+      "cv_rmse_km": 1010.1725077053089,
+      "fold_rmse_km": [
+        985.3715974865423,
+        1019.84455081328,
+        1039.6038537972859,
+        1022.7382305289333,
+        982.0553562023981
+      ]
+    },
+    {
+      "name": "stack_covariance_fusion",
+      "description": "Learn the expert error cross-products and minimize estimated squared error over regularized simplex weights.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 306.4128897335206,
+      "cv_rmse_km": 1012.8288197523704,
+      "fold_rmse_km": [
+        986.86848337177,
+        1024.6717445206623,
+        1040.9459462941968,
+        1025.3190004301332,
+        985.0898372047164
+      ]
+    },
+    {
+      "name": "stack_ecef_residual",
+      "description": "Ridge regression of Cartesian residuals from the multiscale posterior mean.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 312.12399047550224,
+      "cv_rmse_km": 1013.1338780399373,
+      "fold_rmse_km": [
+        987.1600374064599,
+        1024.2185428642347,
+        1042.4392852654428,
+        1026.9275043834725,
+        983.5816938302372
+      ]
+    },
+    {
+      "name": "density_retrieval_likelihood",
+      "description": "Condition the multimodal cell posterior on a bounded geographic likelihood from visual retrieval.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 280.1094970004344,
+      "cv_rmse_km": 1014.1791308277831,
+      "fold_rmse_km": [
+        989.2669240333636,
+        1022.5211155086206,
+        1048.2405587774035,
+        1028.579842105166,
+        980.720810289304
+      ]
+    },
+    {
+      "name": "posterior_local_adaptive",
+      "description": "Адаптивное смешивание глобального и локального прогнозов по их согласованию и апостериорной поддержке.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 300.3821740269532,
+      "cv_rmse_km": 1015.1152845995751,
+      "fold_rmse_km": [
+        990.157780422551,
+        1026.3896095708642,
+        1047.1128323661835,
+        1028.3709929291085,
+        982.0463133519248
+      ]
+    },
+    {
+      "name": "expert_consensus_reweight",
+      "description": "Среднее экспертов с весом по числу близких согласующихся прогнозов.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 308.2099675321751,
+      "cv_rmse_km": 1016.8869232215809,
+      "fold_rmse_km": [
+        995.2309816029664,
+        1025.179561571405,
+        1048.0831319873703,
+        1030.2623762108822,
+        984.3263775277869
+      ]
+    },
+    {
+      "name": "stack_landmark_distances",
+      "description": "Regress angular-distance differences to 16 global landmarks and recover a local position by multilateration.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 313.7917975737502,
+      "cv_rmse_km": 1017.6299609533837,
+      "fold_rmse_km": [
+        992.9254161681038,
+        1026.7698860063583,
+        1048.4324430150575,
+        1031.2770058861163,
+        987.3973647077748
+      ]
+    },
+    {
+      "name": "stack_disagreement_frame",
+      "description": "Regress two tangent components in a row-specific frame pointing toward the DNN/retrieval expert.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 326.2369670166398,
+      "cv_rmse_km": 1017.9404865866278,
+      "fold_rmse_km": [
+        989.7586797370612,
+        1026.0053008890538,
+        1050.610386325317,
+        1034.3573594375168,
+        987.4349187245863
+      ]
+    },
+    {
+      "name": "expert_geometric_median",
+      "description": "Геометрическая медиана семи прогнозов-экспертов на сфере.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 307.4993074591139,
+      "cv_rmse_km": 1020.2056056066587,
+      "fold_rmse_km": [
+        999.1173897068932,
+        1028.3844337963208,
+        1053.937834859881,
+        1032.177020764661,
+        985.9578715762678
+      ]
+    },
+    {
+      "name": "stack_wgs84_tangent",
+      "description": "Regress east/north ellipsoidal displacement and apply the correction by a WGS84 direct geodesic.",
+      "family": "learned_ideas",
+      "kind": "trained",
+      "cv_mae_km": 327.1086735508255,
+      "cv_rmse_km": 1024.8200676619556,
+      "fold_rmse_km": [
+        1004.2579416994132,
+        1031.9211856040095,
+        1054.49033185539,
+        1039.4387127409168,
+        992.7249423317444
+      ]
+    },
+    {
+      "name": "density_anisotropic_update",
+      "description": "Apply a tangent-plane Kalman update using the geographic posterior covariance and retrieval dispersion.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 325.916470242836,
+      "cv_rmse_km": 1026.1240991855661,
+      "fold_rmse_km": [
+        1003.5437365792694,
+        1027.1572192614633,
+        1063.863019117604,
+        1040.3999584101632,
+        994.115060459618
+      ]
+    },
+    {
+      "name": "density_modality_recovery",
+      "description": "Recover joint retrieval and direct-regression directions from saved agreement statistics, then compare regional support.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 343.9299073721406,
+      "cv_rmse_km": 1028.6506283912845,
+      "fold_rmse_km": [
+        1004.3922584561291,
+        1029.516708775512,
+        1068.856140927665,
+        1042.0969001235585,
+        996.7360306061215
+      ]
+    },
+    {
+      "name": "density_peer_kernel",
+      "description": "Reweight ranked cells by geographic support from the other two independently clustered classifiers.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 295.31263727920253,
+      "cv_rmse_km": 1036.3268962724137,
+      "fold_rmse_km": [
+        1016.8214044688381,
+        1042.6663148833243,
+        1064.2329669786675,
+        1049.7085570878749,
+        1007.1288418479501
+      ]
+    },
+    {
+      "name": "density_precision_fusion",
+      "description": "Fuse retrieval and classifier means by their respective posterior dispersions and visual modality agreement.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 354.9354901989849,
+      "cv_rmse_km": 1037.0669704782329,
+      "fold_rmse_km": [
+        1013.8545698567261,
+        1038.7417629879062,
+        1079.7234748056826,
+        1047.620580781286,
+        1003.6644379307917
+      ]
+    },
+    {
+      "name": "rank_entropy_weighted_mean",
+      "description": "Среднее трёх наборов топ-10 центров с весами уверенности и концентрации каждого распределения.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 307.45706019746234,
+      "cv_rmse_km": 1040.0681852497112,
+      "fold_rmse_km": [
+        1022.2547494564266,
+        1042.243042618794,
+        1067.4599412719442,
+        1055.3601219342193,
+        1012.016849652377
+      ]
+    },
+    {
+      "name": "density_prior_temperature",
+      "description": "Adapt classifier temperature to modal-cell prior prevalence and agreement across independently fitted grids.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 298.9672673158936,
+      "cv_rmse_km": 1041.2766156255739,
+      "fold_rmse_km": [
+        1015.7214199548449,
+        1051.4880659896655,
+        1070.5974996699435,
+        1056.081938561167,
+        1011.1773969560555
+      ]
+    },
+    {
+      "name": "rank_tail_completed_mean",
+      "description": "Объединение топ-10 центров с дополнением пропущенной массы глобальными прогнозами.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 312.6929128506116,
+      "cv_rmse_km": 1041.5900479320712,
+      "fold_rmse_km": [
+        1024.8494750225968,
+        1044.5378396773435,
+        1069.249392267008,
+        1055.7907773313627,
+        1012.5141808500462
+      ]
+    },
+    {
+      "name": "posterior_scored_expert",
+      "description": "Выбор эксперта по ожидаемой квадратичной ошибке объединённого распределения с дополнением хвоста.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 312.08082964035447,
+      "cv_rmse_km": 1042.4349096020626,
+      "fold_rmse_km": [
+        1023.2340216553504,
+        1047.6121373894857,
+        1070.6350918212086,
+        1058.3362325199487,
+        1011.1966027449992
+      ]
+    },
+    {
+      "name": "confident_scale_routing",
+      "description": "Переход к наиболее уверенному масштабу разбиения при достаточном отрыве от остальных.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 321.15022244020565,
+      "cv_rmse_km": 1046.1716724686064,
+      "fold_rmse_km": [
+        1026.5774129774593,
+        1048.724326475322,
+        1077.3129274227272,
+        1061.1716523611153,
+        1015.8757425173848
+      ]
+    },
+    {
+      "name": "density_tail_calibration",
+      "description": "Recalibrate omitted tail mass using independent grids and retrieval to check the leading cell's region.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 320.0262319247333,
+      "cv_rmse_km": 1046.4276747623037,
+      "fold_rmse_km": [
+        1025.3125141815663,
+        1050.3210141363063,
+        1076.7300500290971,
+        1061.4329508904789,
+        1017.166111407981
+      ]
+    },
+    {
+      "name": "density_regional_median",
+      "description": "Build three regional basins per image and replace pooled basin probabilities with the across-classifier median.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 316.43874501334443,
+      "cv_rmse_km": 1047.0567391235963,
+      "fold_rmse_km": [
+        1029.6556948018997,
+        1052.904696459324,
+        1076.570245867127,
+        1060.9936302773867,
+        1013.9669359900328
+      ]
+    },
+    {
+      "name": "density_classifier_reliability",
+      "description": "Weight complete classifier posteriors by how well their regional probability distributions match the other grids.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 324.05408362710443,
+      "cv_rmse_km": 1048.3383467815931,
+      "fold_rmse_km": [
+        1027.4859842866124,
+        1054.0381410761208,
+        1080.7835702607015,
+        1062.2871989499479,
+        1015.7732902162726
+      ]
+    },
+    {
+      "name": "density_pooled_frechet",
+      "description": "Pool all three ranked cell posteriors and reconstruct each omitted tail from its full spherical mean.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 327.55272722784247,
+      "cv_rmse_km": 1049.006496672189,
+      "fold_rmse_km": [
+        1029.1810275686214,
+        1052.6744839522073,
+        1079.335400201254,
+        1063.5310005985943,
+        1019.1530298582244
+      ]
+    },
+    {
+      "name": "density_local_offset",
+      "description": "Use retrieval to adjust locations within nearby cells while preserving each cell's posterior probability.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 326.1291420443194,
+      "cv_rmse_km": 1049.021024322612,
+      "fold_rmse_km": [
+        1029.1465327469577,
+        1052.6734820014253,
+        1079.0788365088358,
+        1063.5251897344347,
+        1019.5413366702171
+      ]
+    },
+    {
+      "name": "density_coarse_fine_transport",
+      "description": "Transport coarse cell locations toward supported neighbors in the finer grid while preserving coarse mass.",
+      "family": "density_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 326.55051881089554,
+      "cv_rmse_km": 1049.0692788423517,
+      "fold_rmse_km": [
+        1029.2110018536864,
+        1052.6852115056026,
+        1079.1761100394303,
+        1063.5766079040775,
+        1019.5558056497999
+      ]
+    },
+    {
+      "name": "rank_trimmed_frechet",
+      "description": "Среднее Фреше после удаления наиболее далёких 18% массы около глобального прогноза.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 260.113212738703,
+      "cv_rmse_km": 1055.8792066896349,
+      "fold_rmse_km": [
+        1030.2255876375577,
+        1066.208238771672,
+        1087.0725091982176,
+        1074.0136747568943,
+        1020.2978545163191
+      ]
+    },
+    {
+      "name": "prior_odds_reference_shrinkage",
+      "description": "Вес узкого прогноза определяется превышением апостериорной вероятности моды над её частотой в обучении.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 305.9025083925327,
+      "cv_rmse_km": 1066.43282607358,
+      "fold_rmse_km": [
+        1057.933286427771,
+        1069.0674486701962,
+        1097.4753005955265,
+        1077.72237114106,
+        1028.7513157333974
+      ]
+    },
+    {
+      "name": "rank_spherical_median",
+      "description": "Робастная взвешенная сферическая медиана объединённых топ-10 центров.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 246.7630409746306,
+      "cv_rmse_km": 1085.6596308874746,
+      "fold_rmse_km": [
+        1061.0331862966932,
+        1092.4426955857568,
+        1118.3812152194637,
+        1103.7076789162738,
+        1051.2442732674153
+      ]
+    },
+    {
+      "name": "rank_frechet_medoid",
+      "description": "Выбор центра из объединённых топ-10 с минимальным ожидаемым квадратом углового расстояния.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 280.02803549866525,
+      "cv_rmse_km": 1095.59346735203,
+      "fold_rmse_km": [
+        1070.7930455271603,
+        1094.538004976851,
+        1127.6085314805127,
+        1119.7723920464753,
+        1063.777621299236
+      ]
+    },
+    {
+      "name": "uncertainty_adaptive_temperature",
+      "description": "Температура апостериорного распределения определяется энтропией; интерполяция между сохранёнными прогнозами.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 315.1222818032674,
+      "cv_rmse_km": 1099.5650776839746,
+      "fold_rmse_km": [
+        1098.851972986372,
+        1101.701539399785,
+        1134.2895123543042,
+        1104.1569130647888,
+        1057.459064622928
+      ]
+    },
+    {
+      "name": "rank_minimax_consensus",
+      "description": "Центр, минимизирующий максимальный ожидаемый квадрат ошибки среди трёх разбиений.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 318.0624153404401,
+      "cv_rmse_km": 1144.6792710632596,
+      "fold_rmse_km": [
+        1116.1840818872788,
+        1142.824315411633,
+        1181.4379077023368,
+        1164.9996693088606,
+        1116.4761924058796
+      ]
+    },
+    {
+      "name": "rank_connected_component",
+      "description": "Среднее географической компоненты, содержащей центр с наибольшей суммарной массой ближайших по угловому порогу соседей.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 255.60267975927312,
+      "cv_rmse_km": 1151.3545404500435,
+      "fold_rmse_km": [
+        1115.8587632370477,
+        1162.6089849128234,
+        1179.5902449787327,
+        1163.9507402009688,
+        1133.6099356120455
+      ]
+    },
+    {
+      "name": "rank_product_mode",
+      "description": "Географическая мода произведения локальных плотностей трёх разбиений.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 249.26021784894667,
+      "cv_rmse_km": 1153.605675030618,
+      "fold_rmse_km": [
+        1117.3741648680646,
+        1172.774774625,
+        1178.9689142465186,
+        1166.3671058555146,
+        1131.249152318591
+      ]
+    },
+    {
+      "name": "rank_spatial_mode",
+      "description": "Плотностная мода объединённых центров, затем локальное среднее внутри ядра плотности.",
+      "family": "posterior_ideas",
+      "kind": "deterministic",
+      "cv_mae_km": 249.62320919168044,
+      "cv_rmse_km": 1154.9718945436973,
+      "fold_rmse_km": [
+        1120.607554929117,
+        1168.5178167234674,
+        1189.3937226773758,
+        1161.3096668537198,
+        1133.7140891303468
+      ]
+    }
+  ],
+  "split_sha256": "66273b78b3d7d59137034db945ac48b4b688b6c5017826db61e19cace62cbd4c"
+}

@@ -1,0 +1,105 @@
+{
+  "best_rmse": [
+    "prior/prior/v4",
+    "retrieval/signed_sqrt/ret_learned_kernel",
+    "retrieval/signed_sqrt/ret_two_basin",
+    "retrieval/signed_sqrt/ret_hubness",
+    "retrieval/balanced_pca/ret_two_basin",
+    "retrieval/signed_sqrt/ret_geo_prior",
+    "retrieval/signed_sqrt/ret_frechet",
+    "retrieval/balanced_pca/ret_hubness"
+  ],
+  "best_mae": [
+    "prior/prior/v4",
+    "retrieval/balanced_pca/ret_kernel_mode",
+    "retrieval/signed_sqrt/ret_kernel_mode",
+    "retrieval/shrink_whiten/ret_kernel_mode",
+    "retrieval/geo_projection/ret_kernel_mode",
+    "retrieval/signed_sqrt/ret_learned_kernel",
+    "retrieval/canonical_pair/ret_kernel_mode",
+    "retrieval/balanced_pca/ret_learned_kernel"
+  ],
+  "balanced_bases": [
+    "neural/signed_sqrt/bilinear",
+    "neural/raw_blocks/bilinear",
+    "neural/geo_projection/bilinear",
+    "geo/balanced_pca/geo_ellipsoid_risk",
+    "geo/shrink_whiten/geo_ellipsoid_risk",
+    "geo/balanced_pca/geo_distance_targets",
+    "retrieval/signed_sqrt/ret_learned_kernel",
+    "retrieval/signed_sqrt/ret_two_basin",
+    "retrieval/signed_sqrt/ret_hubness"
+  ],
+  "neural": [
+    "neural/signed_sqrt/bilinear",
+    "neural/raw_blocks/bilinear",
+    "neural/geo_projection/bilinear",
+    "neural/signed_sqrt/group_gate",
+    "neural/raw_blocks/group_gate",
+    "neural/fourier_rbf/bilinear",
+    "neural/geo_projection/residual_angle",
+    "neural/geo_projection/regional_heads"
+  ],
+  "geo": [
+    "geo/balanced_pca/geo_ellipsoid_risk",
+    "geo/shrink_whiten/geo_ellipsoid_risk",
+    "geo/balanced_pca/geo_distance_targets",
+    "geo/shrink_whiten/geo_distance_targets",
+    "geo/signed_sqrt/geo_ellipsoid_risk",
+    "geo/balanced_pca/geo_triangle_targets",
+    "geo/raw_blocks/geo_ellipsoid_risk",
+    "geo/balanced_pca/geo_local_offsets"
+  ],
+  "retrieval": [
+    "retrieval/signed_sqrt/ret_learned_kernel",
+    "retrieval/signed_sqrt/ret_two_basin",
+    "retrieval/signed_sqrt/ret_hubness",
+    "retrieval/balanced_pca/ret_two_basin",
+    "retrieval/signed_sqrt/ret_geo_prior",
+    "retrieval/signed_sqrt/ret_frechet",
+    "retrieval/balanced_pca/ret_hubness",
+    "retrieval/shrink_whiten/ret_learned_kernel"
+  ],
+  "feature_diverse": [
+    "retrieval/balanced_pca/ret_two_basin",
+    "retrieval/canonical_pair/ret_learned_kernel",
+    "retrieval/cross_bilinear/ret_learned_kernel",
+    "retrieval/fourier_rbf/ret_learned_kernel",
+    "retrieval/geo_projection/ret_two_basin",
+    "geo/prototype_metric/geo_distance_targets",
+    "retrieval/raw_blocks/ret_learned_kernel",
+    "retrieval/shrink_whiten/ret_learned_kernel",
+    "retrieval/signed_sqrt/ret_learned_kernel",
+    "retrieval/sparse_jl/ret_learned_kernel"
+  ],
+  "decorrelated": [
+    "prior/prior/v4",
+    "retrieval/signed_sqrt/ret_learned_kernel",
+    "geo/balanced_pca/geo_ellipsoid_risk",
+    "retrieval/signed_sqrt/ret_hubness",
+    "retrieval/signed_sqrt/ret_two_basin",
+    "retrieval/shrink_whiten/ret_learned_kernel",
+    "retrieval/balanced_pca/ret_hubness",
+    "retrieval/balanced_pca/ret_two_basin"
+  ],
+  "tail_safe": [
+    "retrieval/signed_sqrt/ret_kernel_mode",
+    "retrieval/balanced_pca/ret_kernel_mode",
+    "prior/prior/v4",
+    "retrieval/geo_projection/ret_kernel_mode",
+    "retrieval/shrink_whiten/ret_kernel_mode",
+    "retrieval/canonical_pair/ret_kernel_mode",
+    "retrieval/cross_bilinear/ret_kernel_mode",
+    "retrieval/fourier_rbf/ret_kernel_mode"
+  ],
+  "near_precision": [
+    "prior/prior/v4",
+    "retrieval/balanced_pca/ret_learned_kernel",
+    "retrieval/signed_sqrt/ret_learned_kernel",
+    "retrieval/shrink_whiten/ret_kernel_mode",
+    "retrieval/canonical_pair/ret_kernel_mode",
+    "retrieval/balanced_pca/ret_kernel_mode",
+    "retrieval/balanced_pca/ret_support_medoid",
+    "retrieval/shrink_whiten/ret_support_medoid"
+  ]
+}

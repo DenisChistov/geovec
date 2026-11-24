@@ -1,0 +1,9 @@
+{
+  "n": 4096,
+  "median_km": 0.0,
+  "p95_km": 0.0,
+  "max_km": 0.35724365793874674,
+  "mean_km": 8.830827596662943e-05,
+  "metric": "WGS84 between checkpoint replay and committed predictions, not ground truth",
+  "test_truth_opened": false
+}

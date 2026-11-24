@@ -1,0 +1,259 @@
+{
+  "n": 212500,
+  "members": [
+    "prior/prior/v4",
+    "meta/experts/mlp_gate",
+    "paper/distance_risk",
+    "retrieval/fourier_rbf/ret_learned_kernel",
+    "retrieval/shrink_whiten/ret_learned_kernel",
+    "retrieval/canonical_pair/ret_frechet"
+  ],
+  "pairwise_errors": [
+    {
+      "a": "prior/prior/v4",
+      "b": "meta/experts/mlp_gate",
+      "distance_error_pearson": 0.9743031974537342,
+      "east_north_error_correlation": 0.9418029499522726
+    },
+    {
+      "a": "prior/prior/v4",
+      "b": "paper/distance_risk",
+      "distance_error_pearson": 0.8371836654030863,
+      "east_north_error_correlation": 0.7697979445208102
+    },
+    {
+      "a": "prior/prior/v4",
+      "b": "retrieval/fourier_rbf/ret_learned_kernel",
+      "distance_error_pearson": 0.7717869318281626,
+      "east_north_error_correlation": 0.6877608293586647
+    },
+    {
+      "a": "prior/prior/v4",
+      "b": "retrieval/shrink_whiten/ret_learned_kernel",
+      "distance_error_pearson": 0.7323794868828509,
+      "east_north_error_correlation": 0.6393372007609628
+    },
+    {
+      "a": "prior/prior/v4",
+      "b": "retrieval/canonical_pair/ret_frechet",
+      "distance_error_pearson": 0.7404865980134776,
+      "east_north_error_correlation": 0.6583012480824466
+    },
+    {
+      "a": "meta/experts/mlp_gate",
+      "b": "paper/distance_risk",
+      "distance_error_pearson": 0.819844661184293,
+      "east_north_error_correlation": 0.7454502264874961
+    },
+    {
+      "a": "meta/experts/mlp_gate",
+      "b": "retrieval/fourier_rbf/ret_learned_kernel",
+      "distance_error_pearson": 0.7521047614804723,
+      "east_north_error_correlation": 0.6793886132279392
+    },
+    {
+      "a": "meta/experts/mlp_gate",
+      "b": "retrieval/shrink_whiten/ret_learned_kernel",
+      "distance_error_pearson": 0.7080958115363427,
+      "east_north_error_correlation": 0.6208800634197735
+    },
+    {
+      "a": "meta/experts/mlp_gate",
+      "b": "retrieval/canonical_pair/ret_frechet",
+      "distance_error_pearson": 0.7147677071578853,
+      "east_north_error_correlation": 0.6416457995409435
+    },
+    {
+      "a": "paper/distance_risk",
+      "b": "retrieval/fourier_rbf/ret_learned_kernel",
+      "distance_error_pearson": 0.6664954997136776,
+      "east_north_error_correlation": 0.569717350069019
+    },
+    {
+      "a": "paper/distance_risk",
+      "b": "retrieval/shrink_whiten/ret_learned_kernel",
+      "distance_error_pearson": 0.6454988581809887,
+      "east_north_error_correlation": 0.5316918513068323
+    },
+    {
+      "a": "paper/distance_risk",
+      "b": "retrieval/canonical_pair/ret_frechet",
+      "distance_error_pearson": 0.6570393499903706,
+      "east_north_error_correlation": 0.5537897061466488
+    },
+    {
+      "a": "retrieval/fourier_rbf/ret_learned_kernel",
+      "b": "retrieval/shrink_whiten/ret_learned_kernel",
+      "distance_error_pearson": 0.81546399975509,
+      "east_north_error_correlation": 0.7342476594077855
+    },
+    {
+      "a": "retrieval/fourier_rbf/ret_learned_kernel",
+      "b": "retrieval/canonical_pair/ret_frechet",
+      "distance_error_pearson": 0.8128028136195105,
+      "east_north_error_correlation": 0.7339018283580606
+    },
+    {
+      "a": "retrieval/shrink_whiten/ret_learned_kernel",
+      "b": "retrieval/canonical_pair/ret_frechet",
+      "distance_error_pearson": 0.9127279044354277,
+      "east_north_error_correlation": 0.8845259568584782
+    }
+  ],
+  "paired_ablation": {
+    "diverse:signed": {
+      "full": {
+        "name": "diverse:signed",
+        "cv_mae_km": 289.4164777578051,
+        "cv_rmse_km": 979.4876148632261,
+        "fold_rmse_km": [
+          947.3665887943777,
+          993.4544227520464,
+          1015.9659513619857,
+          987.8111667810457,
+          951.0873141613049
+        ]
+      },
+      "four_experts_refit": {
+        "name": "four_only/diverse:signed",
+        "cv_mae_km": 290.3373589020635,
+        "cv_rmse_km": 988.531928604701,
+        "fold_rmse_km": [
+          961.3972516086167,
+          997.4553956797994,
+          1026.5131357501336,
+          993.9698251118459,
+          961.805435877161
+        ]
+      },
+      "delta_rmse_km": -9.044313741474866,
+      "delta_mae_km": -0.9208811442583738,
+      "fraction_rows_improved": 0.5819576470588236,
+      "fraction_ties": 0.0,
+      "four_expert_error_at_least_1500_km_n": 7118,
+      "delta_mse_on_that_tail_km2": -572673.9894210902
+    },
+    "diverse:context": {
+      "full": {
+        "name": "diverse:context",
+        "cv_mae_km": 288.9734312455383,
+        "cv_rmse_km": 978.563718132682,
+        "fold_rmse_km": [
+          946.1496745545729,
+          993.2551492955383,
+          1014.563171875787,
+          987.4714439146129,
+          949.6006906552884
+        ]
+      },
+      "four_experts_refit": {
+        "name": "four_only/diverse:context",
+        "cv_mae_km": 290.3373589020635,
+        "cv_rmse_km": 988.531928604701,
+        "fold_rmse_km": [
+          961.3972516086167,
+          997.4553956797994,
+          1026.5131357501336,
+          993.9698251118459,
+          961.805435877161
+        ]
+      },
+      "delta_rmse_km": -9.968210472018995,
+      "delta_mae_km": -1.3639276565252203,
+      "fraction_rows_improved": 0.5797317647058824,
+      "fraction_ties": 0.0,
+      "four_expert_error_at_least_1500_km_n": 7118,
+      "delta_mse_on_that_tail_km2": -619338.7074263045
+    },
+    "diverse:convex": {
+      "full": {
+        "name": "diverse:convex",
+        "cv_mae_km": 295.109377130683,
+        "cv_rmse_km": 981.8796866476445,
+        "fold_rmse_km": [
+          950.1605972657244,
+          996.4156372966532,
+          1019.981848641026,
+          988.9709656531287,
+          952.0308660693106
+        ]
+      },
+      "four_experts_refit": {
+        "name": "four_only/diverse:convex",
+        "cv_mae_km": 292.6283679876122,
+        "cv_rmse_km": 988.6150540763379,
+        "fold_rmse_km": [
+          960.5911587038023,
+          997.9083970858616,
+          1027.9049273896894,
+          993.878093317838,
+          961.1762993584008
+        ]
+      },
+      "delta_rmse_km": -6.735367428693394,
+      "delta_mae_km": 2.481009143070821,
+      "fraction_rows_improved": 0.5601741176470588,
+      "fraction_ties": 0.0,
+      "four_expert_error_at_least_1500_km_n": 7206,
+      "delta_mse_on_that_tail_km2": -525463.6846023524
+    },
+    "diverse:tailguard": {
+      "full": {
+        "name": "diverse:tailguard",
+        "cv_mae_km": 290.3719718664713,
+        "cv_rmse_km": 985.8563907636806,
+        "fold_rmse_km": [
+          955.2852152605577,
+          999.1244831585249,
+          1021.5922734399273,
+          991.6880617996304,
+          960.0252890615369
+        ]
+      },
+      "four_experts_refit": {
+        "name": "four_only/diverse:tailguard",
+        "cv_mae_km": 285.4737732440165,
+        "cv_rmse_km": 990.1544960893499,
+        "fold_rmse_km": [
+          962.7043465095162,
+          1000.6629242478036,
+          1026.1827726814606,
+          996.0529650674672,
+          963.7069532328738
+        ]
+      },
+      "delta_rmse_km": -4.298105325669326,
+      "delta_mae_km": 4.8981986224547995,
+      "fraction_rows_improved": 0.49713411764705884,
+      "fraction_ties": 0.0,
+      "four_expert_error_at_least_1500_km_n": 6861,
+      "delta_mse_on_that_tail_km2": -470394.02080285776
+    }
+  },
+  "standalone": {
+    "prior/prior/v4": {
+      "cv_mae_km": 280.93457355221767,
+      "cv_rmse_km": 999.6675503679467
+    },
+    "meta/experts/mlp_gate": {
+      "cv_mae_km": 274.67003199719085,
+      "cv_rmse_km": 1012.4517870835479
+    },
+    "paper/distance_risk": {
+      "cv_mae_km": 345.2139517188339,
+      "cv_rmse_km": 1109.3632556795897
+    },
+    "retrieval/fourier_rbf/ret_learned_kernel": {
+      "cv_mae_km": 386.3619309544029,
+      "cv_rmse_km": 1221.1632913204446
+    },
+    "retrieval/shrink_whiten/ret_learned_kernel": {
+      "cv_mae_km": 387.57267839708624,
+      "cv_rmse_km": 1206.1432770493918
+    },
+    "retrieval/canonical_pair/ret_frechet": {
+      "cv_mae_km": 479.90470552298996,
+      "cv_rmse_km": 1288.1749502285263
+    }
+  }
+}

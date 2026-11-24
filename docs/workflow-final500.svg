@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1115" role="img" aria-labelledby="title desc">
+  <title id="title">Логика исследования и итогового прогнозирования геолокации</title>
+  <desc id="desc">250 тысяч изображений, фиксированный тест, скрининг, пять внешних фолдов, вложенные прогнозы, подбор объединения, фиксация победителя и единственная оценка на тесте.</desc>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4 0 8z" fill="#7385a5"/></marker>
+    <style>
+      text {font-family:system-ui,sans-serif;fill:#19243a;font-size:15px} .title{font-size:26px;font-weight:700}.head{font-size:18px;font-weight:650}.sub{font-size:13px;fill:#425675}.tiny{font-size:12px;fill:#425675}.box{fill:#fff;stroke:#b6c7dd;stroke-width:1.5;rx:13}.blue{fill:#eef5ff;stroke:#83abe0}.teal{fill:#e9f8f4;stroke:#74b4a7}.gold{fill:#fff5df;stroke:#ddb36c}.violet{fill:#f3efff;stroke:#b4a0db}.line{fill:none;stroke:#7385a5;stroke-width:2;marker-end:url(#arr)}.dash{stroke-dasharray:6 5}
+    </style>
+  </defs>
+  <rect width="1120" height="1115" fill="#f8fafc" rx="20"/>
+  <text x="35" y="45" class="title">Геолокация по двум векторам · выбор и финальный тест</text>
+  <rect x="35" y="66" width="1050" height="85" class="box"/>
+  <text x="55" y="95" class="head">250 000 снимков: проверенные пары векторов и координат</text>
+  <text x="55" y="119">GeoCLIP 512 + StreetCLIP 768 → независимая L2-нормализация → 1 280 компонент</text>
+  <text x="55" y="139" class="sub">Цель: направление ECEF на эллипсоиде WGS84, без разрыва долготы ±180°.</text>
+  <path d="M560 151V166H382V179" class="line"/><path d="M560 151V166H937V179" class="line"/>
+  <rect x="35" y="180" width="715" height="85" class="box blue"/>
+  <text x="55" y="209" class="head">85% · разработка: 212 500</text>
+  <text x="55" y="234">Пять фиксированных фолдов × 42 500. Подбор только здесь.</text>
+  <text x="55" y="253" class="sub">Стратификация по стране; параметры и признаки учатся на train.</text>
+  <rect x="782" y="180" width="303" height="85" class="box gold"/>
+  <text x="802" y="210" class="head">15% · тест: 37 500</text>
+  <text x="802" y="234">Координаты закрыты при подборе.</text>
+  <text x="802" y="253" class="sub">Исторические агрегаты известны.</text>
+  <path d="M382 265V285" class="line"/>
+  <rect x="35" y="286" width="1050" height="155" class="box"/>
+  <text x="55" y="313" class="head">1. Поиск, сравнение и отбор внутри разработки</text>
+  <rect x="55" y="331" width="300" height="91" class="box teal"/>
+  <text x="68" y="355" class="head">50 V4 + 10 из статей</text>
+  <text x="68" y="378" class="sub">Геоячейки, локальная плотность,</text><text x="68" y="396" class="sub">калибровка и риски · пять фолдов</text>
+  <rect x="370" y="331" width="360" height="91" class="box blue"/>
+  <text x="383" y="355" class="head">500 новых конфигураций</text>
+  <text x="383" y="378" class="sub">5 групп × 10 методов × 10 представлений</text><text x="383" y="396" class="sub">60k fit / 20k cal / 12,5k validation</text>
+  <rect x="745" y="331" width="320" height="91" class="box violet"/>
+  <text x="758" y="355" class="head">Shortlist</text>
+  <text x="758" y="378" class="sub">Лучший в каждой группе + топ-5</text><text x="758" y="396" class="sub">по предварительному RMSE</text>
+  <path d="M560 441V462" class="line"/>
+  <rect x="35" y="463" width="1050" height="356" class="box blue"/>
+  <text x="55" y="492" class="head">2. Полный этап подбора · повторить для каждого из пяти фолдов</text>
+  <rect x="55" y="510" width="660" height="48" class="box"/><text x="72" y="540" class="head">Внешний train: 170 000 · три внутренних разбиения</text>
+  <rect x="745" y="510" width="320" height="48" class="box gold"/><text x="760" y="540" class="head">Внешняя оценка: 42 500</text>
+  <path d="M382 558V575" class="line"/>
+  <rect x="55" y="576" width="310" height="100" class="box"/>
+  <text x="70" y="601" class="head">Базовые эксперты</text>
+  <text x="70" y="624" class="sub">Прямая сеть · геоячейки · retrieval</text>
+  <text x="70" y="642" class="sub">Функции риска, признаки и веса</text>
+  <text x="70" y="660" class="sub">обучаются вне inner validation.</text>
+  <rect x="380" y="576" width="335" height="100" class="box"/>
+  <text x="395" y="601" class="head">V3 → V4 и метамодели</text>
+  <text x="395" y="624" class="sub">Вероятности 512/1024, 7 экспертов;</text>
+  <text x="395" y="642" class="sub">локальное согласие, PCA, уверенность.</text>
+  <text x="395" y="660" class="sub">Внутренние OOF для стекинга.</text>
+  <path d="M210 676V690H382V706" class="line"/><path d="M547 676V690H382V706" class="line"/>
+  <rect x="55" y="707" width="660" height="90" class="box teal"/>
+  <text x="70" y="733" class="head">Объединение экспертов</text>
+  <text x="70" y="755" class="sub">OOF-шлюзы, смещения, менее коррелированные специалисты;</text>
+  <text x="70" y="775" class="sub">285 настроек весов, ridge, контекста и ограничения поправки.</text>
+  <path d="M715 751H730V636H745" class="line"/>
+  <path d="M905 558V576" class="line"/>
+  <rect x="745" y="576" width="320" height="100" class="box gold"/>
+  <text x="760" y="601" class="head">WGS84 Geod.inv</text>
+  <text x="760" y="624" class="sub">d = точное расстояние, км</text>
+  <text x="760" y="644" class="sub">MAE = mean(d)</text>
+  <text x="760" y="662" class="sub">RMSE = sqrt(mean(d²))</text>
+  <path d="M905 676V707" class="line"/>
+  <rect x="745" y="707" width="320" height="90" class="box violet"/>
+  <text x="760" y="733" class="head">Сводная оценка</text>
+  <text x="760" y="755" class="sub">Суммарный MSE всех 212 500</text>
+  <text x="760" y="775" class="sub">валидированных прогнозов.</text>
+  <path d="M560 819V837" class="line"/>
+  <rect x="35" y="838" width="1050" height="63" class="box violet"/>
+  <text x="55" y="864" class="head">3. Зафиксировать победителя по минимальному CV RMSE</text>
+  <text x="55" y="885" class="sub">Это подбор после скрининга, не независимая CV-оценка процедуры. Тест не влияет на выбор.</text>
+  <path d="M560 901V920" class="line"/>
+  <rect x="35" y="921" width="675" height="82" class="box teal"/>
+  <text x="55" y="949" class="head">4. Переобучить выбранную модель на 100% разработки</text>
+  <text x="55" y="972" class="sub">212 500 снимков; параметры fusion — на пятифолдовых OOF.</text>
+  <text x="55" y="991" class="sub">Сохранить предсказания и модель до чтения тестовых меток.</text>
+  <path d="M710 962H746" class="line"/>
+  <path d="M1085 223H1101V920H991" class="line dash"/>
+  <rect x="747" y="921" width="338" height="82" class="box gold"/>
+  <text x="762" y="949" class="head">5. Единственная оценка</text>
+  <text x="762" y="972" class="sub">37 500 отложенных снимков</text>
+  <text x="762" y="991" class="sub">MAE и RMSE · без нового подбора</text>
+  <text x="35" y="1040" class="sub">OOF (out-of-fold): каждый прогноз обучен без целевой строки. WGS84: эллипсоид вращения, не плоская карта.</text>
+  <text x="35" y="1065" class="sub">500 конфигураций — 50 групп методов × 10 вариантов признаков/групп, а не 500 независимых архитектур.</text>
+  <text x="35" y="1090" class="sub">Исторический тест повторно используется; для окончательной независимой проверки нужен новый закрытый тест.</text>
+</svg>

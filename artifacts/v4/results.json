@@ -1,0 +1,31 @@
+{
+  "winner": "cal_interaction",
+  "test": {
+    "mae_km": 266.6239811486437,
+    "rmse_km": 975.2377056762869,
+    "mse_km2": 951088.5825727478,
+    "n": 37500
+  },
+  "cv": {
+    "name": "cal_interaction",
+    "description": "Regress expert directions on continuous posterior, retrieval and disagreement indicators.",
+    "family": "calibration_ideas",
+    "kind": "trained",
+    "cv_mae_km": 280.93457353990715,
+    "cv_rmse_km": 999.6675503715717,
+    "fold_rmse_km": [
+      979.5065785634771,
+      1011.0066597662418,
+      1028.5878816009779,
+      1008.9881915566547,
+      969.0501802855805
+    ]
+  },
+  "historical_reference": {
+    "mae_km": 292.52576868786264,
+    "rmse_km": 982.4998210777056,
+    "mse_km2": 965305.8984177236,
+    "n": 37500
+  },
+  "split_sha256": "66273b78b3d7d59137034db945ac48b4b688b6c5017826db61e19cace62cbd4c"
+}
