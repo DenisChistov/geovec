@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="744" viewBox="0 0 1120 744" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Почему минимум MAE и минимум RMSE дают разные координаты</title>
+  <desc id="desc">Учебный пример на прямой. С равными вероятностями снимок мог быть сделан на отметке 0, 10 или 1000 километров. Медиана 10 километров минимизирует MAE до 333,33 километра, её RMSE составляет 571,61 километра. Среднее 336,67 километра минимизирует RMSE до 469,07 километра, его MAE составляет 442,22 километра. Кружки отмечают возможные места, треугольники указывают выбранную точку.</desc>
+  <defs>
+    <style>
+      text { font-family: 'Open Sans', 'DejaVu Sans', sans-serif; fill: #192d36; }
+      .headline { font-size: 35px; font-weight: 700; letter-spacing: -.6px; }
+      .subhead { font-size: 19px; }
+      .section { font-size: 28px; font-weight: 700; letter-spacing: -.5px; }
+      .body { font-size: 17px; }
+      .label { font-size: 15px; font-weight: 600; }
+      .result { font-size: 27px; font-weight: 700; font-variant-numeric: tabular-nums; }
+      .small { font-size: 15px; }
+      .teal { fill: #006957; }
+      .berry { fill: #853f67; }
+      .muted { fill: #475e66; }
+      .rail { stroke: #809599; stroke-width: 2; }
+      .lead { stroke: #71868b; stroke-width: 1.3; fill: none; }
+    </style>
+    <g id="rail">
+      <line x1="102" y1="0" x2="1018" y2="0" class="rail"/>
+      <g fill="#253b43" stroke="#fff" stroke-width="1.25">
+        <circle cx="102" cy="0" r="4.4"/><circle cx="111.16" cy="0" r="4.4"/><circle cx="1018" cy="0" r="4.4"/>
+      </g>
+      <path d="M101.9 6 L89 18 H75 M111.2 6 L133 18 H147 M1018 6 V18" class="lead"/>
+      <g class="label muted"><text x="75" y="36">0 км</text><text x="147" y="36">10 км</text><text x="1024" y="36" text-anchor="end">1 000 км</text></g>
+    </g>
+  </defs>
+  <rect width="1120" height="744" fill="#f5f6f2"/>
+  <g transform="translate(48 0)">
+    <text x="0" y="54" class="headline">Какой точкой ответить, если мест несколько?</text>
+    <text x="0" y="89" class="subhead">Учебный пример. Три места на прямой одинаково вероятны — 0, 10 и 1 000 км.</text>
+    <circle cx="6" cy="119" r="4.6" fill="#253b43"/>
+    <text x="20" y="124" class="small muted">Возможное место съёмки</text>
+    <path d="M258 113h14l-7 12z" fill="#475e66"/>
+    <text x="283" y="124" class="small muted">Выбранная точка</text>
+  </g>
+  <g>
+    <rect x="48" y="149" width="1024" height="248" rx="18" fill="#fff" stroke="#c5d9d3"/>
+    <path d="M49 175q0 -25 25 -25h65" fill="none" stroke="#00755d" stroke-width="3"/>
+    <text x="74" y="198" class="section">Минимум MAE — медиана</text>
+    <text x="75" y="231" class="body muted">Две из трёх точек находятся на первых 10 км прямой.</text>
+    <rect x="722" y="166" width="146" height="75" rx="10" fill="#e4f3ed"/>
+    <text x="738" y="190" class="label teal">MAE, км</text><text x="738" y="224" class="result teal">333,33</text>
+    <text x="894" y="190" class="label muted">RMSE, км</text><text x="894" y="224" class="result">571,61</text>
+    <path d="M104.16 277h14l-7 13z" fill="#006957"/>
+    <line x1="111.16" y1="291" x2="111.16" y2="297" stroke="#006957" stroke-width="1.8"/>
+    <text x="132" y="284" class="label teal">Прогноз 10 км</text>
+    <use href="#rail" x="0" y="302"/>
+    <text x="75" y="373" class="body">Расстояния от прогноза до трёх мест — 10, 0 и 990 км.</text>
+  </g>
+  <g>
+    <rect x="48" y="417" width="1024" height="248" rx="18" fill="#fff" stroke="#dccdd8"/>
+    <path d="M49 443q0 -25 25 -25h65" fill="none" stroke="#944b79" stroke-width="3"/>
+    <text x="74" y="466" class="section">Минимум RMSE — среднее</text>
+    <text x="75" y="499" class="body muted">Дальняя точка сильнее сдвигает прогноз в свою сторону.</text>
+    <text x="738" y="458" class="label muted">MAE, км</text><text x="738" y="492" class="result">442,22</text>
+    <rect x="878" y="434" width="161" height="75" rx="10" fill="#f3e9ef"/>
+    <text x="894" y="458" class="label berry">RMSE, км</text><text x="894" y="492" class="result berry">469,07</text>
+    <path d="M403.39 545h14l-7 13z" fill="#853f67"/>
+    <line x1="410.39" y1="559" x2="410.39" y2="570" stroke="#853f67" stroke-width="1.8"/>
+    <text x="431" y="552" class="label berry">Прогноз 336,67 км</text>
+    <use href="#rail" x="0" y="570"/>
+    <text x="75" y="641" class="body">Расстояния от прогноза до трёх мест — 336,67, 326,67 и 663,33 км.</text>
+  </g>
+  <text x="48" y="705" class="small muted">MAE усредняет расстояния. RMSE сначала возводит их в квадрат, усредняет и извлекает квадратный корень.</text>
+</svg>

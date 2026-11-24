@@ -1,0 +1,24 @@
+{
+  "winner": "gate:mae_gate:residual",
+  "cv_sha256": "703190b9c3b899cabfe2264fdd0f64f05de3e6d5305f72fd5f264fa283b6f894",
+  "rmse_cv_sha256": "4604c08fdca3e58ef9b5d4805995f7362c444b52aa96c9289eea1ff6609d9ae4",
+  "split_sha256": "66273b78b3d7d59137034db945ac48b4b688b6c5017826db61e19cace62cbd4c",
+  "specification": {
+    "kind": "gate",
+    "method": "mae_gate:residual",
+    "parameters": {
+      "name": "mae_gate:residual",
+      "recipe": "residual",
+      "decode": "residual",
+      "temperature": 1.0,
+      "description": "Медиана смеси с ограниченной обучаемой поправкой по востоку и северу."
+    }
+  },
+  "checkpoint": "mae-gate.pt",
+  "checkpoint_sha256": "90be39ec849da94cd48cdd27d50326cd349ca1b4f7c88952e052cdb5d73d9cb1",
+  "development_rows": 212500,
+  "test_rows": 37500,
+  "shared_experts": "V3/V4 and frozen RMSE final constituent checkpoints already fitted on all development rows",
+  "fit_objective": "MAE-aligned robust/decision rule; select by exact WGS84 MAE",
+  "fit_seconds": 34.25573249399986
+}

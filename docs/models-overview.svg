@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1156" viewBox="0 0 1200 1156"
+     role="img" lang="ru" xml:lang="ru" aria-labelledby="title description">
+  <title id="title">Один снимок, две модели геолокации</title>
+  <desc id="description">Для нового снимка используют 512 признаков GeoCLIP и 768 признаков StreetCLIP.
+    Три геоклассификатора, поиск и прямая нейросеть дают семь прогнозов V3. Из них калибратор V4
+    и нейросеть весов строят два прогноза. В общий набор входят также ещё один геоклассификатор
+    и три варианта поиска. Победитель RMSE корректирует координату V4 с помощью остальных экспертов.
+    В подборе по MAE также доступны географические медианы, вероятности ячеек и локальные прогнозы.
+    Обе модели выбирают на пяти фолдах из 212 500 снимков и оценивают по двум метрикам на 37 500 снимках.
+    Для трёх условных ошибок 10, 10 и 100 км MAE равно 40 км, а RMSE равно 58,3 км.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9z" fill="#728693"/>
+    </marker>
+    <style>
+      text{font-family:Inter,"DejaVu Sans",sans-serif;fill:#142d3b}
+      .hero{font-size:39px;font-weight:700;letter-spacing:-1px}
+      .subtitle{font-size:19px;fill:#415c68}
+      .eyebrow{font-size:14px;font-weight:700;letter-spacing:1.1px}
+      .heading{font-size:24px;font-weight:700}
+      .subhead{font-size:21px;font-weight:700}
+      .body{font-size:17px;fill:#344f5d}
+      .caption{font-size:15px;fill:#425e69}
+      .white{fill:#ffffff}
+      .muted-white{fill:#d4e8e8}
+      .teal{fill:#0b6a63}
+      .blue{fill:#315987}
+      .wine{fill:#854952}
+      .conn{fill:none;stroke:#728693;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect width="1200" height="1156" rx="22" fill="#f8faf9"/>
+  <path d="M48 47h41" stroke="#0b6a63" stroke-width="5" stroke-linecap="round"/>
+  <text x="48" y="96" class="hero">Один снимок, две модели геолокации</text>
+  <text x="48" y="129" class="subtitle">Как из признаков сцены получают координаты и как выбирают правило прогноза</text>
+
+  <rect x="48" y="159" width="1104" height="94" rx="14" fill="#153e49"/>
+  <g transform="translate(72,182)" fill="none" stroke="#bce6da" stroke-width="2.4" stroke-linecap="round">
+    <rect x="0" y="1" width="55" height="46" rx="7"/>
+    <circle cx="38" cy="13" r="4"/>
+    <path d="m6 38 14-17 11 11 7-8 12 13"/>
+  </g>
+  <text x="151" y="196" class="heading white">Новый снимок</text>
+  <text x="151" y="226" class="body muted-white">На входе два вектора признаков сцены</text>
+  <path d="M664 181v51" stroke="#46717a"/>
+  <text x="696" y="197" class="subhead white">GeoCLIP</text>
+  <text x="696" y="226" class="body muted-white">512 признаков</text>
+  <text x="927" y="197" class="subhead white">StreetCLIP</text>
+  <text x="927" y="226" class="body muted-white">768 признаков</text>
+
+  <path class="conn" d="M600 253v16H318v16" marker-end="url(#arrow)"/>
+  <path class="conn" d="M600 269h282v16" marker-end="url(#arrow)"/>
+  <rect x="48" y="292" width="540" height="216" rx="14" fill="#fff" stroke="#bed6d1" stroke-width="1.5"/>
+  <rect x="612" y="292" width="540" height="216" rx="14" fill="#fff" stroke="#c4d0dd" stroke-width="1.5"/>
+  <text x="72" y="325" class="eyebrow teal">ВЕРОЯТНОСТИ И ЛОКАЛЬНЫЙ ПОИСК</text>
+  <text x="72" y="360" class="heading">Семь прогнозов V3</text>
+  <text x="72" y="393" class="body">Три классификатора оценивают, в каких</text>
+  <text x="72" y="418" class="body">ячейках на карте мог быть сделан снимок.</text>
+  <path d="M72 438h489" stroke="#dce9e6"/>
+  <text x="72" y="465" class="body">4 прогноза по ячейкам, 2 по локальному поиску,</text>
+  <text x="72" y="489" class="body">1 объединяет поиск и прямой прогноз нейросети.</text>
+  <text x="636" y="325" class="eyebrow blue">ДОПОЛНИТЕЛЬНЫЕ ЭКСПЕРТЫ</text>
+  <text x="636" y="360" class="heading">Ещё четыре прогноза</text>
+  <text x="636" y="393" class="body">Геоклассификатор сильнее штрафует ошибку,</text>
+  <text x="636" y="418" class="body">когда выбранная ячейка далеко от снимка.</text>
+  <path d="M636 438h489" stroke="#dee6ed"/>
+  <text x="636" y="465" class="body">Три варианта поиска оценивают координаты</text>
+  <text x="636" y="489" class="body">по похожим снимкам с известным местом.</text>
+
+  <path class="conn" d="M318 509v25" marker-end="url(#arrow)"/>
+  <path class="conn" d="M882 509v25" marker-end="url(#arrow)"/>
+  <rect x="48" y="541" width="1104" height="117" rx="14" fill="#e6f2ef" stroke="#a8cdc2" stroke-width="1.5"/>
+  <text x="72" y="579" class="heading">Шесть общих экспертов</text>
+  <path d="M600 594v43" stroke="#c1dad3"/>
+  <text x="72" y="611" class="body">Семь ответов V3 объединяют двумя способами.</text>
+  <text x="72" y="636" class="body">Это калибратор V4 и нейросеть для выбора весов.</text>
+  <text x="636" y="611" class="body">Ещё четыре точки дают геоклассификатор</text>
+  <text x="636" y="636" class="body">и три варианта поиска по похожим снимкам.</text>
+  <path class="conn" d="M600 658v16H318v16" marker-end="url(#arrow)"/>
+  <path class="conn" d="M600 674h282v16" marker-end="url(#arrow)"/>
+
+  <rect x="48" y="697" width="540" height="166" rx="14" fill="#e9eff6" stroke="#b5c7da" stroke-width="1.5"/>
+  <rect x="612" y="697" width="540" height="166" rx="14" fill="#f8eeed" stroke="#dec1c3" stroke-width="1.5"/>
+  <text x="72" y="732" class="eyebrow blue">МОДЕЛЬ RMSE</text>
+  <text x="72" y="766" class="subhead">Коррекция координаты V4</text>
+  <text x="72" y="797" class="body">Поправка зависит от направлений остальных</text>
+  <text x="72" y="823" class="body">экспертов и величины расхождения между ними.</text>
+  <text x="636" y="732" class="eyebrow wine">МОДЕЛЬ MAE</text>
+  <text x="636" y="766" class="subhead">Выбор точки по среднему расстоянию</text>
+  <text x="636" y="797" class="body">30 гипотез → обучаемые веса → медиана</text>
+  <text x="636" y="823" class="body">и небольшая поправка к востоку и северу.</text>
+
+  <rect x="48" y="889" width="1104" height="147" rx="14" fill="#fff" stroke="#cfdadf" stroke-width="1.5"/>
+  <text x="72" y="924" class="eyebrow teal">ОБУЧЕНИЕ И ПРОВЕРКА</text>
+  <path d="M600 941v71" stroke="#d7e1e5"/>
+  <text x="72" y="962" class="subhead">212 500 снимков · выбор модели</text>
+  <text x="72" y="990" class="body">Пять фолдов. Для RMSE сравнивают квадраты</text>
+  <text x="72" y="1015" class="body">расстояний, для MAE — сами расстояния.</text>
+  <text x="636" y="962" class="subhead">37 500 снимков · финальная оценка</text>
+  <text x="636" y="990" class="body">Обе модели возвращают широту и долготу WGS84.</text>
+  <text x="636" y="1015" class="body">Для каждой измеряют и MAE, и RMSE в километрах.</text>
+
+  <rect x="48" y="1058" width="1104" height="67" rx="12" fill="#f2f0e7"/>
+  <text x="72" y="1084" class="eyebrow" style="fill:#77643c">ПРИМЕР РАСЧЁТА МЕТРИК</text>
+  <text x="72" y="1110" class="body">Для трёх условных ошибок 10, 10 и 100 км получаем MAE 40,0 км и RMSE 58,3 км.</text>
+</svg>

@@ -1,0 +1,47 @@
+{
+  "winner": "gate:mae_gate:residual",
+  "cv": {
+    "name": "gate:mae_gate:residual",
+    "cv_mae_km": 225.30311095966053,
+    "cv_rmse_km": 1031.8510201350718,
+    "fold_mae_km": [
+      220.5185932112303,
+      228.90049674098668,
+      231.66051278639782,
+      226.48732172929107,
+      218.94863033039667
+    ],
+    "fold_rmse_km": [
+      989.998445802253,
+      1048.1093546515824,
+      1074.2279583016923,
+      1050.4556288258389,
+      993.7453206133845
+    ]
+  },
+  "test": {
+    "mae_km": 214.29562375598573,
+    "rmse_km": 1026.2305140546853,
+    "mse_km2": 1053149.0679769435,
+    "n": 37500
+  },
+  "test_rows": 37500,
+  "dev_rows": 212500,
+  "cv_sha256": "703190b9c3b899cabfe2264fdd0f64f05de3e6d5305f72fd5f264fa283b6f894",
+  "rmse_cv_sha256": "4604c08fdca3e58ef9b5d4805995f7362c444b52aa96c9289eea1ff6609d9ae4",
+  "split_sha256": "66273b78b3d7d59137034db945ac48b4b688b6c5017826db61e19cace62cbd4c",
+  "predictions_sha256": "57242859e941859d8be2f9e14eb5b78d9c9785ff77e08dbc93dae2b767979ff8",
+  "historical_rmse_model": {
+    "mae_km": 271.848376615944,
+    "rmse_km": 952.5249850273548,
+    "mse_km2": 907303.8471013625,
+    "n": 37500
+  },
+  "historical_v4": {
+    "mae_km": 266.6239811486437,
+    "rmse_km": 975.2377056762869,
+    "mse_km2": 951088.5825727478,
+    "n": 37500
+  },
+  "test_note": "Same historical aggregate results known from earlier experiments; no test metrics used to select new MAE model"
+}

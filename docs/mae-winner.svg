@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" role="img"><title>Финальная модель MAE</title><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7z" fill="#7b95a9"/></marker><style>text{font-family:system-ui,-apple-system,Segoe UI,sans-serif}</style></defs><rect width="1100" height="900" rx="25" fill="#f5f8fc"/>
+<text x="36" y="50" font-size="30" font-weight="700" text-anchor="start" fill="#25364a">Финальная геолокация · минимум MAE</text>
+<text x="36" y="77" font-size="15" font-weight="400" text-anchor="start" fill="#64788d">Для каждой новой фотографии оцениваем, какие координатные гипотезы надёжнее.</text>
+<rect x="36" y="100" width="1028" height="68" rx="16" fill="#163b4b" stroke="#163b4b" stroke-width="1.3"/>
+<text x="56" y="130" font-size="22" font-weight="650" text-anchor="start" fill="#ffffff">GeoCLIP 512 + StreetCLIP 768</text>
+<text x="56" y="151" font-size="15" font-weight="400" text-anchor="start" fill="#d3e7eb">1 280 признаков; координаты нового снимка неизвестны.</text>
+<path d="M160 168 L160 190" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="36" y="190" width="248" height="102" rx="16" fill="#ffffff" stroke="#c6d6e4" stroke-width="1.3"/>
+<text x="50" y="216" font-size="22" font-weight="700" text-anchor="start" fill="#25364a">6 общих</text>
+<text x="50" y="241" font-size="16" font-weight="600" text-anchor="start" fill="#25364a">экспертов</text>
+<text x="50" y="268" font-size="12" font-weight="400" text-anchor="start" fill="#64788d">V4, мета, геоячейки, поиск</text>
+<path d="M160 292 L550 320" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<path d="M420 168 L420 190" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="296" y="190" width="248" height="102" rx="16" fill="#ffffff" stroke="#c6d6e4" stroke-width="1.3"/>
+<text x="310" y="216" font-size="22" font-weight="700" text-anchor="start" fill="#25364a">7 прогнозов</text>
+<text x="310" y="241" font-size="16" font-weight="600" text-anchor="start" fill="#25364a">V3</text>
+<text x="310" y="268" font-size="12" font-weight="400" text-anchor="start" fill="#64788d">вероятности, локальный поиск</text>
+<path d="M420 292 L550 320" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<path d="M680 168 L680 190" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="556" y="190" width="248" height="102" rx="16" fill="#ffffff" stroke="#c6d6e4" stroke-width="1.3"/>
+<text x="570" y="216" font-size="22" font-weight="700" text-anchor="start" fill="#25364a">5 новых</text>
+<text x="570" y="241" font-size="16" font-weight="600" text-anchor="start" fill="#25364a">медианных точек</text>
+<text x="570" y="268" font-size="12" font-weight="400" text-anchor="start" fill="#64788d">специальные правила MAE</text>
+<path d="M680 292 L550 320" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<path d="M940 168 L940 190" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="816" y="190" width="248" height="102" rx="16" fill="#ffffff" stroke="#c6d6e4" stroke-width="1.3"/>
+<text x="830" y="216" font-size="22" font-weight="700" text-anchor="start" fill="#25364a">12 центров</text>
+<text x="830" y="241" font-size="16" font-weight="600" text-anchor="start" fill="#25364a">геоячеек</text>
+<text x="830" y="268" font-size="12" font-weight="400" text-anchor="start" fill="#64788d">4 ведущих × 3 модели</text>
+<path d="M940 292 L550 320" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="36" y="320" width="1028" height="86" rx="16" fill="#e8f5f6" stroke="#aed7dc" stroke-width="1.3"/>
+<text x="55" y="352" font-size="23" font-weight="700" text-anchor="start" fill="#126e79">30 географических кандидатов → 219 признаков</text>
+<text x="55" y="379" font-size="15" font-weight="400" text-anchor="start" fill="#426971">Смещения, уверенность, вероятности геоячеек и степень согласия экспертов.</text>
+<path d="M550 406 L550 430" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="36" y="430" width="1028" height="126" rx="16" fill="#ffffff" stroke="#c6d6e4" stroke-width="1.3"/>
+<text x="55" y="462" font-size="22" font-weight="650" text-anchor="start" fill="#25364a">Обучаемый шлюз: веса для конкретного изображения</text>
+<text x="55" y="490" font-size="24" font-weight="700" text-anchor="start" fill="#163b4b">219 → 72 → 48 → 32</text>
+<text x="55" y="518" font-size="15" font-weight="400" text-anchor="start" fill="#25364a">Softmax объединяет оценки сети и исходные вероятности кандидатов.</text>
+<text x="55" y="541" font-size="14" font-weight="400" text-anchor="start" fill="#64788d">Обучение на вневыборочных прогнозах: шесть эпох для медианной рецептуры.</text>
+<path d="M550 556 L550 580" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="36" y="580" width="1028" height="110" rx="16" fill="#e8f5f6" stroke="#aed7dc" stroke-width="1.3"/>
+<text x="55" y="614" font-size="23" font-weight="700" text-anchor="start" fill="#126e79">Геометрическая медиана + ограниченная поправка</text>
+<text x="55" y="642" font-size="15" font-weight="400" text-anchor="start" fill="#25364a">Пять итераций медианы, затем обучаемый сдвиг к востоку/северу.</text>
+<text x="55" y="665" font-size="15" font-weight="400" text-anchor="start" fill="#25364a">Возвращаем широту и долготу WGS84.</text>
+<path d="M550 690 L550 714" stroke="#7b95a9" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="36" y="714" width="1028" height="110" rx="16" fill="#163b4b" stroke="#163b4b" stroke-width="1.3"/>
+<text x="55" y="748" font-size="19" font-weight="650" text-anchor="start" fill="#cbe7ed">Тест · 37 500 снимков</text>
+<text x="55" y="794" font-size="28" font-weight="700" text-anchor="start" fill="#ffffff">MAE 214,30 км</text>
+<text x="620" y="794" font-size="25" font-weight="700" text-anchor="start" fill="#ffffff">RMSE 1 026,23 км</text>
+<text x="36" y="863" font-size="15" font-weight="400" text-anchor="start" fill="#64788d">Модель выбрана по пятифолдовой MAE; RMSE-версия сохранена отдельно.</text>
+</svg>

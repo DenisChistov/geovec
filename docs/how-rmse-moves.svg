@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 674" width="1000" height="674" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Как пять прогнозов сдвигают точку V4</title>
+  <desc id="desc">Учебная карта в километрах относительно V4. По горизонтали восток, по вертикали север. Пять условных прогнозов показаны кругами, V4 — ромбом. При применении сохранённых коэффициентов модели итоговая стрелка перемещает прогноз на 44,551 километра к востоку и на 0,002 километра к югу. Координаты каждой исходной точки даны на карте в порядке восток, север.</desc>
+  <defs>
+    <style>
+      text {font-family:'DejaVu Sans','Arial',sans-serif;fill:#18323a}
+      .label {font-size:16px;font-weight:600}
+      .coord {font-size:14px;fill:#435b63}
+      .tick {font-size:14px;fill:#52656b;font-variant-numeric:tabular-nums}
+      .grid {stroke:#d6e0df;stroke-width:1;stroke-dasharray:3 5}
+      .ray {fill:none;stroke:#8b9fa5;stroke-width:2;stroke-dasharray:6 5}
+      .point {fill:#fffdfa;stroke:#4f6972;stroke-width:2.8}
+      .halo {paint-order:stroke fill;stroke:#fbfcf9;stroke-width:6;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="1000" height="674" rx="18" fill="#fbfcf9"/>
+  <text x="48" y="56" font-size="32" font-weight="700" id="heading">Как пять прогнозов сдвигают точку V4</text>
+  <text x="50" y="88" font-size="17" fill="#40575d" id="intro">Каждая пара чисел показывает смещение от V4 на восток и на север, в километрах.</text>
+  <g aria-label="Координатная сетка">
+    <rect x="90" y="145" width="810" height="423" rx="5" fill="#f3f6f3"/>
+    <path class="grid" d="M90 145V568 M195 145V568 M405 145V568 M510 145V568 M615 145V568 M720 145V568 M825 145V568 M90 220H900 M90 325H900 M90 535H900"/>
+    <path d="M90 430H897 M300 568V148" fill="none" stroke="#8d9f9e" stroke-width="1.45"/>
+    <path d="m896 426 7 4-7 4m-600-284 4-7 4 7" fill="none" stroke="#8d9f9e" stroke-width="1.45"/>
+    <g text-anchor="end" class="tick">
+      <text x="76" y="225">100</text><text x="76" y="330">50</text><text x="76" y="435">0</text><text x="76" y="540">−50</text>
+    </g>
+    <g text-anchor="middle" class="tick">
+      <text x="90" y="590">−100</text><text x="195" y="590">−50</text><text x="300" y="590">0</text><text x="405" y="590">50</text><text x="510" y="590">100</text><text x="615" y="590">150</text><text x="720" y="590">200</text><text x="825" y="590">250</text>
+    </g>
+    <text x="49" y="130" class="label">Север, км</text><text x="964" y="590" text-anchor="end" class="label">Восток, км</text>
+  </g>
+  <g aria-label="Пять условных прогнозов">
+    <path class="ray" d="M300 430 468 367 M300 430 573 514 M300 430 394.5 325 M300 430 142.5 304 M300 430 783 178"/>
+    <circle class="point" cx="142.5" cy="304" r="5.5"/><circle class="point" cx="394.5" cy="325" r="5.5"/>
+    <circle class="point" cx="468" cy="367" r="5.5"/><circle class="point" cx="573" cy="514" r="5.5"/><circle class="point" cx="783" cy="178" r="5.5"/>
+    <g class="halo">
+      <text class="label" x="107" y="260">Соседи после</text><text class="label" x="107" y="279">отбеливания</text><text class="coord" x="158" y="308">(−75, +60)</text>
+      <text class="label" x="409" y="310">Фурье-соседи</text><text class="coord" x="409" y="332">(+45, +50)</text>
+      <text class="label" x="481" y="362">Сеть весов V3</text><text class="coord" x="481" y="383">(+80, +30)</text>
+      <text class="label" x="589" y="511">Сеть с учётом расстояния</text><text class="coord" x="589" y="533">(+130, −40)</text>
+      <text text-anchor="end" class="label" x="755" y="173">Соседи в общих координатах</text><text text-anchor="end" class="coord" x="755" y="195">(+230, +120)</text>
+    </g>
+  </g>
+  <g aria-label="Итоговый шаг от V4 почти точно на восток">
+    <path d="M300 430 381.6 430.005" stroke="#006b68" stroke-width="7" stroke-linecap="round"/>
+    <path d="m377.5 421.2 16.057 8.805-16.057 8.8 3.4-8.8z" fill="#006b68"/>
+    <path d="m300 422 8 8-8 8-8-8z" fill="#163f43" stroke="#f3f6f3" stroke-width="2"/>
+    <text x="284" y="455" text-anchor="end" class="label halo">V4</text><text x="284" y="477" text-anchor="end" class="coord halo">(0, 0)</text>
+    <path d="M394 437 401 449 417 449" fill="none" stroke="#006b68" stroke-width="1.4"/>
+    <text x="426" y="455" font-size="20" font-weight="700" style="fill:#00615f" class="halo">Итоговый шаг</text><text x="426" y="477" font-size="15" class="halo" style="fill:#00615f">44,55 км на восток</text>
+  </g>
+  <path d="M49 614H950" stroke="#d6e0df"/>
+  <text x="49" y="644" font-size="15" fill="#40575d" id="caption">Условные положения экспертов. Для расчёта стрелки взяты параметры обученной RMSE-модели.</text>
+</svg>

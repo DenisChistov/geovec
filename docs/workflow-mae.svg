@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700"
+     lang="ru" xml:lang="ru" role="img" aria-labelledby="heading details">
+  <title id="heading">Как выбирают модели геолокации по RMSE и MAE</title>
+  <desc id="details">Для 212 500 обучающих снимков распределения V3 и прогнозы экспертов full500
+    получают вне обучающей части каждого фолда. Историческую модель выбрали по наименьшему RMSE,
+    новую выбирают по наименьшему среднему расстоянию MAE на всех пяти фолдах. Для каждой модели
+    параметры выбора и прогнозы фиксируют до оценки на одних и тех же 37 500 отложенных снимках.
+    Значения MAE и RMSE в километрах записывают отдельно в full500/results.json и mae_cv/results.json.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6.7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#536579"/>
+    </marker>
+    <style>
+      text { font-family: "DejaVu Sans", sans-serif; fill: #172c40; }
+      .title { font-size: 31px; font-weight: 700; }
+      .heading { font-size: 21px; font-weight: 700; }
+      .body { font-size: 16px; }
+      .small { font-size: 14px; fill: #3d5265; }
+      .path { font-family: "DejaVu Sans Mono", monospace; font-size: 16px; }
+      .line { fill: none; stroke: #536579; stroke-width: 2; stroke-linejoin: round; }
+      .border { stroke-width: 1.7; }
+    </style>
+  </defs>
+  <rect width="1000" height="700" fill="#f7f9fb" rx="18"/>
+  <text x="42" y="56" class="title">Как выбирают модели геолокации по RMSE и MAE</text>
+  <text x="44" y="85" class="body">Ошибка одного снимка — геодезическое расстояние на эллипсоиде WGS84, в километрах.</text>
+
+  <g aria-label="Общие данные и прогнозы">
+    <rect x="42" y="111" width="916" height="141" rx="13" class="border" fill="#fff" stroke="#9eafbd"/>
+    <text x="65" y="148" class="heading">212 500 обучающих снимков</text>
+    <text x="65" y="178" class="body">Пять фолдов по 42 500 снимков. Для OOF-прогноза модель обучают на остальных четырёх.</text>
+    <text x="65" y="205" class="body">V3 даёт вероятности географических ячеек и координаты соседей.</text>
+    <text x="65" y="232" class="body">Эксперты full500 дают прогнозы координат для тех же строк.</text>
+  </g>
+  <path class="line" d="M500 252V272 M271 272H729 M271 272V292" marker-end="url(#arrow)"/>
+  <path class="line" d="M729 272V292" marker-end="url(#arrow)"/>
+
+  <g aria-label="Выбор двух моделей">
+    <rect x="42" y="297" width="450" height="149" rx="13" class="border" fill="#e9f1fc" stroke="#7197bb"/>
+    <text x="64" y="332" class="heading">Историческая модель RMSE</text>
+    <text x="64" y="363" class="body">Выбрали минимум корня из среднего квадрата</text>
+    <text x="64" y="387" class="body">расстояний по всем 212 500 прогнозам.</text>
+    <text x="64" y="424" class="path" fill="#244f74">full500/cv-summary.json</text>
+
+    <rect x="508" y="297" width="450" height="149" rx="13" class="border" fill="#e4f3ee" stroke="#649488"/>
+    <text x="530" y="332" class="heading">Новая модель MAE</text>
+    <text x="530" y="363" class="body">Выбирают минимум суммы расстояний,</text>
+    <text x="530" y="387" class="body">делённой на число прогнозов (212 500).</text>
+    <text x="530" y="424" class="path" fill="#24584e">mae_cv/cv-summary.json</text>
+  </g>
+
+  <path class="line" d="M271 446V538" marker-end="url(#arrow)"/>
+  <path class="line" d="M729 446V538" marker-end="url(#arrow)"/>
+  <g aria-label="Один и тот же отложенный набор для отдельной оценки моделей">
+    <rect x="294" y="466" width="412" height="58" rx="8" fill="#f7f9fb"/>
+    <text x="500" y="487" text-anchor="middle" class="heading">37 500 отложенных снимков</text>
+    <text x="500" y="511" text-anchor="middle" class="small">Общий исторический тест для обеих моделей</text>
+    <rect x="42" y="545" width="450" height="92" rx="13" class="border" fill="#fff" stroke="#7197bb"/>
+    <text x="64" y="578" class="heading">Тестовые RMSE и MAE</text>
+    <text x="64" y="610" class="path" fill="#244f74">full500/results.json</text>
+    <rect x="508" y="545" width="450" height="92" rx="13" class="border" fill="#fff" stroke="#649488"/>
+    <text x="530" y="578" class="heading">Тестовые MAE и RMSE</text>
+    <text x="530" y="610" class="path" fill="#24584e">mae_cv/results.json</text>
+  </g>
+  <text x="44" y="674" class="small">В каждой ветви выбор модели и её прогнозы фиксируют до оценки по отложенным координатам.</text>
+</svg>
